@@ -1,0 +1,674 @@
+{
+  "MMM-001": {
+    "principal": "imagenes/MMM-001_MMM25-01_p018_img01_xref7146.webp",
+    "galeria": [
+      "imagenes/MMM-001_MMM25-01_p018_img01_xref7146.webp",
+      "imagenes/MMM-001_MMM25-01_p017_img01_xref7141.webp",
+      "imagenes/MMM-001_MMM25-01_p018_img03_xref7148.webp",
+      "imagenes/MMM-001_MMM25-01_p018_img04_xref7149.webp",
+      "imagenes/MMM-001_MMM25-01_p019_img01_xref7154.webp",
+      "imagenes/MMM-001_MMM25-01_p019_img02_xref7155.webp",
+      "imagenes/MMM-001_MMM25-01_p019_img03_xref7156.webp",
+      "imagenes/MMM-001_MMM25-01_p020_img01_xref7160.webp",
+      "imagenes/MMM-001_MMM25-01_p020_img02_xref7161.webp"
+    ],
+    "cantidad": 9
+  },
+  "MMM-002": {
+    "principal": "imagenes/MMM-002_MMM25-02_p022_img02_xref7170.webp",
+    "galeria": [
+      "imagenes/MMM-002_MMM25-02_p022_img02_xref7170.webp",
+      "imagenes/MMM-002_MMM25-02_p021_img01_xref7166.webp",
+      "imagenes/MMM-002_MMM25-02_p022_img03_xref7171.webp",
+      "imagenes/MMM-002_MMM25-02_p022_img04_xref7172.webp",
+      "imagenes/MMM-002_MMM25-02_p023_img01_xref7175.webp",
+      "imagenes/MMM-002_MMM25-02_p023_img02_xref7176.webp",
+      "imagenes/MMM-002_MMM25-02_p023_img03_xref7177.webp",
+      "imagenes/MMM-002_MMM25-02_p023_img04_xref7178.webp",
+      "imagenes/MMM-002_MMM25-02_p024_img05_xref7182.webp",
+      "imagenes/MMM-002_MMM25-02_p024_img08_xref7185.webp"
+    ],
+    "cantidad": 10
+  },
+  "MMM-003": {
+    "principal": "imagenes/MMM-003_MMM25-03_p026_img02_xref7193.webp",
+    "galeria": [
+      "imagenes/MMM-003_MMM25-03_p026_img02_xref7193.webp",
+      "imagenes/MMM-003_MMM25-03_p025_img02_xref7189.webp",
+      "imagenes/MMM-003_MMM25-03_p026_img01_xref7192.webp",
+      "imagenes/MMM-003_MMM25-03_p026_img04_xref7195.webp",
+      "imagenes/MMM-003_MMM25-03_p027_img01_xref7198.webp",
+      "imagenes/MMM-003_MMM25-03_p027_img02_xref7199.webp",
+      "imagenes/MMM-003_MMM25-03_p027_img03_xref7200.webp",
+      "imagenes/MMM-003_MMM25-03_p028_img04_xref7203.webp",
+      "imagenes/MMM-003_MMM25-03_p028_img05_xref7204.webp"
+    ],
+    "cantidad": 9
+  },
+  "MMM-004": {
+    "principal": "imagenes/MMM-004_MMM25-04_p031_img01_xref7217.webp",
+    "galeria": [
+      "imagenes/MMM-004_MMM25-04_p031_img01_xref7217.webp",
+      "imagenes/MMM-004_MMM25-04_p029_img01_xref7209.webp",
+      "imagenes/MMM-004_MMM25-04_p030_img01_xref7214.webp",
+      "imagenes/MMM-004_MMM25-04_p032_img05_xref7222.webp"
+    ],
+    "cantidad": 4
+  },
+  "MMM-005": {
+    "principal": "imagenes/MMM-005_MMM25-05_p034_img01_xref7234.webp",
+    "galeria": [
+      "imagenes/MMM-005_MMM25-05_p034_img01_xref7234.webp",
+      "imagenes/MMM-005_MMM25-05_p033_img01_xref7228.webp",
+      "imagenes/MMM-005_MMM25-05_p035_img01_xref7237.webp",
+      "imagenes/MMM-005_MMM25-05_p035_img02_xref7238.webp",
+      "imagenes/MMM-005_MMM25-05_p036_img04_xref7242.webp"
+    ],
+    "cantidad": 5
+  },
+  "MMM-006": {
+    "principal": "imagenes/MMM-006_MMM25-06_p040_img01_xref7255.webp",
+    "galeria": [
+      "imagenes/MMM-006_MMM25-06_p040_img01_xref7255.webp",
+      "imagenes/MMM-006_MMM25-06_p037_img01_xref7245.webp",
+      "imagenes/MMM-006_MMM25-06_p038_img01_xref7247.webp",
+      "imagenes/MMM-006_MMM25-06_p038_img02_xref7248.webp",
+      "imagenes/MMM-006_MMM25-06_p039_img01_xref7251.webp",
+      "imagenes/MMM-006_MMM25-06_p039_img02_xref7252.webp"
+    ],
+    "cantidad": 6
+  },
+  "MMM-007": {
+    "principal": "imagenes/MMM-007_MMM25-07_p043_img02_xref7264.webp",
+    "galeria": [
+      "imagenes/MMM-007_MMM25-07_p043_img02_xref7264.webp",
+      "imagenes/MMM-007_MMM25-07_p041_img01_xref7258.webp",
+      "imagenes/MMM-007_MMM25-07_p042_img01_xref7260.webp",
+      "imagenes/MMM-007_MMM25-07_p043_img01_xref7263.webp",
+      "imagenes/MMM-007_MMM25-07_p044_img01_xref7267.webp"
+    ],
+    "cantidad": 5
+  },
+  "MMM-008": {
+    "principal": "imagenes/MMM-008_MMM25-08_p047_img01_xref7281.webp",
+    "galeria": [
+      "imagenes/MMM-008_MMM25-08_p047_img01_xref7281.webp",
+      "imagenes/MMM-008_MMM25-08_p045_img01_xref7271.webp",
+      "imagenes/MMM-008_MMM25-08_p046_img02_xref7276.webp",
+      "imagenes/MMM-008_MMM25-08_p046_img03_xref7277.webp",
+      "imagenes/MMM-008_MMM25-08_p046_img04_xref7278.webp",
+      "imagenes/MMM-008_MMM25-08_p048_img05_xref7286.webp",
+      "imagenes/MMM-008_MMM25-08_p048_img06_xref7287.webp"
+    ],
+    "cantidad": 7
+  },
+  "MMM-009": {
+    "principal": "imagenes/MMM-009_MMM25-09_p051_img01_xref7295.webp",
+    "galeria": [
+      "imagenes/MMM-009_MMM25-09_p051_img01_xref7295.webp",
+      "imagenes/MMM-009_MMM25-09_p049_img01_xref7290.webp",
+      "imagenes/MMM-009_MMM25-09_p050_img01_xref7292.webp",
+      "imagenes/MMM-009_MMM25-09_p052_img05_xref7299.webp",
+      "imagenes/MMM-009_MMM25-09_p052_img06_xref7300.webp"
+    ],
+    "cantidad": 5
+  },
+  "MMM-010": {
+    "principal": "imagenes/MMM-010_MMM25-10_p055_img01_xref7314.webp",
+    "galeria": [
+      "imagenes/MMM-010_MMM25-10_p055_img01_xref7314.webp",
+      "imagenes/MMM-010_MMM25-10_p053_img01_xref7305.webp",
+      "imagenes/MMM-010_MMM25-10_p054_img01_xref7309.webp",
+      "imagenes/MMM-010_MMM25-10_p054_img02_xref7310.webp",
+      "imagenes/MMM-010_MMM25-10_p056_img05_xref7319.webp",
+      "imagenes/MMM-010_MMM25-10_p056_img06_xref7320.webp"
+    ],
+    "cantidad": 6
+  },
+  "MMM-011": {
+    "principal": "imagenes/MMM-011_MMM25-11_p059_img02_xref7333.webp",
+    "galeria": [
+      "imagenes/MMM-011_MMM25-11_p059_img02_xref7333.webp",
+      "imagenes/MMM-011_MMM25-11_p057_img01_xref7323.webp",
+      "imagenes/MMM-011_MMM25-11_p058_img02_xref7328.webp",
+      "imagenes/MMM-011_MMM25-11_p058_img03_xref7329.webp",
+      "imagenes/MMM-011_MMM25-11_p059_img03_xref7334.webp",
+      "imagenes/MMM-011_MMM25-11_p060_img01_xref7337.webp"
+    ],
+    "cantidad": 6
+  },
+  "MMM-012": {
+    "principal": "imagenes/MMM-012_MMM25-12_p066_img01_xref7393.webp",
+    "galeria": [
+      "imagenes/MMM-012_MMM25-12_p066_img01_xref7393.webp",
+      "imagenes/MMM-012_MMM25-12_p067_img01_xref7398.webp",
+      "imagenes/MMM-012_MMM25-12_p068_img02_xref7407.webp"
+    ],
+    "cantidad": 3
+  },
+  "MMM-013": {
+    "principal": "imagenes/MMM-013_MMM25-13_p069_img01_xref7416.webp",
+    "galeria": [
+      "imagenes/MMM-013_MMM25-13_p069_img01_xref7416.webp",
+      "imagenes/MMM-013_MMM25-13_p070_img01_xref7421.webp",
+      "imagenes/MMM-013_MMM25-13_p071_img01_xref7424.webp",
+      "imagenes/MMM-013_MMM25-13_p072_img01_xref7427.webp"
+    ],
+    "cantidad": 4
+  },
+  "MMM-014": {
+    "principal": "imagenes/MMM-014_MMM25-14_p073_img01_xref7432.webp",
+    "galeria": [
+      "imagenes/MMM-014_MMM25-14_p073_img01_xref7432.webp",
+      "imagenes/MMM-014_MMM25-14_p074_img02_xref7436.webp",
+      "imagenes/MMM-014_MMM25-14_p075_img01_xref7439.webp",
+      "imagenes/MMM-014_MMM25-14_p076_img01_xref7442.webp"
+    ],
+    "cantidad": 4
+  },
+  "MMM-015": {
+    "principal": "imagenes/MMM-015_MMM25-15_p079_img02_xref7453.webp",
+    "galeria": [
+      "imagenes/MMM-015_MMM25-15_p079_img02_xref7453.webp",
+      "imagenes/MMM-015_MMM25-15_p077_img02_xref7446.webp",
+      "imagenes/MMM-015_MMM25-15_p078_img01_xref7448.webp",
+      "imagenes/MMM-015_MMM25-15_p079_img01_xref7452.webp",
+      "imagenes/MMM-015_MMM25-15_p080_img01_xref7456.webp"
+    ],
+    "cantidad": 5
+  },
+  "MMM-016": {
+    "principal": "imagenes/MMM-016_MMM25-16_p087_img01_xref7526.webp",
+    "galeria": [
+      "imagenes/MMM-016_MMM25-16_p087_img01_xref7526.webp",
+      "imagenes/MMM-016_MMM25-16_p085_img01_xref7515.webp",
+      "imagenes/MMM-016_MMM25-16_p085_img02_xref7516.webp",
+      "imagenes/MMM-016_MMM25-16_p086_img02_xref7522.webp",
+      "imagenes/MMM-016_MMM25-16_p088_img01_xref7530.webp"
+    ],
+    "cantidad": 5
+  },
+  "MMM-017": {
+    "principal": "imagenes/MMM-017_MMM25-17_p091_img02_xref7553.webp",
+    "galeria": [
+      "imagenes/MMM-017_MMM25-17_p091_img02_xref7553.webp",
+      "imagenes/MMM-017_MMM25-17_p089_img01_xref7542.webp",
+      "imagenes/MMM-017_MMM25-17_p090_img01_xref7549.webp",
+      "imagenes/MMM-017_MMM25-17_p091_img03_xref7554.webp",
+      "imagenes/MMM-017_MMM25-17_p092_img01_xref7557.webp"
+    ],
+    "cantidad": 5
+  },
+  "MMM-018": {
+    "principal": "imagenes/MMM-018_MMM25-18_p096_img04_xref7578.webp",
+    "galeria": [
+      "imagenes/MMM-018_MMM25-18_p096_img04_xref7578.webp",
+      "imagenes/MMM-018_MMM25-18_p093_img01_xref7563.webp",
+      "imagenes/MMM-018_MMM25-18_p094_img01_xref7567.webp",
+      "imagenes/MMM-018_MMM25-18_p095_img01_xref7570.webp",
+      "imagenes/MMM-018_MMM25-18_p095_img02_xref7571.webp",
+      "imagenes/MMM-018_MMM25-18_p095_img03_xref7572.webp"
+    ],
+    "cantidad": 6
+  },
+  "MMM-019": {
+    "principal": "imagenes/MMM-019_MMM25-19_p099_img01_xref7591.webp",
+    "galeria": [
+      "imagenes/MMM-019_MMM25-19_p099_img01_xref7591.webp",
+      "imagenes/MMM-019_MMM25-19_p097_img01_xref7586.webp",
+      "imagenes/MMM-019_MMM25-19_p098_img01_xref7588.webp",
+      "imagenes/MMM-019_MMM25-19_p099_img02_xref7592.webp",
+      "imagenes/MMM-019_MMM25-19_p100_img04_xref7596.webp",
+      "imagenes/MMM-019_MMM25-19_p100_img05_xref7597.webp",
+      "imagenes/MMM-019_MMM25-19_p100_img06_xref7598.webp"
+    ],
+    "cantidad": 7
+  },
+  "MMM-020": {
+    "principal": "imagenes/MMM-020_MMM25-20_p104_img01_xref7613.webp",
+    "galeria": [
+      "imagenes/MMM-020_MMM25-20_p104_img01_xref7613.webp",
+      "imagenes/MMM-020_MMM25-20_p101_img01_xref7603.webp",
+      "imagenes/MMM-020_MMM25-20_p102_img01_xref7605.webp",
+      "imagenes/MMM-020_MMM25-20_p103_img02_xref7609.webp",
+      "imagenes/MMM-020_MMM25-20_p103_img03_xref7610.webp"
+    ],
+    "cantidad": 5
+  },
+  "MMM-021": {
+    "principal": "imagenes/MMM-021_MMM25-21_p107_img01_xref7629.webp",
+    "galeria": [
+      "imagenes/MMM-021_MMM25-21_p107_img01_xref7629.webp",
+      "imagenes/MMM-021_MMM25-21_p105_img01_xref7622.webp",
+      "imagenes/MMM-021_MMM25-21_p106_img01_xref7624.webp",
+      "imagenes/MMM-021_MMM25-21_p106_img02_xref7625.webp",
+      "imagenes/MMM-021_MMM25-21_p106_img03_xref7626.webp",
+      "imagenes/MMM-021_MMM25-21_p108_img01_xref7632.webp",
+      "imagenes/MMM-021_MMM25-21_p108_img03_xref7634.webp"
+    ],
+    "cantidad": 7
+  },
+  "MMM-022": {
+    "principal": "imagenes/MMM-022_MMM25-22_p114_img01_xref7699.webp",
+    "galeria": [
+      "imagenes/MMM-022_MMM25-22_p114_img01_xref7699.webp",
+      "imagenes/MMM-022_MMM25-22_p113_img02_xref7695.webp",
+      "imagenes/MMM-022_MMM25-22_p115_img02_xref7705.webp",
+      "imagenes/MMM-022_MMM25-22_p116_img01_xref7710.webp"
+    ],
+    "cantidad": 4
+  },
+  "MMM-023": {
+    "principal": "imagenes/MMM-023_MMM25-23_p119_img01_xref7734.webp",
+    "galeria": [
+      "imagenes/MMM-023_MMM25-23_p119_img01_xref7734.webp",
+      "imagenes/MMM-023_MMM25-23_p117_img02_xref7719.webp",
+      "imagenes/MMM-023_MMM25-23_p117_img03_xref7720.webp",
+      "imagenes/MMM-023_MMM25-23_p117_img04_xref7721.webp",
+      "imagenes/MMM-023_MMM25-23_p118_img01_xref7727.webp",
+      "imagenes/MMM-023_MMM25-23_p118_img04_xref7730.webp",
+      "imagenes/MMM-023_MMM25-23_p118_img05_xref7731.webp",
+      "imagenes/MMM-023_MMM25-23_p119_img02_xref7735.webp",
+      "imagenes/MMM-023_MMM25-23_p120_img01_xref7738.webp",
+      "imagenes/MMM-023_MMM25-23_p120_img05_xref7739.webp",
+      "imagenes/MMM-023_MMM25-23_p120_img06_xref7740.webp"
+    ],
+    "cantidad": 11
+  },
+  "MMM-024": {
+    "principal": "imagenes/MMM-024_MMM25-24_p124_img01_xref7760.webp",
+    "galeria": [
+      "imagenes/MMM-024_MMM25-24_p124_img01_xref7760.webp",
+      "imagenes/MMM-024_MMM25-24_p122_img01_xref7751.webp",
+      "imagenes/MMM-024_MMM25-24_p122_img02_xref7752.webp",
+      "imagenes/MMM-024_MMM25-24_p123_img02_xref7756.webp",
+      "imagenes/MMM-024_MMM25-24_p123_img03_xref7757.webp",
+      "imagenes/MMM-024_MMM25-24_p124_img05_xref7761.webp"
+    ],
+    "cantidad": 6
+  },
+  "MMM-025": {
+    "principal": "imagenes/MMM-025_MMM25-25_p126_img01_xref7768.webp",
+    "galeria": [
+      "imagenes/MMM-025_MMM25-25_p126_img01_xref7768.webp",
+      "imagenes/MMM-025_MMM25-25_p125_img02_xref7766.webp",
+      "imagenes/MMM-025_MMM25-25_p127_img01_xref7771.webp",
+      "imagenes/MMM-025_MMM25-25_p128_img05_xref7776.webp",
+      "imagenes/MMM-025_MMM25-25_p128_img06_xref7777.webp",
+      "imagenes/MMM-025_MMM25-25_p128_img07_xref7778.webp"
+    ],
+    "cantidad": 6
+  },
+  "MMM-026": {
+    "principal": "imagenes/MMM-026_MMM25-29_p141_img01_xref7833.webp",
+    "galeria": [
+      "imagenes/MMM-026_MMM25-29_p141_img01_xref7833.webp",
+      "imagenes/MMM-026_MMM25-29_p142_img02_xref7836.webp",
+      "imagenes/MMM-026_MMM25-29_p142_img03_xref7837.webp",
+      "imagenes/MMM-026_MMM25-29_p143_img01_xref7840.webp",
+      "imagenes/MMM-026_MMM25-29_p143_img02_xref7841.webp",
+      "imagenes/MMM-026_MMM25-29_p143_img03_xref7842.webp",
+      "imagenes/MMM-026_MMM25-29_p144_img01_xref7845.webp",
+      "imagenes/MMM-026_MMM25-29_p144_img05_xref7846.webp"
+    ],
+    "cantidad": 8
+  },
+  "MMM-027": {
+    "principal": "imagenes/MMM-027_MMM25-27_p134_img03_xref7804.webp",
+    "galeria": [
+      "imagenes/MMM-027_MMM25-27_p134_img03_xref7804.webp",
+      "imagenes/MMM-027_MMM25-27_p133_img01_xref7797.webp",
+      "imagenes/MMM-027_MMM25-27_p134_img02_xref7803.webp",
+      "imagenes/MMM-027_MMM25-27_p135_img01_xref7807.webp",
+      "imagenes/MMM-027_MMM25-27_p136_img01_xref7810.webp"
+    ],
+    "cantidad": 5
+  },
+  "MMM-028": {
+    "principal": "imagenes/MMM-028_MMM25-28_p139_img02_xref7822.webp",
+    "galeria": [
+      "imagenes/MMM-028_MMM25-28_p139_img02_xref7822.webp",
+      "imagenes/MMM-028_MMM25-28_p137_img01_xref7813.webp",
+      "imagenes/MMM-028_MMM25-28_p138_img02_xref7817.webp",
+      "imagenes/MMM-028_MMM25-28_p138_img03_xref7818.webp",
+      "imagenes/MMM-028_MMM25-28_p139_img01_xref7821.webp",
+      "imagenes/MMM-028_MMM25-28_p139_img04_xref7824.webp",
+      "imagenes/MMM-028_MMM25-28_p140_img06_xref7829.webp",
+      "imagenes/MMM-028_MMM25-28_p140_img07_xref7830.webp"
+    ],
+    "cantidad": 8
+  },
+  "MMM-029": {
+    "principal": "imagenes/MMM-029_MMM25-26_p132_img02_xref7793.webp",
+    "galeria": [
+      "imagenes/MMM-029_MMM25-26_p132_img02_xref7793.webp",
+      "imagenes/MMM-029_MMM25-26_p129_img01_xref7781.webp",
+      "imagenes/MMM-029_MMM25-26_p130_img02_xref7784.webp",
+      "imagenes/MMM-029_MMM25-26_p130_img03_xref7785.webp",
+      "imagenes/MMM-029_MMM25-26_p131_img04_xref7788.webp",
+      "imagenes/MMM-029_MMM25-26_p131_img05_xref7789.webp",
+      "imagenes/MMM-029_MMM25-26_p132_img01_xref7792.webp"
+    ],
+    "cantidad": 7
+  },
+  "MMM-030": {
+    "principal": "imagenes/MMM-030_MMM25-30_p145_img01_xref7849.webp",
+    "galeria": [
+      "imagenes/MMM-030_MMM25-30_p145_img01_xref7849.webp",
+      "imagenes/MMM-030_MMM25-30_p146_img01_xref7851.webp",
+      "imagenes/MMM-030_MMM25-30_p146_img03_xref7853.webp",
+      "imagenes/MMM-030_MMM25-30_p147_img01_xref7856.webp",
+      "imagenes/MMM-030_MMM25-30_p148_img01_xref7860.webp",
+      "imagenes/MMM-030_MMM25-30_p148_img05_xref7861.webp",
+      "imagenes/MMM-030_MMM25-30_p148_img06_xref7862.webp"
+    ],
+    "cantidad": 7
+  },
+  "MMM-031": {
+    "principal": "imagenes/MMM-031_MMM25-31_p152_img05_xref7878.webp",
+    "galeria": [
+      "imagenes/MMM-031_MMM25-31_p152_img05_xref7878.webp",
+      "imagenes/MMM-031_MMM25-31_p150_img01_xref7869.webp",
+      "imagenes/MMM-031_MMM25-31_p150_img02_xref7870.webp",
+      "imagenes/MMM-031_MMM25-31_p151_img01_xref7873.webp",
+      "imagenes/MMM-031_MMM25-31_p151_img02_xref7874.webp",
+      "imagenes/MMM-031_MMM25-31_p152_img01_xref7873.webp"
+    ],
+    "cantidad": 6
+  },
+  "MMM-032": {
+    "principal": "imagenes/MMM-032_MMM25-32_p159_img01_xref7949.webp",
+    "galeria": [
+      "imagenes/MMM-032_MMM25-32_p159_img01_xref7949.webp",
+      "imagenes/MMM-032_MMM25-32_p156_img01_xref7935.webp",
+      "imagenes/MMM-032_MMM25-32_p156_img02_xref7936.webp",
+      "imagenes/MMM-032_MMM25-32_p157_img01_xref7938.webp",
+      "imagenes/MMM-032_MMM25-32_p157_img02_xref7939.webp",
+      "imagenes/MMM-032_MMM25-32_p157_img03_xref7940.webp",
+      "imagenes/MMM-032_MMM25-32_p158_img01_xref7943.webp",
+      "imagenes/MMM-032_MMM25-32_p159_img05_xref7950.webp",
+      "imagenes/MMM-032_MMM25-32_p159_img06_xref7951.webp"
+    ],
+    "cantidad": 9
+  },
+  "MMM-033": {
+    "principal": "imagenes/MMM-033_MMM25-33_p162_img02_xref7969.webp",
+    "galeria": [
+      "imagenes/MMM-033_MMM25-33_p162_img02_xref7969.webp",
+      "imagenes/MMM-033_MMM25-33_p160_img01_xref7957.webp",
+      "imagenes/MMM-033_MMM25-33_p161_img02_xref7963.webp",
+      "imagenes/MMM-033_MMM25-33_p161_img03_xref7964.webp",
+      "imagenes/MMM-033_MMM25-33_p161_img04_xref7965.webp",
+      "imagenes/MMM-033_MMM25-33_p163_img01_xref7974.webp"
+    ],
+    "cantidad": 6
+  },
+  "MMM-034": {
+    "principal": "imagenes/MMM-034_MMM25-35_p167_img01_xref7994.webp",
+    "galeria": [
+      "imagenes/MMM-034_MMM25-35_p167_img01_xref7994.webp",
+      "imagenes/MMM-034_MMM25-35_p168_img02_xref7997.webp",
+      "imagenes/MMM-034_MMM25-35_p168_img03_xref7998.webp",
+      "imagenes/MMM-034_MMM25-35_p169_img01_xref8001.webp",
+      "imagenes/MMM-034_MMM25-35_p170_img01_xref8004.webp",
+      "imagenes/MMM-034_MMM25-35_p170_img05_xref8005.webp"
+    ],
+    "cantidad": 6
+  },
+  "MMM-035": {
+    "principal": "imagenes/MMM-035_MMM25-36_p171_img01_xref8008.webp",
+    "galeria": [
+      "imagenes/MMM-035_MMM25-36_p171_img01_xref8008.webp",
+      "imagenes/MMM-035_MMM25-36_p173_img01_xref8014.webp",
+      "imagenes/MMM-035_MMM25-36_p173_img02_xref8015.webp",
+      "imagenes/MMM-035_MMM25-36_p173_img03_xref8016.webp",
+      "imagenes/MMM-035_MMM25-36_p174_img04_xref8019.webp"
+    ],
+    "cantidad": 5
+  },
+  "MMM-036": {
+    "principal": "imagenes/MMM-036_MMM25-37_p178_img06_xref8039.webp",
+    "galeria": [
+      "imagenes/MMM-036_MMM25-37_p178_img06_xref8039.webp",
+      "imagenes/MMM-036_MMM25-37_p175_img01_xref8025.webp",
+      "imagenes/MMM-036_MMM25-37_p176_img01_xref8029.webp",
+      "imagenes/MMM-036_MMM25-37_p177_img01_xref8032.webp",
+      "imagenes/MMM-036_MMM25-37_p177_img03_xref8034.webp",
+      "imagenes/MMM-036_MMM25-37_p178_img04_xref8037.webp",
+      "imagenes/MMM-036_YUC24-06_p044_img01_xref513.webp",
+      "imagenes/MMM-036_YUC24-06_p046_img03_xref528.webp",
+      "imagenes/MMM-036_YUC24-06_p047_img04_xref534.webp",
+      "imagenes/MMM-036_YUC24-06_p047_img06_xref536.webp",
+      "imagenes/MMM-036_YUC24-06_p047_img07_xref537.webp",
+      "imagenes/MMM-036_YUC24-06_p047_img09_xref539.webp"
+    ],
+    "cantidad": 12
+  },
+  "MMM-037": {
+    "principal": "imagenes/MMM-037_MMM25-38_p182_img02_xref8058.webp",
+    "galeria": [
+      "imagenes/MMM-037_MMM25-38_p182_img02_xref8058.webp",
+      "imagenes/MMM-037_MMM25-38_p179_img01_xref8042.webp",
+      "imagenes/MMM-037_MMM25-38_p180_img02_xref8047.webp",
+      "imagenes/MMM-037_MMM25-38_p180_img03_xref8048.webp",
+      "imagenes/MMM-037_MMM25-38_p180_img04_xref8049.webp",
+      "imagenes/MMM-037_MMM25-38_p180_img05_xref8050.webp",
+      "imagenes/MMM-037_MMM25-38_p181_img01_xref8053.webp"
+    ],
+    "cantidad": 7
+  },
+  "MMM-038": {
+    "principal": "imagenes/MMM-038_MMM25-39_p185_img01_xref8068.webp",
+    "galeria": [
+      "imagenes/MMM-038_MMM25-39_p185_img01_xref8068.webp",
+      "imagenes/MMM-038_MMM25-39_p184_img01_xref8065.webp",
+      "imagenes/MMM-038_MMM25-39_p186_img05_xref8073.webp"
+    ],
+    "cantidad": 3
+  },
+  "MMM-039": {
+    "principal": "imagenes/MMM-039_MMM25-40_p189_img01_xref8085.webp",
+    "galeria": [
+      "imagenes/MMM-039_MMM25-40_p189_img01_xref8085.webp",
+      "imagenes/MMM-039_MMM25-40_p187_img01_xref8076.webp",
+      "imagenes/MMM-039_MMM25-40_p188_img02_xref8080.webp",
+      "imagenes/MMM-039_MMM25-40_p188_img03_xref8081.webp",
+      "imagenes/MMM-039_MMM25-40_p188_img04_xref8082.webp",
+      "imagenes/MMM-039_MMM25-40_p189_img02_xref8086.webp",
+      "imagenes/MMM-039_MMM25-40_p190_img05_xref8090.webp",
+      "imagenes/MMM-039_MMM25-40_p190_img06_xref8091.webp",
+      "imagenes/MMM-039_YUC24-03_p032_img01_xref402.webp",
+      "imagenes/MMM-039_YUC24-03_p034_img01_xref417.webp",
+      "imagenes/MMM-039_YUC24-03_p034_img02_xref418.webp",
+      "imagenes/MMM-039_YUC24-03_p034_img03_xref419.webp",
+      "imagenes/MMM-039_YUC24-03_p034_img04_xref420.webp",
+      "imagenes/MMM-039_YUC24-03_p035_img01_xref425.webp",
+      "imagenes/MMM-039_YUC24-03_p035_img03_xref427.webp",
+      "imagenes/MMM-039_YUC24-03_p035_img04_xref428.webp",
+      "imagenes/MMM-039_YUC24-03_p035_img05_xref429.webp"
+    ],
+    "cantidad": 17
+  },
+  "MMM-040": {
+    "principal": "imagenes/MMM-040_MMM25-42_p198_img05_xref8155.webp",
+    "galeria": [
+      "imagenes/MMM-040_MMM25-42_p198_img05_xref8155.webp",
+      "imagenes/MMM-040_MMM25-42_p195_img01_xref8143.webp",
+      "imagenes/MMM-040_MMM25-42_p196_img01_xref8145.webp",
+      "imagenes/MMM-040_MMM25-42_p197_img01_xref8150.webp"
+    ],
+    "cantidad": 4
+  },
+  "MMM-041": {
+    "principal": "imagenes/MMM-041_MMM25-34_p166_img05_xref7987.webp",
+    "galeria": [
+      "imagenes/MMM-041_MMM25-34_p166_img05_xref7987.webp",
+      "imagenes/MMM-041_MMM25-34_p164_img02_xref7979.webp",
+      "imagenes/MMM-041_MMM25-34_p165_img01_xref7982.webp",
+      "imagenes/MMM-041_MMM25-34_p165_img02_xref7983.webp",
+      "imagenes/MMM-041_MMM25-34_p166_img04_xref7986.webp",
+      "imagenes/MMM-041_MMM25-34_p166_img06_xref7988.webp",
+      "imagenes/MMM-041_YUC24-01_p024_img01_xref321.webp",
+      "imagenes/MMM-041_YUC24-01_p026_img01_xref342.webp",
+      "imagenes/MMM-041_YUC24-01_p026_img02_xref343.webp",
+      "imagenes/MMM-041_YUC24-01_p027_img03_xref351.webp",
+      "imagenes/MMM-041_YUC24-01_p027_img04_xref352.webp",
+      "imagenes/MMM-041_YUC24-01_p027_img05_xref353.webp",
+      "imagenes/MMM-041_YUC24-01_p027_img06_xref354.webp",
+      "imagenes/MMM-041_YUC24-01_p027_img07_xref355.webp",
+      "imagenes/MMM-041_YUC24-01_p027_img08_xref356.webp"
+    ],
+    "cantidad": 15
+  },
+  "MMM-042": {
+    "principal": "imagenes/MMM-042_YUC24-02_p031_img10_xref396.webp",
+    "galeria": [
+      "imagenes/MMM-042_YUC24-02_p031_img10_xref396.webp",
+      "imagenes/MMM-042_YUC24-02_p028_img01_xref363.webp",
+      "imagenes/MMM-042_YUC24-02_p030_img01_xref378.webp",
+      "imagenes/MMM-042_YUC24-02_p030_img03_xref380.webp",
+      "imagenes/MMM-042_YUC24-02_p030_img04_xref381.webp",
+      "imagenes/MMM-042_YUC24-02_p031_img05_xref391.webp",
+      "imagenes/MMM-042_YUC24-02_p031_img06_xref392.webp",
+      "imagenes/MMM-042_YUC24-02_p031_img09_xref395.webp"
+    ],
+    "cantidad": 8
+  },
+  "MMM-043": {
+    "principal": "imagenes/MMM-043_YUC24-04_p038_img06_xref453.webp",
+    "galeria": [
+      "imagenes/MMM-043_YUC24-04_p038_img06_xref453.webp",
+      "imagenes/MMM-043_YUC24-04_p036_img01_xref436.webp",
+      "imagenes/MMM-043_YUC24-04_p038_img03_xref450.webp",
+      "imagenes/MMM-043_YUC24-04_p038_img04_xref451.webp",
+      "imagenes/MMM-043_YUC24-04_p039_img06_xref462.webp",
+      "imagenes/MMM-043_YUC24-04_p039_img07_xref463.webp",
+      "imagenes/MMM-043_YUC24-04_p039_img09_xref465.webp"
+    ],
+    "cantidad": 7
+  },
+  "MMM-044": {
+    "principal": "imagenes/MMM-044_YUC24-05_p040_img01_xref471.webp",
+    "galeria": [
+      "imagenes/MMM-044_YUC24-05_p040_img01_xref471.webp",
+      "imagenes/MMM-044_YUC24-05_p042_img09_xref494.webp",
+      "imagenes/MMM-044_YUC24-05_p043_img04_xref500.webp"
+    ],
+    "cantidad": 3
+  },
+  "MMM-045": {
+    "principal": "imagenes/MMM-045_YUC24-07_p051_img08_xref571.webp",
+    "galeria": [
+      "imagenes/MMM-045_YUC24-07_p051_img08_xref571.webp",
+      "imagenes/MMM-045_YUC24-07_p048_img01_xref544.webp",
+      "imagenes/MMM-045_YUC24-07_p050_img02_xref561.webp",
+      "imagenes/MMM-045_YUC24-07_p051_img04_xref567.webp",
+      "imagenes/MMM-045_YUC24-07_p051_img05_xref568.webp",
+      "imagenes/MMM-045_YUC24-07_p051_img06_xref569.webp",
+      "imagenes/MMM-045_YUC24-07_p051_img07_xref570.webp"
+    ],
+    "cantidad": 7
+  },
+  "MMM-046": {
+    "principal": "imagenes/MMM-046_YUC24-08_p055_img02_xref596.webp",
+    "galeria": [
+      "imagenes/MMM-046_YUC24-08_p055_img02_xref596.webp",
+      "imagenes/MMM-046_YUC24-08_p052_img01_xref574.webp",
+      "imagenes/MMM-046_YUC24-08_p054_img01_xref588.webp",
+      "imagenes/MMM-046_YUC24-08_p054_img02_xref589.webp",
+      "imagenes/MMM-046_YUC24-08_p054_img03_xref590.webp",
+      "imagenes/MMM-046_YUC24-08_p055_img01_xref595.webp",
+      "imagenes/MMM-046_YUC24-08_p055_img03_xref597.webp",
+      "imagenes/MMM-046_YUC24-08_p055_img04_xref598.webp"
+    ],
+    "cantidad": 8
+  },
+  "MMM-047": {
+    "principal": "imagenes/MMM-047_YUC24-09_p058_img04_xref621.webp",
+    "galeria": [
+      "imagenes/MMM-047_YUC24-09_p058_img04_xref621.webp",
+      "imagenes/MMM-047_YUC24-09_p056_img01_xref601.webp",
+      "imagenes/MMM-047_YUC24-09_p058_img01_xref618.webp",
+      "imagenes/MMM-047_YUC24-09_p058_img02_xref619.webp",
+      "imagenes/MMM-047_YUC24-09_p058_img07_xref624.webp",
+      "imagenes/MMM-047_YUC24-09_p059_img03_xref629.webp",
+      "imagenes/MMM-047_YUC24-09_p059_img04_xref630.webp",
+      "imagenes/MMM-047_YUC24-09_p059_img05_xref631.webp",
+      "imagenes/MMM-047_YUC24-09_p059_img06_xref632.webp",
+      "imagenes/MMM-047_YUC24-09_p059_img07_xref633.webp"
+    ],
+    "cantidad": 10
+  },
+  "MMM-048": {
+    "principal": "imagenes/MMM-048_YUC24-10_p060_img01_xref639.webp",
+    "galeria": [
+      "imagenes/MMM-048_YUC24-10_p060_img01_xref639.webp",
+      "imagenes/MMM-048_YUC24-10_p062_img02_xref654.webp",
+      "imagenes/MMM-048_YUC24-10_p062_img03_xref655.webp",
+      "imagenes/MMM-048_YUC24-10_p062_img04_xref656.webp",
+      "imagenes/MMM-048_YUC24-10_p062_img05_xref657.webp",
+      "imagenes/MMM-048_YUC24-10_p063_img02_xref661.webp",
+      "imagenes/MMM-048_YUC24-10_p063_img03_xref662.webp",
+      "imagenes/MMM-048_YUC24-10_p063_img05_xref664.webp",
+      "imagenes/MMM-048_YUC24-10_p063_img06_xref665.webp",
+      "imagenes/MMM-048_YUC24-10_p063_img07_xref666.webp"
+    ],
+    "cantidad": 10
+  },
+  "MMM-049": {
+    "principal": "imagenes/MMM-049_YUC24-11_p064_img01_xref669.webp",
+    "galeria": [
+      "imagenes/MMM-049_YUC24-11_p064_img01_xref669.webp",
+      "imagenes/MMM-049_YUC24-11_p066_img01_xref683.webp",
+      "imagenes/MMM-049_YUC24-11_p066_img02_xref684.webp",
+      "imagenes/MMM-049_YUC24-11_p067_img02_xref690.webp",
+      "imagenes/MMM-049_YUC24-11_p067_img03_xref691.webp",
+      "imagenes/MMM-049_YUC24-11_p067_img04_xref692.webp",
+      "imagenes/MMM-049_YUC24-11_p067_img05_xref693.webp"
+    ],
+    "cantidad": 7
+  },
+  "MMM-050": {
+    "principal": "imagenes/MMM-050_YUC24-12_p071_img06_xref724.webp",
+    "galeria": [
+      "imagenes/MMM-050_YUC24-12_p071_img06_xref724.webp",
+      "imagenes/MMM-050_YUC24-12_p068_img01_xref699.webp",
+      "imagenes/MMM-050_YUC24-12_p070_img01_xref714.webp",
+      "imagenes/MMM-050_YUC24-12_p070_img02_xref715.webp",
+      "imagenes/MMM-050_YUC24-12_p070_img03_xref716.webp",
+      "imagenes/MMM-050_YUC24-12_p071_img03_xref721.webp",
+      "imagenes/MMM-050_YUC24-12_p071_img04_xref722.webp",
+      "imagenes/MMM-050_YUC24-12_p071_img07_xref725.webp"
+    ],
+    "cantidad": 8
+  },
+  "MMM-051": {
+    "principal": "imagenes/MMM-051_YUC24-13_p075_img04_xref749.webp",
+    "galeria": [
+      "imagenes/MMM-051_YUC24-13_p075_img04_xref749.webp",
+      "imagenes/MMM-051_YUC24-13_p072_img01_xref730.webp",
+      "imagenes/MMM-051_YUC24-13_p074_img01_xref739.webp",
+      "imagenes/MMM-051_YUC24-13_p074_img02_xref740.webp",
+      "imagenes/MMM-051_YUC24-13_p074_img03_xref741.webp",
+      "imagenes/MMM-051_YUC24-13_p075_img01_xref746.webp",
+      "imagenes/MMM-051_YUC24-13_p075_img02_xref747.webp",
+      "imagenes/MMM-051_YUC24-13_p075_img05_xref750.webp"
+    ],
+    "cantidad": 8
+  },
+  "MMM-052": {
+    "principal": "imagenes/MMM-052_YUC24-14_p076_img01_xref756.webp",
+    "galeria": [
+      "imagenes/MMM-052_YUC24-14_p076_img01_xref756.webp",
+      "imagenes/MMM-052_YUC24-14_p078_img01_xref772.webp",
+      "imagenes/MMM-052_YUC24-14_p078_img02_xref773.webp",
+      "imagenes/MMM-052_YUC24-14_p078_img04_xref775.webp",
+      "imagenes/MMM-052_YUC24-14_p079_img04_xref782.webp",
+      "imagenes/MMM-052_YUC24-14_p079_img05_xref783.webp",
+      "imagenes/MMM-052_YUC24-14_p079_img06_xref784.webp",
+      "imagenes/MMM-052_YUC24-14_p079_img07_xref785.webp",
+      "imagenes/MMM-052_YUC24-14_p079_img08_xref786.webp"
+    ],
+    "cantidad": 9
+  }
+}

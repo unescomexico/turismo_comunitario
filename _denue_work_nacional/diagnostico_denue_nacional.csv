@@ -1,0 +1,276 @@
+﻿experiencia_id,experiencia,estado,latitud,longitud,radio_m,registros_denue_recibidos,registros_clasificados,servicios_seleccionados,categorias_seleccionadas,cache
+BCS-001,Berrendo Peninsular,Baja California Sur,27.98109,-114.053325,5000,802,288,24,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | abasto:3 | servicios_financieros:3 | atractivos:2,no
+BCS-002,Cultivando desde el Mar,Baja California Sur,27.963457,-114.05287,5000,800,287,24,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | abasto:3 | servicios_financieros:3 | atractivos:2,no
+BCS-003,The Californias,Baja California Sur,27.967934,-114.036381,5000,802,288,24,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | abasto:3 | servicios_financieros:3 | atractivos:2,no
+BCS-004,San Francisco De La Sierra,Baja California Sur,27.588413,-113.031738,5000,0,0,0,,no
+BCS-005,Arte y Tradición de Ranchos Sudcalifornianos,Baja California Sur,27.359903,-112.711455,5000,1,0,0,,no
+BCS-006,Avistamiento de Ballena Gris,Baja California Sur,26.824913,-113.170501,5000,32,10,5,alimentos:1 | salud:1 | abasto:3,no
+BCS-007,Cultura Ranchera Sudcaliforniana,Baja California Sur,26.20252,-112.040322,5000,42,16,10,alojamiento:2 | salud:3 | combustible:2 | abasto:3,no
+BCS-008,Rancho San Cosme,Baja California Sur,25.577905,-111.167624,5000,0,0,0,,no
+BCS-009,Restaurante Brisa del Mar,Baja California Sur,25.514898,-111.070966,5000,2,0,0,,no
+BCS-010,Entre Dunas y Manglares,Baja California Sur,24.789719,-112.102645,5000,433,139,20,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | abasto:3 | servicios_financieros:1,no
+BCS-011,Avistamiento de Ballenas y Aves,Baja California Sur,24.424019,-111.553349,5000,18,0,0,,no
+BCS-012,Turismo Rural Las Animas,Baja California Sur,23.63345,-109.971915,5000,0,0,0,,no
+BCS-013,Ruta Ciclista del Oro y la Plata,Baja California Sur,23.801994,-110.109102,5000,43,19,14,alojamiento:2 | alimentos:5 | salud:1 | abasto:3 | atractivos:3,no
+BCS-014,Los Realeños de San Antonio,Baja California Sur,23.806533,-110.057391,5000,35,13,11,alojamiento:1 | alimentos:4 | salud:2 | combustible:1 | abasto:3,no
+BCS-015,El Rosario,Baja California Sur,23.743127,-110.111956,5000,17,4,4,alimentos:1 | salud:2 | abasto:1,no
+BCS-016,Santiago Sostenible,Baja California Sur,23.481647,-109.714934,5000,4,2,2,combustible:1 | abasto:1,no
+BCS-017,Vivencias Rurales,Baja California Sur,23.3220929,-109.6619957,5000,0,0,0,,no
+BCS-018,Cabo Pulmo por Locales,Baja California Sur,23.43612,-109.427448,5000,5,0,0,,no
+MMM-001,Caminata por la Selva de Calakmul hacia el Hormiguero,Campeche,18.3972,-89.8206,5000,0,0,0,,no
+MMM-002,Cenotes y Belleza Natural de Miguel Colorado,Campeche,19.3547,-90.4897,5000,1,0,0,,no
+MMM-003,Corredor artesanal “20 de Noviembre”,Campeche,18.1854,-89.7413,5000,0,0,0,,no
+MMM-004,Flamencos de Isla Arena,Campeche,20.4478,-90.4083,5000,0,0,0,,no
+MMM-005,La Casa del Cocodrilo “Wotoch Aayín”,Campeche,20.4478,-90.4083,5000,0,0,0,,no
+MMM-006,La raíz del futuro “La Mancolona”,Campeche,18.2041,-89.8123,5000,0,0,0,,no
+MMM-007,Los Cielos Mayas de Calakmul,Campeche,18.6572,-90.104,5000,3,1,1,alojamiento:1,no
+MMM-008,Meliponicultura y Tradiciones Mayas de Tankuché,Campeche,20.2613,-90.2283,5000,0,0,0,,no
+MMM-009,"Pomuch, pan y difuntos",Campeche,20.1023,-90.1689,5000,485,192,13,alimentos:5 | salud:3 | combustible:2 | abasto:3,no
+MMM-010,Rescate de la flora nativa y los saberes mayas,Campeche,20.0872,-90.0324,5000,0,0,0,,no
+MMM-011,Santuario de meliponas,Campeche,20.2613,-90.2283,5000,0,0,0,,no
+MMM-012,Lacanjá Chansayab,Chiapas,16.7447,-91.0233,5000,0,0,0,,no
+MMM-013,Nahá - Metzabok,Chiapas,17.1958,-91.5783,5000,0,0,0,,no
+MMM-014,Ruta del Agua,Chiapas,17.5167,-92.05,5000,62,34,15,alojamiento:5 | alimentos:4 | salud:2 | combustible:1 | abasto:3,no
+MMM-015,Ruta del Queso,Chiapas,16.9083,-92.1333,5000,4738,1878,26,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:1,no
+HID-001,Arroyo Blanco,Hidalgo,21.165403,-98.999434,5000,436,162,19,alojamiento:4 | alimentos:5 | salud:3 | combustible:1 | abasto:3 | servicios_financieros:3,no
+HID-002,Corazón Artesano de la Huasteca,Hidalgo,21.068582,-98.475796,5000,336,140,14,alojamiento:1 | alimentos:5 | salud:3 | combustible:1 | abasto:3 | atractivos:1,no
+HID-003,Saberes y Sabores de Itzocal,Hidalgo,21.016283,-98.392223,5000,451,172,19,alojamiento:4 | alimentos:5 | salud:3 | transporte:1 | abasto:3 | servicios_financieros:2 | atractivos:1,no
+HID-004,Manos que Tejen Historias,Hidalgo,21.044122,-98.284964,5000,552,192,17,alojamiento:1 | alimentos:5 | salud:3 | transporte:2 | abasto:3 | servicios_financieros:3,no
+HID-005,Centro Ceremonial Cerro Sintepethl,Hidalgo,20.98,-98.35,5000,624,235,23,alojamiento:5 | alimentos:5 | salud:3 | combustible:1 | transporte:1 | abasto:3 | servicios_financieros:3 | atractivos:2,no
+HID-006,Tierras Sagradas de Yahualica,Hidalgo,20.949547,-98.382368,5000,130,49,13,alimentos:5 | salud:3 | abasto:3 | servicios_financieros:1 | atractivos:1,no
+HID-007,"Sabor Ancestral, Cocina de Humo y Cerveza Artesanal",Hidalgo,20.740001,-99.38309,5000,1857,607,27,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:2 | abasto:3 | servicios_financieros:3 | atractivos:3,no
+HID-008,"Bonanza, Oro y Memoria",Hidalgo,20.716296,-99.245332,5000,0,0,0,,no
+HID-009,Alfareras de Olotla,Hidalgo,20.5847,-98.3401,5000,103,46,15,alojamiento:1 | alimentos:5 | salud:3 | combustible:1 | abasto:3 | servicios_financieros:2,no
+HID-010,Visitando Dandho,Hidalgo,20.40752,-99.70664,5000,11,1,1,servicios_financieros:1,no
+HID-011,Las Camaleonas,Hidalgo,20.4,-99.34,5000,524,153,19,alojamiento:5 | alimentos:5 | salud:3 | combustible:1 | abasto:3 | servicios_financieros:2,no
+HID-012,La Cocina de Inés Monroy,Hidalgo,20.370281,-99.238102,5000,181,67,21,alojamiento:5 | alimentos:5 | salud:3 | combustible:2 | abasto:3 | servicios_financieros:2 | atractivos:1,no
+HID-013,Grutas de Xoxafi,Hidalgo,20.389595,-99.02739,5000,92,33,13,alimentos:5 | salud:3 | combustible:2 | abasto:3,no
+HID-014,Casa Mezquite,Hidalgo,20.39,-98.98,5000,278,98,14,alojamiento:1 | alimentos:5 | salud:3 | abasto:3 | servicios_financieros:1 | atractivos:1,no
+HID-015,Naturaleza Extrema Peña del Aire,Hidalgo,20.277648,-98.51731,5000,1,0,0,,no
+HID-016,Mundo Temax,Hidalgo,20.26644,-98.357843,5000,153,53,13,alojamiento:1 | alimentos:5 | salud:3 | combustible:1 | abasto:3,no
+HID-017,Tenango: El Alma Viva de la Sierra,Hidalgo,20.337946,-98.227294,5000,442,135,20,alojamiento:5 | alimentos:5 | salud:3 | combustible:1 | transporte:1 | abasto:3 | servicios_financieros:2,no
+HID-018,Geosenderos de la Tierra,Hidalgo,20.216318,-98.730465,5000,177,80,16,alojamiento:5 | alimentos:5 | salud:3 | abasto:3,no
+HID-019,Corazón de las Cañadas,Hidalgo,20.98,-98.35,5000,624,235,23,alojamiento:5 | alimentos:5 | salud:3 | combustible:1 | transporte:1 | abasto:3 | servicios_financieros:3 | atractivos:2,no
+HID-020,Senderos del Zembo,Hidalgo,20.167216,-98.559182,5000,265,130,21,alojamiento:5 | alimentos:5 | salud:3 | combustible:2 | abasto:3 | servicios_financieros:2 | atractivos:1,no
+HID-021,Cristina Nanacatera,Hidalgo,20.155545,-98.16266,5000,1048,340,20,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | abasto:3 | atractivos:1,no
+HID-022,Sabores del Bosque,Hidalgo,20.109525,-98.602324,5000,1,0,0,,no
+HID-023,Cerro de las Navajas,Hidalgo,20.08001,-98.580029,5000,2,0,0,,no
+HID-024,Maguey pulquero: nobleza y generosidad,Hidalgo,19.96902,-98.505636,5000,657,237,18,alojamiento:4 | alimentos:5 | salud:3 | combustible:2 | abasto:3 | servicios_financieros:1,no
+HID-025,Identidad de mi Pueblo,Hidalgo,19.994869,-99.370017,5000,845,362,24,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:2,no
+MIC-001,Descubre Tangamandapio,Michoacán,19.958722,-102.431355,5000,920,327,22,alojamiento:4 | alimentos:5 | salud:3 | combustible:3 | abasto:3 | servicios_financieros:3 | atractivos:1,no
+MIC-002,Tarejero Mágico,Michoacán,19.82231,-101.715093,5000,1,1,1,combustible:1,no
+MIC-003,Gastronomía e Historia de Arato,Michoacán,19.639712,-102.098134,5000,1259,425,23,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:1 | abasto:3 | servicios_financieros:2 | atractivos:1,no
+MIC-004,Caminar con el Bosque de Cherán K’eri,Michoacán,19.682627,-101.958248,5000,3092,938,22,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | abasto:3 | servicios_financieros:3,no
+MIC-005,Guardianes del Equilibrio,Michoacán,19.679359,-101.608393,5000,514,74,12,alojamiento:1 | alimentos:5 | salud:3 | abasto:3,no
+MIC-006,El Cielo en tus Manos,Michoacán,19.674621,-101.557703,5000,3431,745,21,alojamiento:5 | alimentos:5 | salud:3 | combustible:1 | transporte:1 | abasto:3 | servicios_financieros:3,no
+MIC-007,Kopecua,Michoacán,19.672877,-101.556463,5000,3454,754,22,alojamiento:5 | alimentos:5 | salud:3 | combustible:2 | transporte:1 | abasto:3 | servicios_financieros:3,no
+MIC-008,Echeri Ka Itsï,Michoacán,19.633504,-101.588393,5000,695,150,20,alojamiento:5 | alimentos:5 | salud:3 | combustible:1 | abasto:3 | servicios_financieros:2 | atractivos:1,no
+MIC-009,Linaje Entretejiendo Historias,Michoacán,19.628663,-101.583749,5000,689,149,20,alojamiento:5 | alimentos:5 | salud:3 | combustible:1 | abasto:3 | servicios_financieros:2 | atractivos:1,no
+MIC-010,Cerámica en Alta Temperatura,Michoacán,19.627986,-101.581162,5000,689,149,20,alojamiento:5 | alimentos:5 | salud:3 | combustible:1 | abasto:3 | servicios_financieros:2 | atractivos:1,no
+MIC-011,Tata Jurhiata,Michoacán,19.628431,-101.576121,5000,700,149,20,alojamiento:5 | alimentos:5 | salud:3 | combustible:1 | abasto:3 | servicios_financieros:2 | atractivos:1,no
+MIC-012,Catrinas de Barro de Capula,Michoacán,19.670896,-101.387007,5000,983,146,21,alojamiento:5 | alimentos:5 | salud:3 | combustible:1 | transporte:1 | abasto:3 | servicios_financieros:3,no
+MIC-013,Paisajes del Mezcal,Michoacán,19.69876,-101.1938,5000,43173,16185,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+MIC-014,Awakt: Turismo Comunitario y Biocultural,Michoacán,19.733508,-100.351378,5000,408,164,18,alojamiento:4 | alimentos:5 | salud:3 | combustible:1 | abasto:3 | servicios_financieros:2,no
+MIC-015,Encantos de la Región Monarca,Michoacán,19.7394931,-100.233192,5000,163,54,17,alojamiento:4 | alimentos:5 | salud:3 | combustible:1 | abasto:3 | atractivos:1,no
+MIC-016,Parador Turístico Sierra Chincua,Michoacán,19.670443,-100.278261,5000,20,6,5,alimentos:1 | salud:1 | abasto:3,no
+MIC-017,Reforesta tu alma en Llano de las Papas,Michoacán,19.661903,-100.268219,5000,150,50,12,alojamiento:1 | alimentos:5 | salud:3 | abasto:3,no
+MIC-018,Juana Bravo: Guardiana del Fuego y del Telar,Michoacán,19.546101,-102.230287,5000,1143,318,18,alojamiento:4 | alimentos:5 | salud:3 | combustible:1 | abasto:3 | servicios_financieros:1 | atractivos:1,no
+MIC-019,Donde el Volcán cuenta su Historia,Michoacán,19.494545,-102.199131,5000,1,1,1,alojamiento:1,no
+MIC-020,Corredor Turístico Tata Misirhi,Michoacán,19.42958,-102.005514,5000,9524,3617,27,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:2,no
+MIC-021,Andandikuran,Michoacán,19.408944,-101.998235,5000,8336,3193,27,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:2,no
+MIC-022,Reserva Viva Tingambato,Michoacán,19.484364,-101.805733,5000,73,27,10,alimentos:5 | salud:1 | combustible:1 | abasto:3,no
+MIC-023,Manantiales de la Isla de Urandén,Michoacán,19.54032361681031,-101.6456366577031,5000,5240,1644,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+MIC-024,Islas Legendarias del Lago de Pátzcuaro,Michoacán,19.543007,-101.616762,5000,6358,2150,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+MIC-025,Corundas Deliciosas,Michoacán,19.546485,-101.589784,5000,5474,1841,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+MIC-026,Bordadoras de Historias,Michoacán,19.512505,-101.610657,5000,5945,2206,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+MIC-027,"⁠Seshashi, Taller y Patrimonio Vivo",Michoacán,19.512015,-101.608334,5000,5930,2206,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+MIC-028,Sabores de Zirahuén,Michoacán,19.44913,-101.730048,5000,384,192,17,alojamiento:5 | alimentos:5 | salud:3 | combustible:1 | abasto:3,no
+MIC-029,Abdón Punzo Galería,Michoacán,19.406262,-101.636386,5000,2767,998,24,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | abasto:3 | servicios_financieros:3 | atractivos:2,no
+MIC-030,"Entre Agaves, Tradición y Aventura",Michoacán,19.4129517243115,-101.211238552478,5000,1,0,0,,no
+MIC-031,Ruta Biocultural Mazahua Ngumu,Michoacán,19.442521,-100.240688,5000,4,0,0,,no
+MOR-001,"Zempoala, Senderos de Aventura y Conservación",Morelos,19.029976,-99.274491,5000,1255,538,25,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:2 | atractivos:1,no
+MOR-002,Ixti: El Rostro del Corazón,Morelos,19.091091,-99.069619,5000,0,0,0,,no
+MOR-003,Guardianes del Reino de los Hongos,Morelos,18.9851,-99.273911,5000,3875,1394,26,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:1,no
+MOR-004,Entre Abejas y Flores,Morelos,18.987274,-99.105445,5000,2019,930,24,alojamiento:5 | alimentos:5 | salud:3 | combustible:1 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:1,no
+MOR-005,Corazón del Bosque,Morelos,18.987239,-99.105403,5000,2019,930,24,alojamiento:5 | alimentos:5 | salud:3 | combustible:1 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:1,no
+MOR-006,Relatos de mi Pueblo,Morelos,18.987201,-99.105217,5000,2019,930,24,alojamiento:5 | alimentos:5 | salud:3 | combustible:1 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:1,no
+MOR-007,Fuego y Raíces,Morelos,18.987201,-99.105217,5000,2019,930,24,alojamiento:5 | alimentos:5 | salud:3 | combustible:1 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:1,no
+MOR-008,Ruta del Café Nativo,Morelos,18.992093,-99.100156,5000,1881,876,24,alojamiento:5 | alimentos:5 | salud:3 | combustible:1 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:1,no
+MOR-009,Regreso al Vientre de la Madre Tierra,Morelos,18.971658,-99.037099,5000,29,21,10,alojamiento:5 | alimentos:1 | combustible:1 | abasto:3,no
+MOR-010,Casa de la Mujer Campesina,Morelos,18.98343,-99.006699,5000,1414,518,23,alojamiento:5 | alimentos:5 | salud:3 | combustible:2 | transporte:2 | abasto:3 | servicios_financieros:3,no
+MOR-011,"Vida, Fuego y Tierra de los Volcanes",Morelos,18.8947,-98.728865,5000,2084,653,24,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:2,no
+MOR-012,Neljuayotl Shupelik: Raíces Dulces,Morelos,18.884929,-98.690701,5000,2085,659,23,alojamiento:5 | alimentos:5 | salud:3 | combustible:2 | transporte:3 | abasto:3 | servicios_financieros:2,no
+MOR-013,Conozcamos Nuestro Bosque,Morelos,18.884951,-98.689895,5000,2078,658,23,alojamiento:5 | alimentos:5 | salud:3 | combustible:2 | transporte:3 | abasto:3 | servicios_financieros:2,no
+MOR-014,Entre Hilos y Sabores,Morelos,18.880561,-98.68635,5000,1973,625,22,alojamiento:5 | alimentos:5 | salud:3 | combustible:1 | transporte:3 | abasto:3 | servicios_financieros:2,no
+MOR-015,Cuentepec Extremo,Morelos,18.868196,-99.32756,5000,193,78,12,alimentos:5 | salud:3 | abasto:3 | atractivos:1,no
+MOR-016,Tepalkame,Morelos,18.859833,-99.327028,5000,193,78,12,alimentos:5 | salud:3 | abasto:3 | atractivos:1,no
+MOR-017,Chinelos Mágicos,Morelos,18.876439,-99.071397,5000,3581,1380,29,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:2 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+MOR-018,Cocina Tradicional Mashihua,Morelos,18.856953,-98.937347,5000,9889,3495,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+MOR-019,"Tiltixiaté: Sabores, Saberes y Tradición",Morelos,18.689619,-98.774801,5000,2165,737,28,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:3,no
+MOR-020,La Tigra: Senderos de Vida y Conservación,Morelos,18.523703,-99.333232,5000,0,0,0,,no
+NAY-001,Tour Rey Nayar,Nayarit,22.202624,-104.65047,5000,0,0,0,,no
+NAY-002,Real Mineral del Zopilote,Nayarit,21.95264,-105.122309,5000,1474,544,26,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:1,no
+NAY-003,Ostiones y Chivichangas,Nayarit,21.7444,-105.490417,5000,291,155,13,alimentos:5 | salud:3 | combustible:2 | abasto:3,no
+NAY-004,Buceo En Las Isabeles,Nayarit,21.743753,-105.490171,5000,291,155,13,alimentos:5 | salud:3 | combustible:2 | abasto:3,no
+NAY-005,Sabores y Saberes del Colorin,Nayarit,21.835594,-104.793983,5000,11,0,0,,no
+NAY-006,Potrero de la Palmita,Nayarit,21.855985,-104.713542,5000,13,0,0,,no
+NAY-007,Aldea Ojo Del Cielo,Nayarit,21.576327,-105.059829,5000,0,0,0,,no
+NAY-008,Ecoaldea Cascada de Luna,Nayarit,21.219602,-104.973632,5000,23,9,8,alimentos:5 | abasto:3,no
+NAY-009,Cafe Molote,Nayarit,21.244725,-104.909181,5000,1887,669,27,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:2,no
+NAY-010,Naturaleza y Café Compostela,Nayarit,21.243502,-104.902121,5000,1887,669,27,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:2,no
+NAY-011,Ruta del Café Compostela,Nayarit,21.2432794233086,-104.900914271407,5000,1887,669,27,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:2,no
+NAY-012,Raíces del Agave,Nayarit,21.086919,-104.799102,5000,0,0,0,,no
+NAY-013,Sentipensares de mi Comunidad,Nayarit,21.142337,-104.471548,5000,34,16,8,alimentos:3 | salud:2 | abasto:3,no
+NAY-014,Artesanías Con Milpa,Nayarit,21.106614,-104.433494,5000,999,357,25,alojamiento:5 | alimentos:5 | salud:3 | combustible:2 | transporte:2 | abasto:3 | servicios_financieros:2 | atractivos:3,no
+NAY-015,Pesca en La Barra,Nayarit,22.38569,-105.64313,5000,111,30,15,alojamiento:4 | alimentos:5 | salud:3 | abasto:3,no
+NAY-016,Rancho Chiota,Nayarit,21.26796,-104.88671,5000,1872,657,26,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:1,no
+NAY-017,La Tovara,Nayarit,21.53193,-105.24734,5000,1344,611,25,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3,no
+OAX-001,Kongui Mil Islas,Oaxaca,18.233178,-96.418476,5000,738,273,22,alojamiento:4 | alimentos:5 | salud:3 | combustible:3 | transporte:1 | abasto:3 | servicios_financieros:2 | atractivos:1,no
+OAX-002,Santiago Apoala,Oaxaca,17.651086,-97.138043,5000,118,32,14,alojamiento:3 | alimentos:5 | salud:3 | abasto:3,no
+OAX-003,Recorre los Primeros Pueblos Mixtecos,Oaxaca,17.0686,-96.720492,5000,41411,14335,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+OAX-004,Mixteca Alta,Oaxaca,17.526656,-97.343345,5000,115,42,17,alojamiento:4 | alimentos:5 | salud:3 | transporte:1 | abasto:3 | atractivos:1,no
+OAX-005,Rancho San Pedro,Oaxaca,17.5344863597313,-96.5529848179099,5000,91,40,11,alojamiento:1 | alimentos:4 | salud:3 | abasto:3,no
+OAX-006,Senderos Del Otro Lado Del Agua,Oaxaca,17.40388,-96.53126,5000,178,72,17,alojamiento:1 | alimentos:5 | salud:3 | combustible:1 | transporte:2 | abasto:3 | servicios_financieros:2,no
+OAX-007,El bosque mesófilo y grutas,Oaxaca,17.32972,-96.45467,5000,726,284,25,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | abasto:3 | servicios_financieros:3 | atractivos:3,no
+OAX-008,"Guelatao, Sendero De Historia Y Aventura.",Oaxaca,17.318511,-96.493323,5000,537,202,21,alojamiento:5 | alimentos:5 | salud:3 | combustible:1 | abasto:3 | servicios_financieros:3 | atractivos:1,no
+OAX-009,Capulalpam Mágico,Oaxaca,17.306697,-96.446622,5000,368,148,23,alojamiento:5 | alimentos:5 | salud:3 | combustible:2 | abasto:3 | servicios_financieros:2 | atractivos:3,no
+OAX-010,Medicina Tradicional Indigena,Oaxaca,17.304038,-96.445654,5000,297,118,23,alojamiento:5 | alimentos:5 | salud:3 | combustible:2 | abasto:3 | servicios_financieros:1 | atractivos:4,no
+OAX-011,Yaa Gatzi - San Miguel Amatlan,Oaxaca,17.278279,-96.474064,5000,339,146,25,alojamiento:5 | alimentos:5 | salud:3 | combustible:2 | abasto:3 | servicios_financieros:2 | atractivos:5,no
+OAX-012,Lachatao,Oaxaca,17.268719,-96.473193,5000,143,54,18,alojamiento:4 | alimentos:5 | salud:3 | combustible:1 | abasto:3 | atractivos:2,no
+OAX-013,Ñu Kunda Nkuiñi,Oaxaca,17.244726,-97.311098,5000,7,2,2,alimentos:1 | abasto:1,no
+OAX-014,Latuvi,Oaxaca,17.188647,-96.514288,5000,33,13,7,alimentos:3 | salud:1 | abasto:3,no
+OAX-015,Los Colores Del Maiz,Oaxaca,17.12716,-96.52474,5000,44,28,15,alojamiento:3 | alimentos:5 | salud:2 | combustible:2 | abasto:3,no
+OAX-016,Yaat Yana,Oaxaca,17.113702,-96.491753,5000,116,62,18,alojamiento:5 | alimentos:5 | salud:3 | combustible:2 | abasto:3,no
+OAX-017,Yaa-Cuetzi,Oaxaca,17.117586,-96.454848,5000,106,53,18,alojamiento:5 | alimentos:5 | salud:3 | combustible:2 | abasto:3,no
+OAX-018,Llano Grande,Oaxaca,17.14745,-96.41069,5000,25,11,10,alojamiento:2 | alimentos:5 | abasto:3,no
+OAX-019,Ceremonias Holisticas Oazeni,Oaxaca,17.167056,-96.262517,5000,821,149,21,alojamiento:5 | alimentos:5 | salud:3 | combustible:2 | abasto:3 | servicios_financieros:1 | atractivos:2,no
+OAX-020,Pueblos Mancomunados,Oaxaca,17.065159,-96.725507,5000,41990,14559,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+OAX-021,Nacion Mixe,Oaxaca,17.03319,-96.074512,5000,816,263,21,alojamiento:5 | alimentos:5 | salud:3 | combustible:2 | abasto:3 | servicios_financieros:3,no
+OAX-022,Nazaa Teotitlan,Oaxaca,17.03052,-96.51914,5000,1763,249,27,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:1 | abasto:3 | servicios_financieros:2 | atractivos:5,no
+OAX-023,Real Minero,Oaxaca,16.779469,-96.617689,5000,450,96,15,alojamiento:1 | alimentos:5 | salud:3 | combustible:3 | abasto:3,no
+OAX-024,San Sebastian de las Grutas,Oaxaca,16.6303416940669,-96.968512312962,5000,0,0,0,,no
+OAX-025,Thanamiel,Oaxaca,15.969265,-97.685638,5000,209,117,18,alojamiento:5 | alimentos:5 | salud:3 | combustible:1 | abasto:3 | atractivos:1,no
+OAX-026,Tututepec Mágico,Oaxaca,15.98746,-97.55011,5000,229,111,17,alojamiento:5 | alimentos:5 | salud:3 | combustible:1 | abasto:3,no
+OAX-027,Manialtepec Natural,Oaxaca,15.97435,-97.24388,5000,205,82,14,alojamiento:1 | alimentos:5 | salud:3 | abasto:3 | atractivos:2,no
+OAX-028,Latidos de Naturaleza y Comunidad,Oaxaca,15.95682,-97.24122,5000,229,90,14,alojamiento:2 | alimentos:5 | salud:3 | abasto:3 | atractivos:1,no
+OAX-029,Tortugas de Vivemar,Oaxaca,15.91743,-97.120061,5000,911,329,23,alojamiento:4 | alimentos:5 | salud:3 | combustible:2 | transporte:3 | abasto:3 | servicios_financieros:1 | atractivos:2,no
+OAX-030,Manglares de la Ventanilla,Oaxaca,15.67007,-96.575,5000,470,257,18,alojamiento:5 | alimentos:5 | salud:3 | abasto:3 | atractivos:2,no
+OAX-031,Tortugas y Conservacion Comunitaria,Oaxaca,15.735245,-96.158969,5000,2409,925,28,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:3,no
+PUE-001,Senderos de Xicotepec,Puebla,20.288942,-97.954115,5000,4234,1437,27,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:2,no
+PUE-002,Finca Cafetalera,Puebla,20.200951,-98.052229,5000,5668,2137,27,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:2,no
+PUE-003,Kakiwin Tutunaku,Puebla,20.09785,-97.628127,5000,807,313,21,alojamiento:5 | alimentos:5 | salud:3 | combustible:1 | abasto:3 | servicios_financieros:3 | atractivos:1,no
+PUE-004,Esencia Rural,Puebla,20.055908,-97.534647,5000,1937,667,29,alojamiento:5 | alimentos:5 | salud:3 | combustible:2 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+PUE-005,Talmatinih Tahpianih,Puebla,20.012868,-97.58287,5000,712,220,20,alojamiento:5 | alimentos:5 | salud:3 | transporte:1 | abasto:3 | servicios_financieros:3,no
+PUE-006,Jardín Botánico Xoxoxtic,Puebla,20.040607,-97.509861,5000,1724,580,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+PUE-007,Tosepan Kalli,Puebla,20.030633,-97.527652,5000,1795,612,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+PUE-008,Hotel Taselotzin,Puebla,20.014247,-97.522567,5000,1725,581,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+PUE-009,Embarcadero Takiskiany,Puebla,19.965671,-97.449076,5000,3,0,0,,no
+PUE-010,Entre Montañas,Puebla,19.881961,-97.366831,5000,867,337,14,alojamiento:2 | alimentos:5 | salud:3 | abasto:3 | atractivos:1,no
+PUE-011,Tsajtsitipetl,Puebla,19.907157,-97.939249,5000,4349,1442,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+PUE-012,Sabor del fuego,Puebla,19.903081,-97.937842,5000,4018,1328,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+PUE-013,Zempoal Tekitini,Puebla,19.888671,-97.839298,5000,18,11,7,salud:1 | abasto:3 | servicios_financieros:3,no
+PUE-014,Ozolli Tlapatla,Puebla,19.099777,-98.514688,5000,1558,617,23,alojamiento:5 | alimentos:5 | salud:3 | combustible:1 | transporte:3 | abasto:3 | servicios_financieros:1 | atractivos:2,no
+PUE-015,Tlakualli,Puebla,19.100674,-98.516277,5000,1531,607,23,alojamiento:5 | alimentos:5 | salud:3 | combustible:1 | transporte:3 | abasto:3 | servicios_financieros:1 | atractivos:2,no
+PUE-016,Grutas Acocomoca de Carreragco,Puebla,19.867101,-97.709181,5000,2,0,0,,no
+PUE-017,Visita una colmena,Puebla,19.136595,-98.496642,5000,1432,576,17,alojamiento:2 | alimentos:5 | salud:3 | transporte:3 | abasto:3 | servicios_financieros:1,no
+PUE-018,Teaaciztli,Puebla,19.110975,-98.437707,5000,1113,472,22,alojamiento:5 | alimentos:5 | salud:3 | combustible:2 | transporte:1 | abasto:3 | servicios_financieros:3,no
+PUE-019,Humito del Volcán,Puebla,19.065757,-98.426907,5000,1710,513,23,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:1 | abasto:3 | servicios_financieros:2 | atractivos:1,no
+PUE-020,Ruta de Exconventos,Puebla,18.966624,-97.905525,5000,7286,2292,26,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:1,no
+PUE-021,Descubre Chalchicomula,Puebla,18.987971,-97.44831,5000,2927,980,26,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:1,no
+PUE-022,Zem Lavandas,Puebla,18.530153,-97.908833,5000,15,1,1,abasto:1,no
+PUE-023,Mujeres con Sabor a Nguiva,Puebla,18.403394,-97.907456,5000,0,0,0,,no
+PUE-024,San Juan Raya,Puebla,18.313831,-97.617308,5000,0,0,0,,no
+PUE-025,Tenoxtitepe,Puebla,20.029671,-97.958752,5000,64,30,11,alimentos:5 | salud:3 | abasto:3,no
+MMM-016,Visita a la Cueva de las Serpientes Colgantes,Quintana Roo,19.4258,-88.4528,5000,0,0,0,,no
+MMM-017,Selva y Chicle. Recorrido por el Sendero Yu’um K’áax,Quintana Roo,19.6861,-88.2833,5000,0,0,0,,no
+MMM-018,Taller de Bordado Artesanal,Quintana Roo,19.7522,-88.2628,5000,0,0,0,,no
+MMM-019,Nado en los Canales de la Laguna Chunyaxché,Quintana Roo,20.0667,-87.7167,5000,0,0,0,,no
+MMM-020,Experiencia U Belilek,Quintana Roo,20.2439,-88.1706,5000,0,0,0,,no
+MMM-021,Xóot Ich Kool: vamos a la milpa,Quintana Roo,19.9208,-87.8981,5000,0,0,0,,no
+MMM-022,Vida Yokot’an. Herederos del Sazón Ancestral,Tabasco,18.1628,-93.0706,5000,2211,736,28,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:3,no
+MMM-023,Saberes y Sabores del Cacao al Chocolate,Tabasco,18.2733,-93.2072,5000,5419,1886,27,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:2,no
+MMM-024,"Kacté: alma, piel y cuero",Tabasco,17.9892,-92.9475,5000,23230,8463,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+MMM-025,Bukajin “Pantanos al Muste”,Tabasco,18.3794,-92.5983,5000,8,0,0,,no
+MMM-026,Aventura Panadera,Tabasco,18.0833,-92.1,5000,793,316,24,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | abasto:3 | servicios_financieros:3 | atractivos:2,no
+MMM-027,Pishul Gastronomía,Tabasco,17.4522,-92.7728,5000,263,95,17,alojamiento:5 | alimentos:5 | salud:3 | abasto:3 | atractivos:1,no
+MMM-028,Ruta del Cacao al Chocolate,Tabasco,18.2733,-93.2072,5000,5419,1886,27,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:2,no
+MMM-029,Avistamiento de Manatíes,Tabasco,18.3794,-92.5983,5000,8,0,0,,no
+MMM-030,Sumérgete en la aventura Ch’ulam Ja,Tabasco,18.3794,-92.5983,5000,8,0,0,,no
+MMM-031,Ceremonia de Kakaw,Tabasco,18.2733,-93.2072,5000,5419,1886,27,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:2,no
+TLA-001,Magueyera Saniz,Tlaxcala,19.587066,-98.61843,5000,1586,499,22,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | abasto:3 | servicios_financieros:3,no
+TLA-002,Maizapan,Tlaxcala,19.56984,-98.27264,5000,5,0,0,,no
+TLA-003,"Axolotl, ¿Héroe o Villano?",Tlaxcala,19.335201,-98.628029,5000,702,266,19,alojamiento:5 | alimentos:5 | salud:3 | combustible:2 | abasto:3 | atractivos:1,no
+TLA-004,Saberes y Sabores de mi Pueblo,Tlaxcala,19.497916,-98.570045,5000,1342,456,28,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:2 | abasto:3 | servicios_financieros:3 | atractivos:4,no
+TLA-005,Luciernagas en Nanacamilpa,Tlaxcala,19.492486,-98.563156,5000,1344,457,28,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:2 | abasto:3 | servicios_financieros:3 | atractivos:4,no
+TLA-006,Nanayork,Tlaxcala,19.49613,-98.53309,5000,1345,457,28,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:2 | abasto:3 | servicios_financieros:3 | atractivos:4,no
+TLA-007,Huerto La Quinta,Tlaxcala,19.460257,-98.509173,5000,1200,397,28,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:2 | abasto:3 | servicios_financieros:3 | atractivos:4,no
+TLA-008,Viaje al Mundo del Maguey,Tlaxcala,19.464228,-98.473678,5000,402,154,13,alimentos:5 | salud:3 | abasto:3 | servicios_financieros:2,no
+TLA-009,El Camino Grande,Tlaxcala,19.46997594,-98.34752823,5000,590,182,15,alimentos:5 | salud:3 | combustible:2 | abasto:3 | servicios_financieros:1 | atractivos:1,no
+TLA-010,Respirando Rutas,Tlaxcala,19.455105,-98.096194,5000,2000,774,29,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:4,no
+TLA-011,La Ruta de la Miel Terrenate,Tlaxcala,19.439052,-97.937962,5000,591,206,13,alimentos:5 | salud:3 | combustible:1 | abasto:3 | servicios_financieros:1,no
+TLA-012,Del Metepantle al Tinacal,Tlaxcala,19.45149863,-97.80235012,5000,604,189,17,alojamiento:3 | alimentos:5 | salud:3 | combustible:1 | transporte:1 | abasto:3 | atractivos:1,no
+TLA-013,Museo Comunitario de Atltzayanca,Tlaxcala,19.4269509060257,-97.7974471187814,5000,767,248,17,alojamiento:3 | alimentos:5 | salud:3 | combustible:1 | transporte:1 | abasto:3 | atractivos:1,no
+TLA-014,Huertas San Isidro,Tlaxcala,19.395712,-97.8241,5000,1047,333,18,alojamiento:3 | alimentos:5 | salud:3 | combustible:1 | transporte:1 | abasto:3 | servicios_financieros:1 | atractivos:1,no
+TLA-015,Territorio del Coyote,Tlaxcala,19.39259,-98.20138,5000,2045,785,29,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:2 | atractivos:5,no
+TLA-016,Tenex: Manos de Libertad,Tlaxcala,19.333624,-98.31954,5000,1930,670,27,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:2,no
+TLA-017,El Tlachiqueo de las Alturas,Tlaxcala,19.341385,-98.28037,5000,4042,1405,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+TLA-018,Cabañas Techichilco,Tlaxcala,19.33809,-98.249782,5000,9413,3483,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+TLA-019,Pulque Tour,Tlaxcala,19.31471205697194,-98.23834403227595,5000,16004,5515,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+TLA-020,Secretos del Sarape de Contla,Tlaxcala,19.321715,-98.17026,5000,14504,4645,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+TLA-021,El Camino del Tlachiquero,Tlaxcala,19.33403,-98.08071,5000,1171,387,19,alojamiento:4 | alimentos:5 | salud:3 | transporte:1 | abasto:3 | servicios_financieros:3,no
+TLA-022,Metate y Molcajete,Tlaxcala,19.308278,-97.959229,5000,5313,1734,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+TLA-023,Creando tu Minialfombra,Tlaxcala,19.306003,-97.924746,5000,5672,1867,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+TLA-024,"Zaragoza, Te Queremos Conocer",Tlaxcala,19.296225,-97.917148,5000,5696,1880,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+TLA-025,Maices Nativos de Colores,Tlaxcala,19.255645,-97.894864,5000,1069,342,22,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | abasto:3 | servicios_financieros:1 | atractivos:2,no
+TLA-026,Aventura Vivencial Otomí,Tlaxcala,19.251429,-97.894935,5000,872,262,21,alojamiento:5 | alimentos:5 | salud:3 | combustible:2 | abasto:3 | servicios_financieros:1 | atractivos:2,no
+TLA-027,"Maiz, Tierra y Fuego",Tlaxcala,19.246071,-97.894816,5000,1194,360,20,alojamiento:5 | alimentos:5 | salud:3 | combustible:1 | abasto:3 | servicios_financieros:1 | atractivos:2,no
+TLA-029,Experiencia Agroturística del Nogal,Tlaxcala,19.246665,-98.190375,5000,5934,2090,26,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:1 | abasto:3 | servicios_financieros:3 | atractivos:3,no
+TLA-030,"Cultura, Salud y Bienestar",Tlaxcala,19.45559,-98.093447,5000,1891,723,29,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:4,no
+VER-001,Centro de las Artes Indígenas,Veracruz,20.431778,-97.372578,5000,1256,486,21,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:1 | abasto:3 | servicios_financieros:1,no
+VER-002,Los Nichos,Veracruz,20.43189,-97.36335,5000,3509,1216,27,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:2,no
+VER-003,El Tlacuache llegando a Casa,Veracruz,20.399003,-97.230821,5000,0,0,0,,no
+VER-004,Ciénagas del Fuerte,Veracruz,20.356906,-96.907162,5000,38,5,5,alojamiento:2 | combustible:1 | abasto:2,no
+VER-005,Manos Dulces Naolinco,Veracruz,19.646694,-96.9413,5000,1073,390,19,alojamiento:3 | alimentos:5 | salud:3 | combustible:2 | transporte:1 | abasto:3 | servicios_financieros:2,no
+VER-006,Fiesta de la Cosecha del Café,Veracruz,19.651732,-96.905601,5000,2426,695,25,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3,no
+VER-007,Raíces Vivas de Xico Viejo,Veracruz,19.425292,-97.010261,5000,2329,926,29,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:2 | atractivos:5,no
+VER-008,La Colmena,Veracruz,19.39373,-96.97969,5000,2762,1003,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+VER-009,Red de Senderos de Café,Veracruz,19.076155,-96.918342,5000,1,0,0,,no
+VER-010,La Ruta del Café Tepatlaxco,Veracruz,19.079746,-96.8527,5000,245,99,19,alojamiento:1 | alimentos:5 | salud:3 | combustible:1 | abasto:3 | servicios_financieros:3 | atractivos:3,no
+VER-011,Ruta del Café,Veracruz,18.97922,-96.976939,5000,489,199,16,alimentos:5 | salud:3 | abasto:3 | servicios_financieros:3 | atractivos:2,no
+VER-012,Las Altas Montañas de Veracruz,Veracruz,18.92421,-97.207689,5000,0,0,0,,no
+VER-013,Pico de Orizaba,Veracruz,18.988639,-97.228109,5000,0,0,0,,no
+VER-014,Finca Kitos,Veracruz,18.933261,-96.949105,5000,8188,3139,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+VER-015,Sabores y Saberes de la Tierra,Veracruz,18.868367,-96.987316,5000,5127,2171,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+VER-016,Rancho San Felipe,Veracruz,18.875128,-96.888882,5000,8599,2951,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+VER-017,Cuna del Café,Veracruz,18.812921,-96.932098,5000,1157,519,21,alojamiento:3 | alimentos:5 | salud:3 | combustible:3 | transporte:2 | abasto:3 | servicios_financieros:1 | atractivos:1,no
+VER-018,Baño de Bosque de Niebla,Veracruz,18.799799,-96.952124,5000,465,205,15,alojamiento:1 | alimentos:5 | salud:3 | combustible:1 | transporte:1 | abasto:3 | servicios_financieros:1,no
+VER-019,En lo más alto de la Montaña,Veracruz,18.715026,-97.060361,5000,604,240,17,alojamiento:2 | alimentos:5 | salud:3 | transporte:1 | abasto:3 | servicios_financieros:3,no
+VER-020,Atlahuilco,Veracruz,18.697045,-97.090675,5000,583,226,17,alojamiento:2 | alimentos:5 | salud:3 | transporte:1 | abasto:3 | servicios_financieros:3,no
+VER-021,Los Manglares de Sontecomapan,Veracruz,18.510156,-95.034339,5000,7,0,0,,no
+VER-022,Selva del Marinero,Veracruz,18.439105,-94.964224,5000,0,0,0,,no
+VER-023,Artesanas Flor de Lirio,Veracruz,18.415193,-95.018555,5000,8,0,0,,no
+VER-024,Ceytaks,Veracruz,18.244282,-95.084162,5000,139,73,11,alimentos:5 | salud:3 | abasto:3,no
+VER-025,Descubriendo Jomxuk,Veracruz,18.149522,-94.808167,5000,270,105,14,alimentos:5 | salud:3 | transporte:3 | abasto:3,no
+VER-026,Kan Tasejkan,Veracruz,18.147292,-94.798073,5000,270,105,14,alimentos:5 | salud:3 | transporte:3 | abasto:3,no
+VER-027,Campamento Tortuguero,Veracruz,20.48073,-97.00912,5000,801,499,20,alojamiento:5 | alimentos:5 | salud:3 | combustible:1 | abasto:3 | atractivos:3,no
+MMM-032,Aktun Usil,Yucatán,20.5867,-89.9928,5000,983,385,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+MMM-033,Aldea Xbatun,Yucatán,20.689,-88.2003,5000,4828,1713,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+MMM-034,Caricoa Chocolate,Yucatán,20.4094,-89.2833,5000,2247,232,24,alojamiento:1 | alimentos:5 | salud:3 | combustible:3 | transporte:1 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+MMM-035,Cenote Zazil Tunich,Yucatán,20.689,-88.2003,5000,4828,1713,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+MMM-036,Cocina Ya’axché (Centro Etnogastronómico),Yucatán,20.6622,-89.7697,5000,0,0,0,,no
+MMM-037,Cuch Holoch,Yucatán,20.6622,-89.7697,5000,0,0,0,,no
+MMM-038,Grutas Chocantes,Yucatán,20.4094,-89.2833,5000,2247,232,24,alojamiento:1 | alimentos:5 | salud:3 | combustible:3 | transporte:1 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+MMM-039,Meliponario Lool-Há,Yucatán,20.3917,-89.3833,5000,807,167,19,alojamiento:2 | alimentos:5 | salud:3 | abasto:3 | servicios_financieros:2 | atractivos:4,no
+MMM-040,Aldea Maya Xa’ Anil Naj,Yucatán,20.2956,-89.6603,5000,250,104,22,alojamiento:3 | alimentos:5 | salud:3 | combustible:3 | abasto:3 | servicios_financieros:1 | atractivos:4,no
+MMM-041,Najilkat (Casa del barro),Yucatán,20.7625,-88.2917,5000,1,1,1,alojamiento:1,no
+MMM-042,Comunidad Kanxoc,Yucatán,20.6583,-88.1167,5000,206,47,12,alojamiento:1 | alimentos:5 | salud:2 | combustible:1 | abasto:3,no
+MMM-043,U Najil Yilk’il Kaab,Yucatán,20.5472,-88.8208,5000,440,135,17,alojamiento:1 | alimentos:5 | salud:3 | combustible:2 | abasto:3 | servicios_financieros:2 | atractivos:1,no
+MMM-044,Yaax Tekit,Yucatán,20.5569,-89.3364,5000,1836,294,24,alojamiento:4 | alimentos:5 | salud:3 | combustible:1 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+MMM-045,Pachpakal Solar Maya,Yucatán,20.3917,-89.3833,5000,807,167,19,alojamiento:2 | alimentos:5 | salud:3 | abasto:3 | servicios_financieros:2 | atractivos:4,no
+MMM-046,Cocina tradicional de Maní K’oóben,Yucatán,20.3917,-89.3833,5000,807,167,19,alojamiento:2 | alimentos:5 | salud:3 | abasto:3 | servicios_financieros:2 | atractivos:4,no
+MMM-047,Unajil Ek Balam,Yucatán,20.8717,-88.2533,5000,0,0,0,,no
+MMM-048,Caminos del mayab,Yucatán,20.967,-89.6237,5000,30294,10652,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no
+MMM-049,Sheartail,Yucatán,20.8667,-90.3956,5000,822,305,23,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:1 | abasto:3 | servicios_financieros:1 | atractivos:2,no
+MMM-050,Descubre Sisal,Yucatán,21.1644,-90.0408,5000,240,81,19,alojamiento:5 | alimentos:5 | salud:3 | combustible:1 | transporte:2 | abasto:3,no
+MMM-051,Guardianes de los Manglares de Dzinitun,Yucatán,20.8667,-90.3956,5000,822,305,23,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:1 | abasto:3 | servicios_financieros:1 | atractivos:2,no
+MMM-052,Mundo Maya MTB,Yucatán,20.967,-89.6237,5000,30294,10652,30,alojamiento:5 | alimentos:5 | salud:3 | combustible:3 | transporte:3 | abasto:3 | servicios_financieros:3 | atractivos:5,no

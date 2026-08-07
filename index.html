@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head><script>(function(){const q=new URLSearchParams(location.search).get('lang');if(q){localStorage.setItem('catalogLanguage',q);}else if(localStorage.getItem('catalogLanguage')==='en'){location.replace('index_en.html');}})();</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Guía Nacional de Experiencias Turísticas Comunitarias</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&amp;family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<link href="styles.css?v=17" rel="stylesheet">
+</link></head>
+<body>
+<!-- HEADER -->
+<div class="site-chrome is-expanded" id="site-chrome">
+<header class="header">
+<div class="header-inner">
+<div class="header-brand">
+<div class="header-ornament"></div>
+<div class="header-wordmark">
+<h1>Guía Nacional de <em>Experiencias Turísticas Comunitarias</em></h1>
+<p class="header-sub">Patrimonio · comunidad · sostenibilidad</p>
+</div>
+</div>
+<div aria-label="Instituciones participantes" class="header-logos">
+<img alt="Secretaría de Turismo" class="header-logo header-logo--sectur" src="img/logo_sectur.png?v=1"/>
+<span aria-hidden="true" class="header-logo-divider"></span>
+<img alt="FONATUR" class="header-logo header-logo--fonatur" src="img/logo_fonatur.png?v=1"/>
+<span aria-hidden="true" class="header-logo-divider"></span>
+<img alt="UNESCO" class="header-logo header-logo--unesco" src="img/logo_unesco.png?v=3"/>
+</div>
+</div>
+</header>
+<!-- NAV TABS -->
+<nav aria-label="Navegación principal" class="nav-tabs" role="tablist">
+<button aria-selected="true" class="nav-tab active" data-view="mapa" role="tab">Mapa</button>
+<button aria-selected="false" class="nav-tab" data-view="catalogo" role="tab">Catálogo</button>
+<button aria-selected="false" class="nav-tab" data-view="descubre" role="tab">Acerca de</button>
+<div aria-label="Idioma" class="language-switch" role="group"><a class="is-active" href="index.html?lang=es" hreflang="es">ES</a><a href="index_en.html?lang=en" hreflang="en">EN</a></div><button aria-label="Volver a consultar la introducción" class="nav-intro-btn" id="open-intro" type="button">
+<span aria-hidden="true" class="nav-intro-icon">i</span>
+<span>Introducción</span>
+</button>
+</nav>
+</div>
+<!-- ═══ VISTA: MAPA ═══ -->
+<section class="view active" id="view-mapa" role="tabpanel">
+<div class="map-panel">
+<div aria-label="Mapa interactivo de experiencias turísticas" id="map"></div>
+<div aria-live="polite" class="map-load-status" id="map-load-status" role="status">
+<span aria-hidden="true" class="map-load-spinner"></span>
+<span id="map-load-message">Cargando mapa y experiencias…</span>
+</div>
+<!-- Filtros y capas del mapa -->
+<div class="map-filter-panel" id="map-filter-panel">
+<button aria-expanded="true" class="map-filter-panel-toggle" id="map-filter-panel-toggle" type="button">
+<span>Filtrar y planificar</span>
+<span aria-hidden="true" class="map-filter-chevron">⌃</span>
+</button>
+<div class="map-filter-panel-body" id="map-filter-panel-body">
+<div class="map-filter-grid">
+<details class="map-check-filter" data-map-filter-details="estado">
+<summary><span>Estado</span><strong id="map-estado-summary">Todos</strong></summary>
+<div aria-label="Filtrar por estado" class="map-check-options" id="map-estado-options" role="group"></div>
+</details>
+<details class="map-check-filter" data-map-filter-details="tipo">
+<summary><span>Tipo de experiencia</span><strong id="map-tipo-summary">Todos</strong></summary>
+<div aria-label="Filtrar por tipo de experiencia" class="map-check-options" id="map-tipo-options" role="group"></div>
+</details>
+<details class="map-check-filter" data-map-filter-details="patrimonio">
+<summary><span>Patrimonio</span><strong id="map-patrimonio-summary">Todos</strong></summary>
+<div aria-label="Filtrar por tipo de patrimonio" class="map-check-options" id="map-patrimonio-options" role="group"></div>
+</details>
+</div>
+<div class="map-filter-summary">
+<strong id="map-result-count">0 experiencias</strong>
+<button id="map-reset-filters" type="button">Limpiar filtros</button>
+</div>
+<div class="map-context-controls">
+<p class="map-context-title">Capas para planificar la visita</p>
+<div class="map-context-row">
+<label class="map-layer-toggle"><input id="map-show-services" type="checkbox"/> Servicios cercanos</label>
+<select disabled="" id="map-service-category">
+<option value="">Todas las categorías</option>
+<option value="alojamiento">Alojamiento</option>
+<option value="alimentos">Alimentos</option>
+<option value="salud">Salud</option>
+<option value="combustible">Combustible</option>
+<option value="transporte">Transporte local</option>
+<option value="abasto">Abasto</option>
+<option value="servicios_financieros">Servicios financieros</option>
+<option value="atractivos">Atractivos</option>
+</select>
+</div>
+<div class="map-context-row">
+<label class="map-layer-toggle"><input id="map-show-infrastructure" type="checkbox"/> Conectividad</label>
+<select disabled="" id="map-infrastructure-category">
+<option value="">Toda la conectividad</option>
+<option value="aeropuerto">Aeropuertos</option>
+<option value="terminal_autobuses">Terminales de autobuses</option>
+<option value="estacion_ferrocarril">Estaciones ferroviarias</option>
+<option value="puerto_embarcadero">Puertos y embarcaderos</option>
+</select>
+</div>
+<p class="map-context-note" id="map-context-note">Activa una capa y acércate al territorio para consultar el contexto.</p>
+</div>
+</div>
+</div>
+<!-- Búsqueda flotante -->
+<div class="map-search-wrap">
+<input autocomplete="off" class="map-search" id="map-search-input" placeholder="Buscar experiencia o localidad..." type="text"/>
+<div class="map-search-results" id="map-search-results"></div>
+</div>
+<!-- Botón ubicación -->
+<button class="map-locate-btn" id="btn-locate" title="Ver mi ubicación">
+<svg fill="none" height="16" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="16">
+<circle cx="12" cy="12" r="3"></circle><path d="M12 2v3M12 19v3M2 12h3M19 12h3"></path>
+</svg>
+</button>
+<!-- Leyendas contextuales; aparecen al activar servicios o conectividad -->
+<div aria-live="polite" class="map-legend map-context-legend" hidden="" id="map-context-legend"></div>
+<button aria-label="Desplazarse a la experiencia destacada" class="map-scroll-cue" onclick="document.getElementById('side-panel')?.scrollIntoView({behavior:'smooth',block:'start'})" type="button"><span>Ver experiencia destacada</span><span aria-hidden="true">↓</span></button>
+</div>
+<!-- PANEL LATERAL -->
+<aside class="side-panel" id="side-panel">
+<!-- Panel contextual del mapa -->
+<div aria-live="polite" class="panel-welcome explore-panel" id="panel-welcome">
+<div class="panel-welcome-inner explore-panel-inner">
+<header class="explore-panel-header">
+<div class="welcome-kicker" id="explore-kicker">Explora el territorio</div>
+<h2 id="explore-title">Experiencias<br/><em>que conectan</em></h2>
+<p id="explore-description">Usa los filtros o selecciona un punto destacado para conocer iniciativas comunitarias, culturales y naturales.</p>
+</header>
+<div aria-label="Resumen de resultados" class="explore-summary-grid">
+<div class="explore-summary-item explore-summary-item--primary">
+<strong id="explore-visible-count">0</strong>
+<span>experiencias visibles</span>
+</div>
+<div class="explore-summary-item">
+<strong id="explore-state-count">0</strong>
+<span>estados</span>
+</div>
+<div class="explore-summary-item">
+<strong id="explore-municipality-count">0</strong>
+<span>municipios</span>
+</div>
+</div>
+<div class="explore-active-filters" hidden="" id="explore-active-filters"></div>
+<section class="explore-featured-section" id="explore-featured-section">
+<div class="explore-section-heading explore-carousel-heading">
+<div class="explore-heading-copy">
+<h3 id="explore-featured-heading">Experiencia destacada</h3>
+<span id="explore-featured-position"></span>
+</div>
+<div aria-label="Recorrer experiencias" class="explore-carousel-controls" id="explore-carousel-controls">
+<button aria-label="Experiencia anterior" id="explore-carousel-prev" type="button">‹</button>
+<span id="explore-carousel-indicator">1 / 1</span>
+<button aria-label="Siguiente experiencia" id="explore-carousel-next" type="button">›</button>
+</div>
+</div>
+<div id="explore-featured"></div>
+</section>
+<section class="explore-results-section">
+<div class="explore-section-heading">
+<h3 id="explore-results-heading">Más experiencias visibles</h3>
+<span id="explore-results-count"></span>
+</div>
+<div class="explore-results-list" id="explore-results-list"></div>
+</section>
+<div id="explore-nearby-slot"></div>
+<section aria-label="Simbología del mapa" class="explore-symbols">
+<h3>Símbolos del mapa</h3>
+<div class="explore-symbol-row">
+<span aria-hidden="true" class="explore-symbol experience-symbol"><i></i></span>
+<span><strong>Experiencias</strong><small>Elemento principal del mapa</small></span>
+</div>
+<div class="explore-symbol-row">
+<span aria-hidden="true" class="explore-symbol service-symbol">S</span>
+<span><strong>Servicios</strong><small>Contexto para planificar la visita</small></span>
+</div>
+<div class="explore-symbol-row">
+<span aria-hidden="true" class="explore-symbol infrastructure-symbol">A</span>
+<span><strong>Conectividad</strong><small>Aeropuertos, terminales, trenes y puertos</small></span>
+</div>
+</section>
+</div>
+</div>
+<!-- Ficha de experiencia -->
+<div aria-hidden="true" class="mobile-ficha-backdrop" hidden="" id="mobile-ficha-backdrop"></div>
+<div aria-hidden="true" class="panel-ficha" id="panel-ficha" style="display:none">
+<div class="ficha-header" id="ficha-header">
+<button aria-label="Cerrar ficha de experiencia" class="ficha-back" id="ficha-back" type="button">
+<span aria-hidden="true" class="ficha-back-icon">×</span>
+<span class="ficha-back-label">Cerrar ficha</span>
+</button>
+<h2 class="ficha-title" id="ficha-title"></h2>
+<p class="ficha-location" id="ficha-location"></p>
+<div class="ficha-tags" id="ficha-tags"></div>
+</div>
+<div class="ficha-body" id="ficha-body">
+<section class="ficha-section ficha-gallery-section" id="ficha-gallery-section">
+<div id="ficha-gallery"></div>
+</section>
+<section class="ficha-section">
+<h3 class="ficha-section-title">La experiencia</h3>
+<p class="ficha-desc" id="ficha-desc"></p>
+</section>
+<section class="ficha-section">
+<h3 class="ficha-section-title">Anfitrion</h3>
+<div class="ficha-anf" id="ficha-anf"></div>
+</section>
+<section class="ficha-section ficha-meta-grid">
+<div class="ficha-meta-item">
+<span class="ficha-meta-label">Servicios incluidos</span>
+<span class="ficha-meta-value" id="ficha-servicios"></span>
+</div>
+<div class="ficha-meta-item">
+<span class="ficha-meta-label">Capacidad del grupo</span>
+<span class="ficha-meta-value" id="ficha-capacidad"></span>
+</div>
+</section>
+<section class="ficha-section ficha-booking-section" id="ficha-booking-section">
+<h3 class="ficha-section-title">Consulta y contratación</h3>
+<div class="booking-actions" id="ficha-booking"></div>
+</section>
+<section class="ficha-section">
+<h3 class="ficha-section-title">Patrimonio que protege</h3>
+<div class="ficha-patrimonio" id="ficha-patrimonio"></div>
+</section>
+<section class="ficha-section" id="ficha-impacto-section">
+<h3 class="ficha-section-title">Impacto comunitario</h3>
+<div class="ficha-impacto" id="ficha-impacto"></div>
+</section>
+<section class="ficha-section" id="ficha-planifica-section">
+<h3 class="ficha-section-title">Planifica tu visita</h3>
+<div class="ficha-planifica" id="ficha-planifica"></div>
+</section>
+<section class="ficha-section" id="nearby-section">
+<h3 class="ficha-section-title">Otras experiencias cercanas</h3>
+<div class="nearby-list" id="nearby-list"></div>
+</section>
+<section class="ficha-section ficha-como-llegar">
+<h3 class="ficha-section-title">Como llegar</h3>
+<div id="ficha-maps-link"></div>
+</section>
+<section class="ficha-section ficha-contact">
+<h3 class="ficha-section-title">Contacto</h3>
+<div class="contact-grid" id="ficha-contact"></div>
+</section>
+</div>
+</div>
+</aside>
+</section>
+<!-- ═══ VISTA: CATALOGO ═══ -->
+<section class="view" id="view-catalogo" role="tabpanel">
+<div class="catalogo-wrap">
+<div class="catalogo-filters is-collapsed" id="catalogo-filters">
+<div class="catalogo-filter-mobile-bar">
+<button aria-controls="catalogo-filter-controls" aria-expanded="false" class="catalogo-filter-mobile-toggle" id="catalogo-filter-mobile-toggle" type="button">
+<span class="catalogo-filter-mobile-copy">
+<strong>Filtros del catálogo</strong>
+<small id="catalogo-filter-mobile-status">Cargando experiencias…</small>
+</span>
+<span class="catalogo-filter-mobile-action" id="catalogo-filter-mobile-action">Mostrar</span>
+<span aria-hidden="true" class="catalogo-filter-mobile-chevron">⌄</span>
+</button>
+</div>
+<div class="catalogo-filters-inner" id="catalogo-filter-controls">
+<input class="cat-search-input" id="cat-search" placeholder="Buscar en el catálogo..." type="text"/>
+<div class="filter-group">
+<label class="filter-label">Estado</label>
+<select class="filter-select" id="cat-estado"><option value="">Todos los estados</option></select>
+</div>
+<div class="filter-group">
+<label class="filter-label">Municipio</label>
+<select class="filter-select" id="cat-municipio"><option value="">Todos los municipios</option></select>
+</div>
+<div class="filter-group">
+<label class="filter-label">Tipo</label>
+<select class="filter-select" id="cat-tipo"><option value="">Todos los tipos</option></select>
+</div>
+<button class="cat-clear-btn" id="cat-clear-filters" type="button">Limpiar</button>
+<span class="cat-count" id="cat-count">Cargando…</span>
+</div>
+</div>
+<div class="catalogo-grid" id="catalogo-grid"></div>
+<div class="cat-drawer" id="cat-drawer">
+<div class="cat-drawer-overlay" id="cat-drawer-overlay"></div>
+<div class="cat-drawer-panel" id="cat-drawer-panel">
+<button class="cat-drawer-close" id="cat-drawer-close">x</button>
+<div id="cat-drawer-content"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- ═══ VISTA: ACERCA DE (scrollytelling + indicadores) ═══ -->
+<section class="view" id="view-descubre" role="tabpanel">
+<div class="descubre-wrap">
+<!-- INTRO DEL PROYECTO -->
+<div class="sc-section sc-section--intro sc-about-intro">
+<div class="sc-section-inner">
+<p class="sc-kicker">Conoce el catálogo</p>
+<h2>Viajes con identidad, anfitriones locales y patrimonio vivo</h2>
+<p class="sc-lead">El catálogo reúne experiencias que pueden reservarse o consultarse directamente con sus anfitriones. Explora el territorio, compara actividades y encuentra propuestas de naturaleza, cultura, gastronomía y saberes comunitarios para preparar tu próxima visita.</p>
+<div aria-label="Experiencias por categoría" class="about-category-metrics" id="about-category-metrics">
+<button class="about-metric-card about-metric-card--total is-active" data-dashboard-category="" type="button">
+<span class="about-metric-number" id="about-metric-experiencias">0</span>
+<span class="about-metric-label">Experiencias en total</span>
+</button>
+<button class="about-metric-card" data-dashboard-category="Historia y arqueología" type="button">
+<span class="about-metric-number" id="about-metric-historia">0</span>
+<span class="about-metric-label">Historia y arqueología</span>
+</button>
+<button class="about-metric-card" data-dashboard-category="Naturaleza" type="button">
+<span class="about-metric-number" id="about-metric-naturaleza">0</span>
+<span class="about-metric-label">Naturaleza</span>
+</button>
+<button class="about-metric-card" data-dashboard-category="Senderismo" type="button">
+<span class="about-metric-number" id="about-metric-senderismo">0</span>
+<span class="about-metric-label">Senderismo</span>
+</button>
+<button class="about-metric-card" data-dashboard-category="Artesanía" type="button">
+<span class="about-metric-number" id="about-metric-artesania">0</span>
+<span class="about-metric-label">Artesanía</span>
+</button>
+<button class="about-metric-card" data-dashboard-category="Gastronomía" type="button">
+<span class="about-metric-number" id="about-metric-gastronomia">0</span>
+<span class="about-metric-label">Gastronomía</span>
+</button>
+<button class="about-metric-card" data-dashboard-category="Meliponicultura" type="button">
+<span class="about-metric-number" id="about-metric-meliponicultura">0</span>
+<span class="about-metric-label">Meliponicultura</span>
+</button>
+</div>
+</div>
+</div>
+<!-- RELATO CON IMAGEN FIJA Y CAPÍTULOS EN SCROLL -->
+<section aria-label="Recorrido por las categorías del catálogo" class="story-scrolly" id="about-story">
+<div class="story-visual-wrap">
+<div class="story-visual" id="story-visual" style="background-image:url('img/hero_ruinas.jpg')">
+<div class="story-visual-shade"></div>
+<div class="story-visual-copy">
+<span class="story-visual-index" id="story-visual-index">01</span>
+<p class="story-visual-kicker" id="story-visual-kicker">Historia y arqueología</p>
+<h3 id="story-visual-title">Camina entre paisajes, historias y comunidades que mantienen vivo su territorio.</h3>
+</div>
+</div>
+</div>
+<div class="story-steps">
+<article class="story-step is-active" data-story-image="img/hero_ruinas.jpg" data-story-index="01" data-story-kicker="Historia y arqueología" data-story-title="Camina entre paisajes, historias y comunidades que mantienen vivo su territorio.">
+<span class="story-step-number">01</span>
+<p class="sc-kicker">Historia y arqueología</p>
+<h2>Recorridos que conectan pasado y presente</h2>
+<p>Visita sitios arqueológicos, comunidades mayas y espacios de memoria acompañados por personas que conocen el territorio. Cada experiencia permite acercarse a la historia local desde una perspectiva viva y comunitaria.</p>
+<button class="story-cta" onclick="openCatalogCategory('Historia y arqueología')" type="button">Ver experiencias culturales</button>
+</article>
+<article class="story-step" data-story-image="img/hero_grupo1.jpg" data-story-index="02" data-story-kicker="Naturaleza" data-story-title="Explora cenotes, manglares, selvas y humedales con quienes los protegen todos los días.">
+<span class="story-step-number">02</span>
+<p class="sc-kicker">Naturaleza</p>
+<h2>Aventuras guiadas por el conocimiento local</h2>
+<p>Encuentra senderismo, kayak, observación de fauna, nado y recorridos por reservas naturales. Las visitas contribuyen a economías comunitarias vinculadas con el cuidado del paisaje y la biodiversidad.</p>
+<button class="story-cta" onclick="openCatalogCategory('Naturaleza')" type="button">Explorar naturaleza</button>
+</article>
+<article class="story-step" data-story-image="img/exp_bordado1.jpg" data-story-index="03" data-story-kicker="Artesanías y saberes" data-story-title="Conoce talleres, técnicas y piezas creadas por artesanas y artesanos de las comunidades.">
+<span class="story-step-number">03</span>
+<p class="sc-kicker">Artesanías y saberes</p>
+<h2>Aprende directamente de quienes preservan los oficios</h2>
+<p>Participa en talleres de bordado, barro, fibras, cuero y otros procesos artesanales. Además de llevarte una pieza, podrás conocer las historias, los materiales y los conocimientos que hacen única cada creación.</p>
+<button class="story-cta" onclick="openCatalogCategory('Artesanía')" type="button">Conocer talleres</button>
+</article>
+<article class="story-step" data-story-image="img/hero_tortillas.jpg" data-story-index="04" data-story-kicker="Gastronomía" data-story-title="Prueba sabores regionales y comparte la mesa con cocineras, productores y familias anfitrionas.">
+<span class="story-step-number">04</span>
+<p class="sc-kicker">Gastronomía</p>
+<h2>Sabores que cuentan la historia de un lugar</h2>
+<p>Descubre cocinas tradicionales, cacao, miel, pan y productos de la milpa a través de degustaciones y talleres. Consulta disponibilidad y contacta a los anfitriones desde la ficha de cada experiencia.</p>
+<button class="story-cta" onclick="openCatalogCategory('Gastronomía')" type="button">Descubrir sabores</button>
+</article>
+</div>
+</section>
+<!-- LOS 8 CRITERIOS UNESCO -->
+<div class="sc-section sc-section--criterios">
+<div class="sc-section-inner">
+<p class="sc-kicker">Confianza para elegir</p>
+<h2>Experiencias con enfoque comunitario y sostenible</h2>
+<p class="sc-lead">Las experiencias se presentan con criterios que ayudan a reconocer propuestas auténticas, vinculadas con el patrimonio y con beneficios para las comunidades anfitrionas.</p>
+<div class="criterios-grid">
+<div class="criterio-card">
+<div class="criterio-num">01</div>
+<h3>Gestion comunitaria</h3>
+<p>Los grupos que reciben visitantes son los primeros en beneficiarse. La toma de decisiones es colectiva y la comunidad en general se ve favorecida directa e indirectamente.</p>
+</div>
+<div class="criterio-card">
+<div class="criterio-num">02</div>
+<h3>Patrimonio</h3>
+<p>Cada experiencia involucra y protege al menos un tipo de patrimonio: material (sitios arqueologicos, arquitectura), inmaterial (saberes, lenguas, tradiciones) o natural (ecosistemas, biodiversidad).</p>
+</div>
+<div class="criterio-card">
+<div class="criterio-num">03</div>
+<h3>Autenticidad</h3>
+<p>Los servicios turisticos reflejan genuinamente la identidad cultural de la comunidad. No se trata de representaciones escenificadas sino de practicas reales del territorio y sus habitantes.</p>
+</div>
+<div class="criterio-card">
+<div class="criterio-num">04</div>
+<h3>Derrama economica local</h3>
+<p>Los ingresos generados por el turismo se distribuyen entre los miembros de la comunidad. Los productos y servicios consumidos son de origen local, evitando la dependencia de intermediarios externos.</p>
+</div>
+<div class="criterio-card">
+<div class="criterio-num">05</div>
+<h3>Igualdad de genero</h3>
+<p>Las actividades incluyen participacion igualitaria de personas de todos los generos como guias, anfitriones y tomadores de decisiones. Se prioriza el liderazgo femenino en muchas de las experiencias.</p>
+</div>
+<div class="criterio-card">
+<div class="criterio-num">06</div>
+<h3>Descentralizacion</h3>
+<p>Las actividades son organizadas y operadas directamente por personas de la comunidad, previniendo el aprovechamiento exclusivo de intermediarios ajenos al territorio.</p>
+</div>
+<div class="criterio-card">
+<div class="criterio-num">07</div>
+<h3>Inclusion y accesibilidad</h3>
+<p>Las experiencias procuran ser accesibles para el mayor numero posible de personas, considerando las caracteristicas naturales del entorno y buscando adaptaciones donde sea posible.</p>
+</div>
+<div class="criterio-card">
+<div class="criterio-num">08</div>
+<h3>Impacto sostenible</h3>
+<p>El turismo genera una alternativa de ingresos que contribuye a la recuperacion de actividades tradicionales y al uso racional de los recursos naturales, sin comprometer su conservacion futura.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- FOTO DOBLE: grupo -->
+<div class="sc-photo-full sc-img--ruinas">
+<div class="sc-photo-caption">Experiencias comunitarias y territorios vivos.</div>
+</div>
+<!-- DASHBOARD INTERACTIVO -->
+<div class="sc-section sc-section--indicadores" id="about-dashboard">
+<div class="sc-section-inner">
+<p class="sc-kicker">El catálogo en números</p>
+<h2>Explora la diversidad de las experiencias</h2>
+<p class="sc-lead">Selecciona una categoría o un estado para actualizar las gráficas y recorrer las experiencias relacionadas. Los conteos reflejan etiquetas múltiples, por lo que una experiencia puede aparecer en más de una categoría.</p>
+<div aria-label="Controles del dashboard" class="dashboard-toolbar">
+<div class="dashboard-toolbar-copy">
+<span class="dashboard-eyebrow">Vista activa</span>
+<h3 id="dashboard-selection-title">Todas las experiencias</h3>
+<p id="dashboard-selection-summary">0 experiencias disponibles</p>
+</div>
+<div class="dashboard-toolbar-controls">
+<label>
+<span>Categoría</span>
+<select id="dashboard-category-filter">
+<option value="">Todas las categorías</option>
+</select>
+</label>
+<label>
+<span>Estado</span>
+<select id="dashboard-state-filter">
+<option value="">Todos los estados</option>
+</select>
+</label>
+<button id="dashboard-reset" type="button">Restablecer</button>
+</div>
+</div>
+<div aria-label="Filtrar dashboard por categoría" class="dashboard-category-chips" id="dashboard-category-chips"></div>
+<div class="interactive-dashboard-grid">
+<article class="chart-card chart-card--dashboard-state">
+<div class="chart-card-heading">
+<div>
+<span class="dashboard-card-kicker">Distribución territorial</span>
+<h3>Experiencias por estado</h3>
+</div>
+<small>Selecciona una barra</small>
+</div>
+<div class="chart-wrap chart-wrap--dashboard-state"><canvas id="chart-estado"></canvas></div>
+</article>
+<article class="chart-card chart-card--dashboard-category">
+<div class="chart-card-heading">
+<div>
+<span class="dashboard-card-kicker">Composición</span>
+<h3>Categorías de experiencia</h3>
+</div>
+<small>Selecciona un segmento</small>
+</div>
+<div class="chart-wrap chart-wrap--dashboard-category"><canvas id="chart-tipo"></canvas></div>
+</article>
+<article class="chart-card chart-card--dashboard-heritage">
+<div class="chart-card-heading">
+<div>
+<span class="dashboard-card-kicker">Vínculos patrimoniales</span>
+<h3>Patrimonio presente en la selección</h3>
+</div>
+</div>
+<div class="chart-wrap chart-wrap--dashboard-heritage"><canvas id="chart-patrimonio"></canvas></div>
+</article>
+<article class="chart-card dashboard-experience-card">
+<div class="chart-card-heading dashboard-experience-heading">
+<div>
+<span class="dashboard-card-kicker">Explora una ficha</span>
+<h3 id="dashboard-experience-heading">Experiencia destacada</h3>
+</div>
+<div aria-label="Recorrer experiencias del dashboard" class="dashboard-carousel-controls">
+<button aria-label="Experiencia anterior" id="dashboard-prev" type="button">‹</button>
+<span id="dashboard-position">1 / 1</span>
+<button aria-label="Siguiente experiencia" id="dashboard-next" type="button">›</button>
+</div>
+</div>
+<div class="dashboard-experience-preview" id="dashboard-experience-preview"></div>
+</article>
+</div>
+</div>
+</div>
+<!-- FOTO FINAL -->
+<div class="sc-split sc-split--img-right sc-split--tall">
+<div class="sc-split-text">
+<p class="sc-kicker">Territorios vivos</p>
+<h2>Elige una experiencia y contacta a sus anfitriones</h2>
+<p>Consulta la ficha completa, revisa los servicios incluidos y utiliza las opciones de contacto o contratación disponibles. Cada visita es una oportunidad para conocer el territorio y apoyar iniciativas locales.</p>
+<div style="margin-top:24px">
+<button class="btn-catalog" onclick="switchView('mapa')">Explorar el mapa</button>
+<button class="btn-catalog btn-catalog--outline" onclick="switchView('catalogo')">Ver el catálogo</button>
+</div>
+</div>
+<div class="sc-split-img sc-img--hombre"></div>
+</div>
+<!-- PIE -->
+<div class="sc-footer">
+<div class="sc-footer-inner">
+<p>Guía Nacional de Experiencias Turísticas Comunitarias. Plataforma de consulta territorial para descubrir y contactar experiencias comunitarias de México.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- VISOR DE FOTOGRAFÍAS -->
+<div aria-hidden="true" class="image-lightbox" id="image-lightbox">
+<button aria-label="Cerrar imagen" class="image-lightbox-close" id="image-lightbox-close" type="button">×</button>
+<button aria-label="Imagen anterior" class="image-lightbox-nav image-lightbox-prev" id="image-lightbox-prev" type="button">‹</button>
+<img alt="Fotografía de la experiencia" id="image-lightbox-img"/>
+<button aria-label="Imagen siguiente" class="image-lightbox-nav image-lightbox-next" id="image-lightbox-next" type="button">›</button>
+<div class="image-lightbox-caption" id="image-lightbox-caption"></div>
+</div>
+<!-- INTRODUCCIÓN EMERGENTE -->
+<div aria-hidden="false" class="intro-modal open" id="intro-modal">
+<div class="intro-backdrop" id="intro-backdrop"></div>
+<section aria-labelledby="intro-title" aria-modal="true" class="intro-window" role="dialog">
+<div class="intro-hero">
+<div class="intro-hero-shade"></div>
+<button aria-label="Explorar la plataforma" class="intro-close" id="intro-close" type="button"><span>Explorar plataforma</span><span aria-hidden="true">→</span></button>
+<div class="intro-content"><div aria-label="Idioma" class="intro-language-switch" role="group"><span>Idioma</span><a class="is-active" href="index.html?lang=es" hreflang="es">ES</a><a href="index_en.html?lang=en" hreflang="en">EN</a></div>
+<p class="intro-kicker">Turismo con identidad local</p>
+<h2 id="intro-title">Encuentra experiencias<br/><em>con identidad local</em></h2>
+<p class="intro-lead">Explora propuestas culturales, naturales y gastronómicas, compara lo que incluye cada visita y contacta directamente a sus anfitriones para consultar disponibilidad y contratación.</p>
+<div class="intro-info-card">
+<p class="intro-info-title">¿Qué encontrarás aquí?</p>
+<p>Experiencias organizadas por ubicación y categoría para ayudarte a elegir una visita auténtica y apoyar iniciativas comunitarias.</p>
+<div aria-label="Categorías de experiencias" class="intro-category-tags">
+<span>Naturaleza</span>
+<span>Senderismo</span>
+<span>Artesanía</span>
+<span>Gastronomía</span>
+<span>Meliponicultura</span>
+<span>Historia y arqueología</span>
+</div>
+</div>
+<div class="intro-actions">
+<button class="intro-btn intro-btn--primary" id="intro-explore-map" type="button">Explorar el mapa</button>
+<button class="intro-btn intro-btn--secondary" id="intro-explore-catalog" type="button">Ver el catálogo</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- CHAT MODAL -->
+<div aria-hidden="true" class="chat-modal" id="chat-modal">
+<div class="chat-backdrop" id="chat-backdrop"></div>
+<div aria-label="Asistente de experiencias" class="chat-window" role="dialog">
+<div class="chat-header">
+<div class="chat-header-left">
+<div class="chat-avatar">A</div>
+<div>
+<div class="chat-title">Asistente del catálogo</div>
+<div class="chat-subtitle">Te ayudo a encontrar tu experiencia ideal</div>
+</div>
+</div>
+<button class="chat-close" id="chat-close">x</button>
+</div>
+<div class="chat-messages" id="chat-messages"></div>
+<div class="chat-suggestions" id="chat-suggestions"></div>
+<div class="chat-input-row">
+<input class="chat-input" id="chat-input" placeholder="Escribe o selecciona una opcion..." type="text"/>
+<button class="chat-send" id="chat-send">Enviar</button>
+</div>
+</div>
+</div>
+<button class="chat-fab" id="chat-fab" title="Asistente de experiencias">
+<svg fill="none" height="22" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24" width="22">
+<path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"></path>
+</svg>
+</button>
+<script src="main.js?v=17"></script>
+</body>
+</html>
