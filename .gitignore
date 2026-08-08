@@ -1,0 +1,15 @@
+# Archivos temporales del procesamiento fotográfico
+_fotos_work_nacional/
+
+# Cachés y archivos de trabajo del procesamiento DENUE
+_cache_denue_nacional/
+_denue_work_nacional/
+
+# Archivos temporales de Python
+__pycache__/
+*.py[cod]
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+Desktop.ini

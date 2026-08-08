@@ -670,5 +670,1799 @@
       "imagenes/MMM-052_YUC24-14_p079_img08_xref786.webp"
     ],
     "cantidad": 9
+  },
+  "BCS-001": {
+    "principal": "imagenes/BCS-001_01.webp",
+    "galeria": [
+      "imagenes/BCS-001_01.webp",
+      "imagenes/BCS-001_02.webp",
+      "imagenes/BCS-001_03.webp",
+      "imagenes/BCS-001_04.webp",
+      "imagenes/BCS-001_05.webp"
+    ],
+    "cantidad": 5
+  },
+  "BCS-002": {
+    "principal": "imagenes/BCS-002_01.webp",
+    "galeria": [
+      "imagenes/BCS-002_01.webp",
+      "imagenes/BCS-002_02.webp",
+      "imagenes/BCS-002_03.webp",
+      "imagenes/BCS-002_04.webp",
+      "imagenes/BCS-002_05.webp"
+    ],
+    "cantidad": 5
+  },
+  "BCS-003": {
+    "principal": "imagenes/BCS-003_01.webp",
+    "galeria": [
+      "imagenes/BCS-003_01.webp",
+      "imagenes/BCS-003_02.webp",
+      "imagenes/BCS-003_03.webp",
+      "imagenes/BCS-003_04.webp",
+      "imagenes/BCS-003_05.webp"
+    ],
+    "cantidad": 5
+  },
+  "BCS-004": {
+    "principal": "imagenes/BCS-004_01.webp",
+    "galeria": [
+      "imagenes/BCS-004_01.webp",
+      "imagenes/BCS-004_02.webp",
+      "imagenes/BCS-004_03.webp",
+      "imagenes/BCS-004_04.webp",
+      "imagenes/BCS-004_05.webp"
+    ],
+    "cantidad": 5
+  },
+  "BCS-005": {
+    "principal": "imagenes/BCS-005_01.webp",
+    "galeria": [
+      "imagenes/BCS-005_01.webp",
+      "imagenes/BCS-005_02.webp",
+      "imagenes/BCS-005_03.webp",
+      "imagenes/BCS-005_04.webp",
+      "imagenes/BCS-005_05.webp"
+    ],
+    "cantidad": 5
+  },
+  "BCS-006": {
+    "principal": "imagenes/BCS-006_01.webp",
+    "galeria": [
+      "imagenes/BCS-006_01.webp",
+      "imagenes/BCS-006_02.webp",
+      "imagenes/BCS-006_03.webp",
+      "imagenes/BCS-006_04.webp",
+      "imagenes/BCS-006_05.webp"
+    ],
+    "cantidad": 5
+  },
+  "BCS-007": {
+    "principal": "imagenes/BCS-007_01.webp",
+    "galeria": [
+      "imagenes/BCS-007_01.webp",
+      "imagenes/BCS-007_02.webp",
+      "imagenes/BCS-007_03.webp",
+      "imagenes/BCS-007_04.webp",
+      "imagenes/BCS-007_05.webp"
+    ],
+    "cantidad": 5
+  },
+  "BCS-008": {
+    "principal": "imagenes/BCS-008_01.webp",
+    "galeria": [
+      "imagenes/BCS-008_01.webp",
+      "imagenes/BCS-008_02.webp",
+      "imagenes/BCS-008_03.webp",
+      "imagenes/BCS-008_04.webp",
+      "imagenes/BCS-008_05.webp"
+    ],
+    "cantidad": 5
+  },
+  "BCS-009": {
+    "principal": "imagenes/BCS-009_01.webp",
+    "galeria": [
+      "imagenes/BCS-009_01.webp",
+      "imagenes/BCS-009_02.webp",
+      "imagenes/BCS-009_03.webp",
+      "imagenes/BCS-009_04.webp",
+      "imagenes/BCS-009_05.webp"
+    ],
+    "cantidad": 5
+  },
+  "BCS-010": {
+    "principal": "imagenes/BCS-010_01.webp",
+    "galeria": [
+      "imagenes/BCS-010_01.webp",
+      "imagenes/BCS-010_02.webp",
+      "imagenes/BCS-010_03.webp",
+      "imagenes/BCS-010_04.webp",
+      "imagenes/BCS-010_05.webp"
+    ],
+    "cantidad": 5
+  },
+  "BCS-011": {
+    "principal": "imagenes/BCS-011_01.webp",
+    "galeria": [
+      "imagenes/BCS-011_01.webp",
+      "imagenes/BCS-011_02.webp",
+      "imagenes/BCS-011_03.webp",
+      "imagenes/BCS-011_04.webp",
+      "imagenes/BCS-011_05.webp"
+    ],
+    "cantidad": 5
+  },
+  "BCS-012": {
+    "principal": "imagenes/BCS-012_01.webp",
+    "galeria": [
+      "imagenes/BCS-012_01.webp",
+      "imagenes/BCS-012_02.webp",
+      "imagenes/BCS-012_03.webp",
+      "imagenes/BCS-012_04.webp",
+      "imagenes/BCS-012_05.webp"
+    ],
+    "cantidad": 5
+  },
+  "BCS-013": {
+    "principal": "imagenes/BCS-013_01.webp",
+    "galeria": [
+      "imagenes/BCS-013_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "BCS-014": {
+    "principal": "imagenes/BCS-014_01.webp",
+    "galeria": [
+      "imagenes/BCS-014_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "BCS-015": {
+    "principal": "imagenes/BCS-015_01.webp",
+    "galeria": [
+      "imagenes/BCS-015_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "BCS-016": {
+    "principal": "imagenes/BCS-016_01.webp",
+    "galeria": [
+      "imagenes/BCS-016_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "BCS-017": {
+    "principal": "imagenes/BCS-017_01.webp",
+    "galeria": [
+      "imagenes/BCS-017_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "BCS-018": {
+    "principal": "imagenes/BCS-018_01.webp",
+    "galeria": [
+      "imagenes/BCS-018_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "HID-001": {
+    "principal": "imagenes/HID-001_01.webp",
+    "galeria": [
+      "imagenes/HID-001_01.webp",
+      "imagenes/HID-001_02.webp",
+      "imagenes/HID-001_03.webp",
+      "imagenes/HID-001_04.webp",
+      "imagenes/HID-001_05.webp",
+      "imagenes/HID-001_06.webp",
+      "imagenes/HID-001_07.webp",
+      "imagenes/HID-001_08.webp"
+    ],
+    "cantidad": 8
+  },
+  "HID-002": {
+    "principal": "imagenes/HID-002_01.webp",
+    "galeria": [
+      "imagenes/HID-002_01.webp",
+      "imagenes/HID-002_02.webp",
+      "imagenes/HID-002_03.webp",
+      "imagenes/HID-002_04.webp",
+      "imagenes/HID-002_05.webp",
+      "imagenes/HID-002_06.webp",
+      "imagenes/HID-002_07.webp",
+      "imagenes/HID-002_08.webp",
+      "imagenes/HID-002_09.webp"
+    ],
+    "cantidad": 9
+  },
+  "HID-003": {
+    "principal": "imagenes/HID-003_01.webp",
+    "galeria": [
+      "imagenes/HID-003_01.webp",
+      "imagenes/HID-003_02.webp",
+      "imagenes/HID-003_03.webp",
+      "imagenes/HID-003_04.webp",
+      "imagenes/HID-003_05.webp",
+      "imagenes/HID-003_06.webp",
+      "imagenes/HID-003_07.webp"
+    ],
+    "cantidad": 7
+  },
+  "HID-004": {
+    "principal": "imagenes/HID-004_01.webp",
+    "galeria": [
+      "imagenes/HID-004_01.webp",
+      "imagenes/HID-004_02.webp",
+      "imagenes/HID-004_03.webp",
+      "imagenes/HID-004_04.webp",
+      "imagenes/HID-004_05.webp",
+      "imagenes/HID-004_06.webp"
+    ],
+    "cantidad": 6
+  },
+  "HID-005": {
+    "principal": "imagenes/HID-005_01.webp",
+    "galeria": [
+      "imagenes/HID-005_01.webp",
+      "imagenes/HID-005_02.webp"
+    ],
+    "cantidad": 2
+  },
+  "HID-006": {
+    "principal": "imagenes/HID-006_01.webp",
+    "galeria": [
+      "imagenes/HID-006_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "HID-007": {
+    "principal": "imagenes/HID-007_01.webp",
+    "galeria": [
+      "imagenes/HID-007_01.webp",
+      "imagenes/HID-007_02.webp",
+      "imagenes/HID-007_03.webp",
+      "imagenes/HID-007_04.webp",
+      "imagenes/HID-007_05.webp",
+      "imagenes/HID-007_06.webp",
+      "imagenes/HID-007_07.webp",
+      "imagenes/HID-007_08.webp"
+    ],
+    "cantidad": 8
+  },
+  "HID-008": {
+    "principal": "imagenes/HID-008_01.webp",
+    "galeria": [
+      "imagenes/HID-008_01.webp",
+      "imagenes/HID-008_02.webp",
+      "imagenes/HID-008_03.webp",
+      "imagenes/HID-008_04.webp",
+      "imagenes/HID-008_05.webp",
+      "imagenes/HID-008_06.webp"
+    ],
+    "cantidad": 6
+  },
+  "HID-009": {
+    "principal": "imagenes/HID-009_01.webp",
+    "galeria": [
+      "imagenes/HID-009_01.webp",
+      "imagenes/HID-009_02.webp",
+      "imagenes/HID-009_03.webp",
+      "imagenes/HID-009_04.webp",
+      "imagenes/HID-009_05.webp",
+      "imagenes/HID-009_06.webp",
+      "imagenes/HID-009_07.webp",
+      "imagenes/HID-009_08.webp",
+      "imagenes/HID-009_09.webp",
+      "imagenes/HID-009_10.webp"
+    ],
+    "cantidad": 10
+  },
+  "HID-010": {
+    "principal": "imagenes/HID-010_01.webp",
+    "galeria": [
+      "imagenes/HID-010_01.webp",
+      "imagenes/HID-010_02.webp",
+      "imagenes/HID-010_03.webp",
+      "imagenes/HID-010_04.webp",
+      "imagenes/HID-010_05.webp",
+      "imagenes/HID-010_06.webp",
+      "imagenes/HID-010_07.webp"
+    ],
+    "cantidad": 7
+  },
+  "HID-011": {
+    "principal": "imagenes/HID-011_01.webp",
+    "galeria": [
+      "imagenes/HID-011_01.webp",
+      "imagenes/HID-011_02.webp",
+      "imagenes/HID-011_03.webp",
+      "imagenes/HID-011_04.webp",
+      "imagenes/HID-011_05.webp",
+      "imagenes/HID-011_06.webp",
+      "imagenes/HID-011_07.webp",
+      "imagenes/HID-011_08.webp"
+    ],
+    "cantidad": 8
+  },
+  "HID-012": {
+    "principal": "imagenes/HID-012_01.webp",
+    "galeria": [
+      "imagenes/HID-012_01.webp",
+      "imagenes/HID-012_02.webp",
+      "imagenes/HID-012_03.webp",
+      "imagenes/HID-012_04.webp",
+      "imagenes/HID-012_05.webp",
+      "imagenes/HID-012_06.webp",
+      "imagenes/HID-012_07.webp",
+      "imagenes/HID-012_08.webp",
+      "imagenes/HID-012_09.webp"
+    ],
+    "cantidad": 9
+  },
+  "HID-013": {
+    "principal": "imagenes/HID-013_01.webp",
+    "galeria": [
+      "imagenes/HID-013_01.webp",
+      "imagenes/HID-013_02.webp",
+      "imagenes/HID-013_03.webp",
+      "imagenes/HID-013_04.webp",
+      "imagenes/HID-013_05.webp",
+      "imagenes/HID-013_06.webp",
+      "imagenes/HID-013_07.webp"
+    ],
+    "cantidad": 7
+  },
+  "HID-014": {
+    "principal": "imagenes/HID-014_01.webp",
+    "galeria": [
+      "imagenes/HID-014_01.webp",
+      "imagenes/HID-014_02.webp",
+      "imagenes/HID-014_03.webp",
+      "imagenes/HID-014_04.webp",
+      "imagenes/HID-014_05.webp",
+      "imagenes/HID-014_06.webp",
+      "imagenes/HID-014_07.webp",
+      "imagenes/HID-014_08.webp",
+      "imagenes/HID-014_09.webp",
+      "imagenes/HID-014_10.webp"
+    ],
+    "cantidad": 10
+  },
+  "HID-015": {
+    "principal": "imagenes/HID-015_01.webp",
+    "galeria": [
+      "imagenes/HID-015_01.webp",
+      "imagenes/HID-015_02.webp",
+      "imagenes/HID-015_03.webp",
+      "imagenes/HID-015_04.webp",
+      "imagenes/HID-015_05.webp",
+      "imagenes/HID-015_06.webp"
+    ],
+    "cantidad": 6
+  },
+  "HID-016": {
+    "principal": "imagenes/HID-016_01.webp",
+    "galeria": [
+      "imagenes/HID-016_01.webp",
+      "imagenes/HID-016_02.webp",
+      "imagenes/HID-016_03.webp",
+      "imagenes/HID-016_04.webp",
+      "imagenes/HID-016_05.webp",
+      "imagenes/HID-016_06.webp",
+      "imagenes/HID-016_07.webp",
+      "imagenes/HID-016_08.webp"
+    ],
+    "cantidad": 8
+  },
+  "HID-017": {
+    "principal": "imagenes/HID-017_01.webp",
+    "galeria": [
+      "imagenes/HID-017_01.webp",
+      "imagenes/HID-017_02.webp",
+      "imagenes/HID-017_03.webp"
+    ],
+    "cantidad": 3
+  },
+  "HID-018": {
+    "principal": "imagenes/HID-018_01.webp",
+    "galeria": [
+      "imagenes/HID-018_01.webp",
+      "imagenes/HID-018_02.webp",
+      "imagenes/HID-018_03.webp",
+      "imagenes/HID-018_04.webp",
+      "imagenes/HID-018_05.webp",
+      "imagenes/HID-018_06.webp"
+    ],
+    "cantidad": 6
+  },
+  "HID-019": {
+    "principal": "imagenes/HID-019_01.webp",
+    "galeria": [
+      "imagenes/HID-019_01.webp",
+      "imagenes/HID-019_02.webp",
+      "imagenes/HID-019_03.webp",
+      "imagenes/HID-019_04.webp",
+      "imagenes/HID-019_05.webp",
+      "imagenes/HID-019_06.webp",
+      "imagenes/HID-019_07.webp",
+      "imagenes/HID-019_08.webp"
+    ],
+    "cantidad": 8
+  },
+  "HID-020": {
+    "principal": "imagenes/HID-020_01.webp",
+    "galeria": [
+      "imagenes/HID-020_01.webp",
+      "imagenes/HID-020_02.webp",
+      "imagenes/HID-020_03.webp",
+      "imagenes/HID-020_04.webp",
+      "imagenes/HID-020_05.webp",
+      "imagenes/HID-020_06.webp",
+      "imagenes/HID-020_07.webp",
+      "imagenes/HID-020_08.webp",
+      "imagenes/HID-020_09.webp"
+    ],
+    "cantidad": 9
+  },
+  "HID-021": {
+    "principal": "imagenes/HID-021_01.webp",
+    "galeria": [
+      "imagenes/HID-021_01.webp",
+      "imagenes/HID-021_02.webp",
+      "imagenes/HID-021_03.webp",
+      "imagenes/HID-021_04.webp",
+      "imagenes/HID-021_05.webp",
+      "imagenes/HID-021_06.webp"
+    ],
+    "cantidad": 6
+  },
+  "HID-022": {
+    "principal": "imagenes/HID-022_01.webp",
+    "galeria": [
+      "imagenes/HID-022_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "HID-023": {
+    "principal": "imagenes/HID-023_01.webp",
+    "galeria": [
+      "imagenes/HID-023_01.webp",
+      "imagenes/HID-023_02.webp",
+      "imagenes/HID-023_03.webp",
+      "imagenes/HID-023_04.webp",
+      "imagenes/HID-023_05.webp",
+      "imagenes/HID-023_06.webp",
+      "imagenes/HID-023_07.webp"
+    ],
+    "cantidad": 7
+  },
+  "HID-024": {
+    "principal": "imagenes/HID-024_01.webp",
+    "galeria": [
+      "imagenes/HID-024_01.webp",
+      "imagenes/HID-024_02.webp",
+      "imagenes/HID-024_03.webp",
+      "imagenes/HID-024_04.webp",
+      "imagenes/HID-024_05.webp",
+      "imagenes/HID-024_06.webp",
+      "imagenes/HID-024_07.webp"
+    ],
+    "cantidad": 7
+  },
+  "HID-025": {
+    "principal": "imagenes/HID-025_01.webp",
+    "galeria": [
+      "imagenes/HID-025_01.webp",
+      "imagenes/HID-025_02.webp",
+      "imagenes/HID-025_03.webp",
+      "imagenes/HID-025_04.webp",
+      "imagenes/HID-025_05.webp",
+      "imagenes/HID-025_06.webp",
+      "imagenes/HID-025_07.webp"
+    ],
+    "cantidad": 7
+  },
+  "MIC-001": {
+    "principal": "imagenes/MIC-001_01.webp",
+    "galeria": [
+      "imagenes/MIC-001_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-002": {
+    "principal": "imagenes/MIC-002_01.webp",
+    "galeria": [
+      "imagenes/MIC-002_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-003": {
+    "principal": "imagenes/MIC-003_01.webp",
+    "galeria": [
+      "imagenes/MIC-003_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-004": {
+    "principal": "imagenes/MIC-004_01.webp",
+    "galeria": [
+      "imagenes/MIC-004_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-005": {
+    "principal": "imagenes/MIC-005_01.webp",
+    "galeria": [
+      "imagenes/MIC-005_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-006": {
+    "principal": "imagenes/MIC-006_01.webp",
+    "galeria": [
+      "imagenes/MIC-006_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-007": {
+    "principal": "imagenes/MIC-007_01.webp",
+    "galeria": [
+      "imagenes/MIC-007_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-008": {
+    "principal": "imagenes/MIC-008_01.webp",
+    "galeria": [
+      "imagenes/MIC-008_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-009": {
+    "principal": "imagenes/MIC-009_01.webp",
+    "galeria": [
+      "imagenes/MIC-009_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-010": {
+    "principal": "imagenes/MIC-010_01.webp",
+    "galeria": [
+      "imagenes/MIC-010_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-011": {
+    "principal": "imagenes/MIC-011_01.webp",
+    "galeria": [
+      "imagenes/MIC-011_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-012": {
+    "principal": "imagenes/MIC-012_01.webp",
+    "galeria": [
+      "imagenes/MIC-012_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-013": {
+    "principal": "imagenes/MIC-013_01.webp",
+    "galeria": [
+      "imagenes/MIC-013_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-014": {
+    "principal": "imagenes/MIC-014_01.webp",
+    "galeria": [
+      "imagenes/MIC-014_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-015": {
+    "principal": "imagenes/MIC-015_01.webp",
+    "galeria": [
+      "imagenes/MIC-015_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-016": {
+    "principal": "imagenes/MIC-016_01.webp",
+    "galeria": [
+      "imagenes/MIC-016_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-017": {
+    "principal": "imagenes/MIC-017_01.webp",
+    "galeria": [
+      "imagenes/MIC-017_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-018": {
+    "principal": "imagenes/MIC-018_01.webp",
+    "galeria": [
+      "imagenes/MIC-018_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-019": {
+    "principal": "imagenes/MIC-019_01.webp",
+    "galeria": [
+      "imagenes/MIC-019_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-020": {
+    "principal": "imagenes/MIC-020_01.webp",
+    "galeria": [
+      "imagenes/MIC-020_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-021": {
+    "principal": "imagenes/MIC-021_01.webp",
+    "galeria": [
+      "imagenes/MIC-021_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-022": {
+    "principal": "imagenes/MIC-022_01.webp",
+    "galeria": [
+      "imagenes/MIC-022_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-023": {
+    "principal": "imagenes/MIC-023_01.webp",
+    "galeria": [
+      "imagenes/MIC-023_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-024": {
+    "principal": "imagenes/MIC-024_01.webp",
+    "galeria": [
+      "imagenes/MIC-024_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-025": {
+    "principal": "imagenes/MIC-025_01.webp",
+    "galeria": [
+      "imagenes/MIC-025_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-026": {
+    "principal": "imagenes/MIC-026_01.webp",
+    "galeria": [
+      "imagenes/MIC-026_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-027": {
+    "principal": "imagenes/MIC-027_01.webp",
+    "galeria": [
+      "imagenes/MIC-027_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-028": {
+    "principal": "imagenes/MIC-028_01.webp",
+    "galeria": [
+      "imagenes/MIC-028_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-029": {
+    "principal": "imagenes/MIC-029_01.webp",
+    "galeria": [
+      "imagenes/MIC-029_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-030": {
+    "principal": "imagenes/MIC-030_01.webp",
+    "galeria": [
+      "imagenes/MIC-030_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MIC-031": {
+    "principal": "imagenes/MIC-031_01.webp",
+    "galeria": [
+      "imagenes/MIC-031_01.webp",
+      "imagenes/MIC-031_02.webp",
+      "imagenes/MIC-031_03.webp"
+    ],
+    "cantidad": 3
+  },
+  "MOR-001": {
+    "principal": "imagenes/MOR-001_01.webp",
+    "galeria": [
+      "imagenes/MOR-001_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MOR-002": {
+    "principal": "imagenes/MOR-002_01.webp",
+    "galeria": [
+      "imagenes/MOR-002_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MOR-003": {
+    "principal": "imagenes/MOR-003_01.webp",
+    "galeria": [
+      "imagenes/MOR-003_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MOR-004": {
+    "principal": "imagenes/MOR-004_01.webp",
+    "galeria": [
+      "imagenes/MOR-004_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MOR-005": {
+    "principal": "imagenes/MOR-005_01.webp",
+    "galeria": [
+      "imagenes/MOR-005_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MOR-006": {
+    "principal": "imagenes/MOR-006_01.webp",
+    "galeria": [
+      "imagenes/MOR-006_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MOR-007": {
+    "principal": "imagenes/MOR-007_01.webp",
+    "galeria": [
+      "imagenes/MOR-007_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MOR-008": {
+    "principal": "imagenes/MOR-008_01.webp",
+    "galeria": [
+      "imagenes/MOR-008_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MOR-009": {
+    "principal": "imagenes/MOR-009_01.webp",
+    "galeria": [
+      "imagenes/MOR-009_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MOR-010": {
+    "principal": "imagenes/MOR-010_01.webp",
+    "galeria": [
+      "imagenes/MOR-010_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MOR-011": {
+    "principal": "imagenes/MOR-011_01.webp",
+    "galeria": [
+      "imagenes/MOR-011_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MOR-012": {
+    "principal": "imagenes/MOR-012_01.webp",
+    "galeria": [
+      "imagenes/MOR-012_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MOR-013": {
+    "principal": "imagenes/MOR-013_01.webp",
+    "galeria": [
+      "imagenes/MOR-013_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MOR-014": {
+    "principal": "imagenes/MOR-014_01.webp",
+    "galeria": [
+      "imagenes/MOR-014_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MOR-015": {
+    "principal": "imagenes/MOR-015_01.webp",
+    "galeria": [
+      "imagenes/MOR-015_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MOR-016": {
+    "principal": "imagenes/MOR-016_01.webp",
+    "galeria": [
+      "imagenes/MOR-016_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MOR-017": {
+    "principal": "imagenes/MOR-017_01.webp",
+    "galeria": [
+      "imagenes/MOR-017_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MOR-018": {
+    "principal": "imagenes/MOR-018_01.webp",
+    "galeria": [
+      "imagenes/MOR-018_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MOR-019": {
+    "principal": "imagenes/MOR-019_01.webp",
+    "galeria": [
+      "imagenes/MOR-019_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "MOR-020": {
+    "principal": "imagenes/MOR-020_01.webp",
+    "galeria": [
+      "imagenes/MOR-020_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "NAY-001": {
+    "principal": "imagenes/NAY-001_01.webp",
+    "galeria": [
+      "imagenes/NAY-001_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "NAY-002": {
+    "principal": "imagenes/NAY-002_01.webp",
+    "galeria": [
+      "imagenes/NAY-002_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "NAY-003": {
+    "principal": "imagenes/NAY-003_01.webp",
+    "galeria": [
+      "imagenes/NAY-003_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "NAY-004": {
+    "principal": "imagenes/NAY-004_01.webp",
+    "galeria": [
+      "imagenes/NAY-004_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "NAY-005": {
+    "principal": "imagenes/NAY-005_01.webp",
+    "galeria": [
+      "imagenes/NAY-005_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "NAY-006": {
+    "principal": "imagenes/NAY-006_01.webp",
+    "galeria": [
+      "imagenes/NAY-006_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "NAY-007": {
+    "principal": "imagenes/NAY-007_01.webp",
+    "galeria": [
+      "imagenes/NAY-007_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "NAY-008": {
+    "principal": "imagenes/NAY-008_01.webp",
+    "galeria": [
+      "imagenes/NAY-008_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "NAY-009": {
+    "principal": "imagenes/NAY-009_01.webp",
+    "galeria": [
+      "imagenes/NAY-009_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "NAY-010": {
+    "principal": "imagenes/NAY-010_01.webp",
+    "galeria": [
+      "imagenes/NAY-010_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "NAY-011": {
+    "principal": "imagenes/NAY-011_01.webp",
+    "galeria": [
+      "imagenes/NAY-011_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "NAY-012": {
+    "principal": "imagenes/NAY-012_01.webp",
+    "galeria": [
+      "imagenes/NAY-012_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "NAY-013": {
+    "principal": "imagenes/NAY-013_01.webp",
+    "galeria": [
+      "imagenes/NAY-013_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "NAY-014": {
+    "principal": "imagenes/NAY-014_01.webp",
+    "galeria": [
+      "imagenes/NAY-014_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "NAY-015": {
+    "principal": "imagenes/NAY-015_01.webp",
+    "galeria": [
+      "imagenes/NAY-015_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "NAY-016": {
+    "principal": "imagenes/NAY-016_01.webp",
+    "galeria": [
+      "imagenes/NAY-016_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "NAY-017": {
+    "principal": "imagenes/NAY-017_01.webp",
+    "galeria": [
+      "imagenes/NAY-017_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-001": {
+    "principal": "imagenes/OAX-001_01.webp",
+    "galeria": [
+      "imagenes/OAX-001_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-002": {
+    "principal": "imagenes/OAX-002_01.webp",
+    "galeria": [
+      "imagenes/OAX-002_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-003": {
+    "principal": "imagenes/OAX-003_01.webp",
+    "galeria": [
+      "imagenes/OAX-003_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-004": {
+    "principal": "imagenes/OAX-004_01.webp",
+    "galeria": [
+      "imagenes/OAX-004_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-005": {
+    "principal": "imagenes/OAX-005_01.webp",
+    "galeria": [
+      "imagenes/OAX-005_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-006": {
+    "principal": "imagenes/OAX-006_01.webp",
+    "galeria": [
+      "imagenes/OAX-006_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-007": {
+    "principal": "imagenes/OAX-007_01.webp",
+    "galeria": [
+      "imagenes/OAX-007_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-008": {
+    "principal": "imagenes/OAX-008_01.webp",
+    "galeria": [
+      "imagenes/OAX-008_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-009": {
+    "principal": "imagenes/OAX-009_01.webp",
+    "galeria": [
+      "imagenes/OAX-009_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-010": {
+    "principal": "imagenes/OAX-010_01.webp",
+    "galeria": [
+      "imagenes/OAX-010_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-011": {
+    "principal": "imagenes/OAX-011_01.webp",
+    "galeria": [
+      "imagenes/OAX-011_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-012": {
+    "principal": "imagenes/OAX-012_01.webp",
+    "galeria": [
+      "imagenes/OAX-012_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-013": {
+    "principal": "imagenes/OAX-013_01.webp",
+    "galeria": [
+      "imagenes/OAX-013_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-014": {
+    "principal": "imagenes/OAX-014_01.webp",
+    "galeria": [
+      "imagenes/OAX-014_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-015": {
+    "principal": "imagenes/OAX-015_01.webp",
+    "galeria": [
+      "imagenes/OAX-015_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-016": {
+    "principal": "imagenes/OAX-016_01.webp",
+    "galeria": [
+      "imagenes/OAX-016_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-017": {
+    "principal": "imagenes/OAX-017_01.webp",
+    "galeria": [
+      "imagenes/OAX-017_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-018": {
+    "principal": "imagenes/OAX-018_01.webp",
+    "galeria": [
+      "imagenes/OAX-018_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-019": {
+    "principal": "imagenes/OAX-019_01.webp",
+    "galeria": [
+      "imagenes/OAX-019_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-020": {
+    "principal": "imagenes/OAX-020_01.webp",
+    "galeria": [
+      "imagenes/OAX-020_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-021": {
+    "principal": "imagenes/OAX-021_01.webp",
+    "galeria": [
+      "imagenes/OAX-021_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-022": {
+    "principal": "imagenes/OAX-022_01.webp",
+    "galeria": [
+      "imagenes/OAX-022_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-023": {
+    "principal": "imagenes/OAX-023_01.webp",
+    "galeria": [
+      "imagenes/OAX-023_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-024": {
+    "principal": "imagenes/OAX-024_01.webp",
+    "galeria": [
+      "imagenes/OAX-024_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-025": {
+    "principal": "imagenes/OAX-025_01.webp",
+    "galeria": [
+      "imagenes/OAX-025_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-026": {
+    "principal": "imagenes/OAX-026_01.webp",
+    "galeria": [
+      "imagenes/OAX-026_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-027": {
+    "principal": "imagenes/OAX-027_01.webp",
+    "galeria": [
+      "imagenes/OAX-027_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-028": {
+    "principal": "imagenes/OAX-028_01.webp",
+    "galeria": [
+      "imagenes/OAX-028_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-029": {
+    "principal": "imagenes/OAX-029_01.webp",
+    "galeria": [
+      "imagenes/OAX-029_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-030": {
+    "principal": "imagenes/OAX-030_01.webp",
+    "galeria": [
+      "imagenes/OAX-030_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "OAX-031": {
+    "principal": "imagenes/OAX-031_01.webp",
+    "galeria": [
+      "imagenes/OAX-031_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "PUE-001": {
+    "principal": "imagenes/PUE-001_01.webp",
+    "galeria": [
+      "imagenes/PUE-001_01.webp",
+      "imagenes/PUE-001_02.webp",
+      "imagenes/PUE-001_03.webp",
+      "imagenes/PUE-001_04.webp",
+      "imagenes/PUE-001_05.webp",
+      "imagenes/PUE-001_06.webp",
+      "imagenes/PUE-001_07.webp",
+      "imagenes/PUE-001_08.webp"
+    ],
+    "cantidad": 8
+  },
+  "PUE-002": {
+    "principal": "imagenes/PUE-002_01.webp",
+    "galeria": [
+      "imagenes/PUE-002_01.webp",
+      "imagenes/PUE-002_02.webp",
+      "imagenes/PUE-002_03.webp",
+      "imagenes/PUE-002_04.webp",
+      "imagenes/PUE-002_05.webp",
+      "imagenes/PUE-002_06.webp",
+      "imagenes/PUE-002_07.webp",
+      "imagenes/PUE-002_08.webp",
+      "imagenes/PUE-002_09.webp"
+    ],
+    "cantidad": 9
+  },
+  "PUE-003": {
+    "principal": "imagenes/PUE-003_01.webp",
+    "galeria": [
+      "imagenes/PUE-003_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "PUE-004": {
+    "principal": "imagenes/PUE-004_01.webp",
+    "galeria": [
+      "imagenes/PUE-004_01.webp",
+      "imagenes/PUE-004_02.webp",
+      "imagenes/PUE-004_03.webp",
+      "imagenes/PUE-004_04.webp",
+      "imagenes/PUE-004_05.webp",
+      "imagenes/PUE-004_06.webp",
+      "imagenes/PUE-004_07.webp"
+    ],
+    "cantidad": 7
+  },
+  "PUE-005": {
+    "principal": "imagenes/PUE-005_01.webp",
+    "galeria": [
+      "imagenes/PUE-005_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "PUE-006": {
+    "principal": "imagenes/PUE-006_01.webp",
+    "galeria": [
+      "imagenes/PUE-006_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "PUE-007": {
+    "principal": "imagenes/PUE-007_01.webp",
+    "galeria": [
+      "imagenes/PUE-007_01.webp",
+      "imagenes/PUE-007_02.webp",
+      "imagenes/PUE-007_03.webp"
+    ],
+    "cantidad": 3
+  },
+  "PUE-008": {
+    "principal": "imagenes/PUE-008_01.webp",
+    "galeria": [
+      "imagenes/PUE-008_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "PUE-009": {
+    "principal": "imagenes/PUE-009_01.webp",
+    "galeria": [
+      "imagenes/PUE-009_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "PUE-010": {
+    "principal": "imagenes/PUE-010_01.webp",
+    "galeria": [
+      "imagenes/PUE-010_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "PUE-011": {
+    "principal": "imagenes/PUE-011_01.webp",
+    "galeria": [
+      "imagenes/PUE-011_01.webp",
+      "imagenes/PUE-011_02.webp",
+      "imagenes/PUE-011_03.webp",
+      "imagenes/PUE-011_04.webp",
+      "imagenes/PUE-011_05.webp"
+    ],
+    "cantidad": 5
+  },
+  "PUE-012": {
+    "principal": "imagenes/PUE-012_01.webp",
+    "galeria": [
+      "imagenes/PUE-012_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "PUE-013": {
+    "principal": "imagenes/PUE-013_01.webp",
+    "galeria": [
+      "imagenes/PUE-013_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "PUE-014": {
+    "principal": "imagenes/PUE-014_01.webp",
+    "galeria": [
+      "imagenes/PUE-014_01.webp",
+      "imagenes/PUE-014_02.webp",
+      "imagenes/PUE-014_03.webp",
+      "imagenes/PUE-014_04.webp",
+      "imagenes/PUE-014_05.webp",
+      "imagenes/PUE-014_06.webp",
+      "imagenes/PUE-014_07.webp",
+      "imagenes/PUE-014_08.webp",
+      "imagenes/PUE-014_09.webp",
+      "imagenes/PUE-014_10.webp"
+    ],
+    "cantidad": 10
+  },
+  "PUE-016": {
+    "principal": "imagenes/PUE-016_01.webp",
+    "galeria": [
+      "imagenes/PUE-016_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "PUE-017": {
+    "principal": "imagenes/PUE-017_01.webp",
+    "galeria": [
+      "imagenes/PUE-017_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "PUE-019": {
+    "principal": "imagenes/PUE-019_01.webp",
+    "galeria": [
+      "imagenes/PUE-019_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "PUE-020": {
+    "principal": "imagenes/PUE-020_01.webp",
+    "galeria": [
+      "imagenes/PUE-020_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "PUE-021": {
+    "principal": "imagenes/PUE-021_01.webp",
+    "galeria": [
+      "imagenes/PUE-021_01.webp",
+      "imagenes/PUE-021_02.webp",
+      "imagenes/PUE-021_03.webp",
+      "imagenes/PUE-021_04.webp",
+      "imagenes/PUE-021_05.webp",
+      "imagenes/PUE-021_06.webp",
+      "imagenes/PUE-021_07.webp",
+      "imagenes/PUE-021_08.webp",
+      "imagenes/PUE-021_09.webp",
+      "imagenes/PUE-021_10.webp"
+    ],
+    "cantidad": 10
+  },
+  "PUE-022": {
+    "principal": "imagenes/PUE-022_01.webp",
+    "galeria": [
+      "imagenes/PUE-022_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "PUE-023": {
+    "principal": "imagenes/PUE-023_01.webp",
+    "galeria": [
+      "imagenes/PUE-023_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "PUE-024": {
+    "principal": "imagenes/PUE-024_01.webp",
+    "galeria": [
+      "imagenes/PUE-024_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "TLA-001": {
+    "principal": "imagenes/TLA-001_01.webp",
+    "galeria": [
+      "imagenes/TLA-001_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "TLA-002": {
+    "principal": "imagenes/TLA-002_01.webp",
+    "galeria": [
+      "imagenes/TLA-002_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "TLA-003": {
+    "principal": "imagenes/TLA-003_01.webp",
+    "galeria": [
+      "imagenes/TLA-003_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "TLA-004": {
+    "principal": "imagenes/TLA-004_01.webp",
+    "galeria": [
+      "imagenes/TLA-004_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "TLA-005": {
+    "principal": "imagenes/TLA-005_01.webp",
+    "galeria": [
+      "imagenes/TLA-005_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "TLA-006": {
+    "principal": "imagenes/TLA-006_01.webp",
+    "galeria": [
+      "imagenes/TLA-006_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "TLA-007": {
+    "principal": "imagenes/TLA-007_01.webp",
+    "galeria": [
+      "imagenes/TLA-007_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "TLA-008": {
+    "principal": "imagenes/TLA-008_01.webp",
+    "galeria": [
+      "imagenes/TLA-008_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "TLA-009": {
+    "principal": "imagenes/TLA-009_01.webp",
+    "galeria": [
+      "imagenes/TLA-009_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "TLA-010": {
+    "principal": "imagenes/TLA-010_01.webp",
+    "galeria": [
+      "imagenes/TLA-010_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "TLA-011": {
+    "principal": "imagenes/TLA-011_01.webp",
+    "galeria": [
+      "imagenes/TLA-011_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "TLA-012": {
+    "principal": "imagenes/TLA-012_01.webp",
+    "galeria": [
+      "imagenes/TLA-012_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "TLA-013": {
+    "principal": "imagenes/TLA-013_01.webp",
+    "galeria": [
+      "imagenes/TLA-013_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "TLA-014": {
+    "principal": "imagenes/TLA-014_01.webp",
+    "galeria": [
+      "imagenes/TLA-014_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "TLA-015": {
+    "principal": "imagenes/TLA-015_01.webp",
+    "galeria": [
+      "imagenes/TLA-015_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "TLA-016": {
+    "principal": "imagenes/TLA-016_01.webp",
+    "galeria": [
+      "imagenes/TLA-016_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "TLA-017": {
+    "principal": "imagenes/TLA-017_01.webp",
+    "galeria": [
+      "imagenes/TLA-017_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "TLA-018": {
+    "principal": "imagenes/TLA-018_01.webp",
+    "galeria": [
+      "imagenes/TLA-018_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "TLA-019": {
+    "principal": "imagenes/TLA-019_01.webp",
+    "galeria": [
+      "imagenes/TLA-019_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "TLA-020": {
+    "principal": "imagenes/TLA-020_01.webp",
+    "galeria": [
+      "imagenes/TLA-020_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "TLA-021": {
+    "principal": "imagenes/TLA-021_01.webp",
+    "galeria": [
+      "imagenes/TLA-021_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "TLA-022": {
+    "principal": "imagenes/TLA-022_01.webp",
+    "galeria": [
+      "imagenes/TLA-022_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "TLA-023": {
+    "principal": "imagenes/TLA-023_01.webp",
+    "galeria": [
+      "imagenes/TLA-023_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "TLA-024": {
+    "principal": "imagenes/TLA-024_01.webp",
+    "galeria": [
+      "imagenes/TLA-024_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "TLA-025": {
+    "principal": "imagenes/TLA-025_01.webp",
+    "galeria": [
+      "imagenes/TLA-025_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "TLA-026": {
+    "principal": "imagenes/TLA-026_01.webp",
+    "galeria": [
+      "imagenes/TLA-026_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-001": {
+    "principal": "imagenes/VER-001_01.webp",
+    "galeria": [
+      "imagenes/VER-001_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-002": {
+    "principal": "imagenes/VER-002_01.webp",
+    "galeria": [
+      "imagenes/VER-002_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-003": {
+    "principal": "imagenes/VER-003_01.webp",
+    "galeria": [
+      "imagenes/VER-003_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-004": {
+    "principal": "imagenes/VER-004_01.webp",
+    "galeria": [
+      "imagenes/VER-004_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-005": {
+    "principal": "imagenes/VER-005_01.webp",
+    "galeria": [
+      "imagenes/VER-005_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-006": {
+    "principal": "imagenes/VER-006_01.webp",
+    "galeria": [
+      "imagenes/VER-006_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-007": {
+    "principal": "imagenes/VER-007_01.webp",
+    "galeria": [
+      "imagenes/VER-007_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-008": {
+    "principal": "imagenes/VER-008_01.webp",
+    "galeria": [
+      "imagenes/VER-008_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-009": {
+    "principal": "imagenes/VER-009_01.webp",
+    "galeria": [
+      "imagenes/VER-009_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-010": {
+    "principal": "imagenes/VER-010_01.webp",
+    "galeria": [
+      "imagenes/VER-010_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-011": {
+    "principal": "imagenes/VER-011_01.webp",
+    "galeria": [
+      "imagenes/VER-011_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-012": {
+    "principal": "imagenes/VER-012_01.webp",
+    "galeria": [
+      "imagenes/VER-012_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-013": {
+    "principal": "imagenes/VER-013_01.webp",
+    "galeria": [
+      "imagenes/VER-013_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-014": {
+    "principal": "imagenes/VER-014_01.webp",
+    "galeria": [
+      "imagenes/VER-014_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-015": {
+    "principal": "imagenes/VER-015_01.webp",
+    "galeria": [
+      "imagenes/VER-015_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-016": {
+    "principal": "imagenes/VER-016_01.webp",
+    "galeria": [
+      "imagenes/VER-016_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-017": {
+    "principal": "imagenes/VER-017_01.webp",
+    "galeria": [
+      "imagenes/VER-017_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-018": {
+    "principal": "imagenes/VER-018_01.webp",
+    "galeria": [
+      "imagenes/VER-018_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-019": {
+    "principal": "imagenes/VER-019_01.webp",
+    "galeria": [
+      "imagenes/VER-019_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-020": {
+    "principal": "imagenes/VER-020_01.webp",
+    "galeria": [
+      "imagenes/VER-020_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-021": {
+    "principal": "imagenes/VER-021_01.webp",
+    "galeria": [
+      "imagenes/VER-021_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-022": {
+    "principal": "imagenes/VER-022_01.webp",
+    "galeria": [
+      "imagenes/VER-022_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-023": {
+    "principal": "imagenes/VER-023_01.webp",
+    "galeria": [
+      "imagenes/VER-023_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-024": {
+    "principal": "imagenes/VER-024_01.webp",
+    "galeria": [
+      "imagenes/VER-024_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-025": {
+    "principal": "imagenes/VER-025_01.webp",
+    "galeria": [
+      "imagenes/VER-025_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-026": {
+    "principal": "imagenes/VER-026_01.webp",
+    "galeria": [
+      "imagenes/VER-026_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "VER-027": {
+    "principal": "imagenes/VER-027_01.webp",
+    "galeria": [
+      "imagenes/VER-027_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "PUE-015": {
+    "principal": "imagenes/PUE-015_01.webp",
+    "galeria": [
+      "imagenes/PUE-015_01.webp",
+      "imagenes/PUE-015_02.webp",
+      "imagenes/PUE-015_03.webp",
+      "imagenes/PUE-015_04.webp",
+      "imagenes/PUE-015_05.webp",
+      "imagenes/PUE-015_06.webp",
+      "imagenes/PUE-015_07.webp",
+      "imagenes/PUE-015_08.webp",
+      "imagenes/PUE-015_09.webp",
+      "imagenes/PUE-015_10.webp"
+    ],
+    "cantidad": 10
+  },
+  "TLA-027": {
+    "principal": "imagenes/TLA-027_01.webp",
+    "galeria": [
+      "imagenes/TLA-027_01.webp"
+    ],
+    "cantidad": 1
+  },
+  "PUE-018": {
+    "principal": "imagenes/PUE-018_01.webp",
+    "galeria": [
+      "imagenes/PUE-018_01.webp",
+      "imagenes/PUE-018_02.webp",
+      "imagenes/PUE-018_03.webp",
+      "imagenes/PUE-018_04.webp",
+      "imagenes/PUE-018_05.webp",
+      "imagenes/PUE-018_06.webp",
+      "imagenes/PUE-018_07.webp",
+      "imagenes/PUE-018_08.webp",
+      "imagenes/PUE-018_09.webp",
+      "imagenes/PUE-018_10.webp"
+    ],
+    "cantidad": 10
   }
 }
