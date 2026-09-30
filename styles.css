@@ -1932,7 +1932,7 @@ body.intro-is-open { overflow: hidden; }
 }
 .map-filter-summary {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   gap: 10px;
   margin-top: 10px;

@@ -332,8 +332,8 @@ async function loadData() {
 // ── MAPA ──
 function initMap() {
   MAP = L.map('map',{center:[18.5,-90.5],zoom:6,zoomControl:true,attributionControl:false});
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{
-    attribution:'© CARTO · © OpenStreetMap', maxZoom:18
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
+    attribution:'© OpenStreetMap contributors', maxZoom:18
   }).addTo(MAP);
   L.control.attribution({prefix:false, position:'bottomright'}).addTo(MAP);
   markersLayer = L.layerGroup().addTo(MAP);
@@ -1504,14 +1504,11 @@ function initMap() {
     markerZoomAnimation: !mobileMap,
   });
 
-  // En celular se evita solicitar mosaicos @2x: conservan la legibilidad y
-  // reducen considerablemente el peso inicial y el consumo de datos.
-  const tileUrl = mobileMap
-    ? 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png'
-    : 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
+  // Mapa base: OpenStreetMap (los mosaicos estándar no ofrecen variante @2x).
+  const tileUrl = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
 
   L.tileLayer(tileUrl, {
-    attribution: '© CARTO · © OpenStreetMap',
+    attribution: '© OpenStreetMap contributors',
     maxZoom: 18,
     updateWhenIdle: mobileMap,
     keepBuffer: mobileMap ? 1 : 2,
@@ -1604,8 +1601,6 @@ function applyMapFilters(options = {}) {
   USER_NEARBY_DATA = [];
   const result = ALL_DATA.filter(experienceMatchesMapFilters);
   renderMarkers(result);
-  const count = document.getElementById('map-result-count');
-  if (count) count.textContent = `${result.length} experiencia${result.length === 1 ? '' : 's'}`;
   if (options.fit && result.length) {
     MAP.fitBounds(result.map(exp => [parseFloat(exp.latitud), parseFloat(exp.longitud)]), { padding: [45,45], maxZoom: 10 });
   }
@@ -2346,8 +2341,6 @@ function applyMapFilters(options = {}) {
   renderMarkers(result);
 
   const mapped = result.filter(hasValidCoordinates);
-  const count = document.getElementById('map-result-count');
-  if (count) count.textContent = `${result.length} experiencia${result.length === 1 ? '' : 's'}${mapped.length < result.length ? ` · ${mapped.length} con ubicación` : ''}`;
 
   if (options.fit && mapped.length) {
     MAP.fitBounds(
