@@ -66,18 +66,31 @@ async function loadImageManifest() {
 
 // ── CSV PARSER ──
 function parseCSV(text) {
-  const lines = text.replace(/\r\n/g,'\n').replace(/\r/g,'\n').split('\n');
-  if (lines.length < 2) return [];
-  const headers = parseCSVRow(lines[0]);
-  const rows = [];
-  for (let i=1;i<lines.length;i++) {
-    if (!lines[i].trim()) continue;
-    const vals = parseCSVRow(lines[i]);
-    const obj = {};
-    headers.forEach((h,idx)=>{ obj[h.trim()] = vals[idx]!==undefined ? vals[idx].trim() : ''; });
-    rows.push(obj);
+  // RFC 4180 parser: preserves commas, escaped quotes and embedded newlines.
+  const table = [], record = [];
+  let value = '', quoted = false;
+  const pushCell = () => { record.push(value); value = ''; };
+  const pushRecord = () => {
+    pushCell();
+    if (record.some(cell => cell.trim() !== '')) table.push(record.splice(0));
+    else record.length = 0;
+  };
+  for (let i = 0; i < text.length; i++) {
+    const char = text[i];
+    if (char === '"') {
+      if (quoted && text[i + 1] === '"') { value += '"'; i++; }
+      else quoted = !quoted;
+    } else if (char === ',' && !quoted) pushCell();
+    else if ((char === '\r' || char === '\n') && !quoted) {
+      if (char === '\r' && text[i + 1] === '\n') i++;
+      pushRecord();
+    } else value += char;
   }
-  return rows;
+  if (value || record.length) pushRecord();
+  if (!table.length) return [];
+  const headers = table.shift().map(header => header.replace(/^\uFEFF/, '').trim());
+  return table.map(columns => Object.fromEntries(headers.map((header, idx) =>
+    [header, (columns[idx] || '').trim()])));
 }
 function parseCSVRow(line) {
   const result=[]; let cur=''; let inQ=false;
@@ -99,7 +112,7 @@ function haversine(lat1,lon1,lat2,lon2) {
 
 function hasValidCoordinates(exp) {
   const lat = parseFloat(exp?.latitud), lon = parseFloat(exp?.longitud);
-  return Number.isFinite(lat) && Number.isFinite(lon);
+  return Number.isFinite(lat) && Number.isFinite(lon) && lat >= 14 && lat <= 33 && lon >= -119 && lon <= -86;
 }
 
 function formatExperienceLocation(exp) {
@@ -426,6 +439,7 @@ function flyToExp(id) {
 window.flyToExp=flyToExp;
 
 function locateUser() {
+  if (DESTINATION_ACTIVE) clearDestinationSearch();
   if (!navigator.geolocation){alert('Your browser does not support geolocation.');return;}
   navigator.geolocation.getCurrentPosition(pos=>{
     const {latitude:lat,longitude:lon}=pos.coords;
@@ -1535,6 +1549,8 @@ function initMap() {
   CURRENT_MAP_DATA = ALL_DATA;
   renderMarkers(ALL_DATA);
   setupMapControls();
+  setupDestinationSearch();
+  setupWorldHeritageLayer();
   const valid = ALL_DATA.filter(exp => Number.isFinite(parseFloat(exp.latitud)) && Number.isFinite(parseFloat(exp.longitud)));
   if (valid.length) {
     MAP.fitBounds(valid.map(exp => [parseFloat(exp.latitud), parseFloat(exp.longitud)]), { padding: [35,35], maxZoom: 7 });
@@ -1573,6 +1589,7 @@ function renderMarkers(data) {
         <span class="map-popup-ruta">${escapeHtml((exp._tipos || [])[0] || exp.estado || 'Experience')}</span>
         <div class="map-popup-name">${escapeHtml(exp.nombre_experiencia)}</div>
         <div class="map-popup-loc">${escapeHtml(exp.localidad)}, ${escapeHtml(exp.municipio)}, ${escapeHtml(exp.estado)}</div>
+        ${exp.coordenadas_precision === "localidad_aproximada" ? `<small>${escapeHtml(DEST_TEXT.approximate)}</small>` : ""}
         <button class="map-popup-btn" onclick="openFicha('${escapeHtml(exp.id)}')">View experience</button>
       </div>`, { maxWidth: 300 });
     marker.on('click', () => {
@@ -1751,7 +1768,7 @@ function updateExplorePanel(data = CURRENT_MAP_DATA) {
   const title = document.getElementById('explore-title');
   const description = document.getElementById('explore-description');
   if (USER_NEARBY_DATA.length) {
-    if (kicker) kicker.textContent = 'Your location';
+    if (kicker) kicker.textContent = DESTINATION_ACTIVE ? 'Your destination' : 'Your location';
     if (title) title.innerHTML = 'Nearest<br><em>experiences</em>';
     if (description) description.textContent = 'Browse the experiences nearest to the location shared by your device.';
   } else if (activeFilters.length) {
@@ -1826,7 +1843,7 @@ function showNearbyBanner(nearby) {
     list.innerHTML = ranked.slice(1, 5).map((exp, index) => panelResultItem(exp, index, `${Number(exp.dist || 0).toFixed(0)} km`)).join('');
   }
   const featuredPosition = document.getElementById('explore-featured-position');
-  if (featuredPosition && ranked[0]) featuredPosition.textContent = `${Number(ranked[0].dist || 0).toFixed(0)} km from you`;
+  if (featuredPosition && ranked[0]) featuredPosition.textContent = `${Number(ranked[0].dist || 0).toFixed(0)} km ${DESTINATION_ACTIVE ? DEST_TEXT.around : "from you"}`;
 }
 
 function contextMarkerIcon(category, kind) {
@@ -2290,6 +2307,7 @@ function renderMarkers(data) {
         <span class="map-popup-ruta">${escapeHtml((exp._tipos || [])[0] || exp.estado || 'Experience')}</span>
         <div class="map-popup-name">${escapeHtml(exp.nombre_experiencia)}</div>
         <div class="map-popup-loc">${escapeHtml(exp.localidad)}, ${escapeHtml(exp.municipio)}, ${escapeHtml(exp.estado)}</div>
+        ${exp.coordenadas_precision === "localidad_aproximada" ? `<small>${escapeHtml(DEST_TEXT.approximate)}</small>` : ""}
         <button class="map-popup-btn" onclick="openFicha('${escapeHtml(exp.id)}')">View experience</button>
       </div>`,
       { maxWidth: 300 }
@@ -2336,8 +2354,20 @@ function experienceMatchesMapFilters(exp) {
 }
 
 function applyMapFilters(options = {}) {
-  USER_NEARBY_DATA = [];
-  const result = ALL_DATA.filter(experienceMatchesMapFilters);
+  const eligible = ALL_DATA.filter(experienceMatchesMapFilters);
+  let result = eligible;
+  if (DESTINATION_ACTIVE) {
+    const {lat, lon, radius} = DESTINATION_ACTIVE;
+    const ranked = eligible.filter(hasValidCoordinates).map(exp => ({...exp, dist: haversine(lat, lon, Number(exp.latitud), Number(exp.longitud))})).sort((a,b) => a.dist-b.dist);
+    const within = ranked.filter(exp => exp.dist <= radius);
+    result = within.length ? within : ranked.slice(0,5);
+    USER_NEARBY_DATA = result;
+    setDestinationStatus(within.length
+      ? `${within.length} ${DEST_TEXT.near} ${radius} km · ${DESTINATION_ACTIVE.label}`
+      : DEST_TEXT.far);
+  } else {
+    USER_NEARBY_DATA = [];
+  }
   renderMarkers(result);
 
   const mapped = result.filter(hasValidCoordinates);
@@ -2601,7 +2631,7 @@ function updateExplorePanel(data = CURRENT_MAP_DATA) {
   const description = document.getElementById('explore-description');
 
   if (USER_NEARBY_DATA.length) {
-    if (kicker) kicker.textContent = 'Your location';
+    if (kicker) kicker.textContent = DESTINATION_ACTIVE ? 'Your destination' : 'Your location';
     if (title) title.innerHTML = 'Nearest<br><em>experiences</em>';
     if (description) {
       description.textContent = 'Browse the experiences nearest to the location shared by your device.';
@@ -2683,7 +2713,7 @@ function updateExplorePanel(data = CURRENT_MAP_DATA) {
       featuredExperience.dist ?? featuredExperience._panelDistance ?? 0
     );
     featuredPosition.textContent = USER_NEARBY_DATA.length && distance
-      ? `${distance.toFixed(0)} km from you`
+      ? `${distance.toFixed(0)} km ${DESTINATION_ACTIVE ? DEST_TEXT.around : "from you"}`
       : [featuredExperience.estado, (featuredExperience._tipos || [])[0]].filter(Boolean).join(' · ');
   }
 
@@ -3260,3 +3290,230 @@ function setupCatalogFiltersMobileV7() {
 
 window.syncCatalogFiltersMobileV7 = syncCatalogFiltersMobileV7;
 document.addEventListener('DOMContentLoaded', setupCatalogFiltersMobileV7);
+
+
+/* ═══ Selección de destino y capa de Patrimonio Mundial / Destination & WHC ═══ */
+let DESTINATION_ACTIVE = null;
+let DESTINATION_MARKER = null;
+let DESTINATION_REQUEST_AT = 0;
+const DESTINATION_CACHE = new Map();
+let WHC_LAYER = null;
+let WHC_SITES = [];
+const WHC_PUBLIC_API = 'https://data.unesco.org/api/explore/v2.1/catalog/datasets/whc001/records';
+const DEST_LANG = 'en';
+const DEST_TEXT = DEST_LANG === 'en' ? {
+  search: 'Search', prompt: 'Enter a place, municipality or city in Mexico.',
+  searching: 'Searching for places in Mexico…', noResults: 'No matching place was found in Mexico.',
+  failed: 'Place search is unavailable. Try a place from the experiences catalog.',
+  local: 'Approximate reference based on a catalogued experience',
+  near: 'experiences within', far: 'No experiences within the selected radius. Showing the five closest.',
+  selected: 'Destination', around: 'near your destination', source: 'UNESCO World Heritage Centre',
+  cultural: 'Cultural', natural: 'Natural', mixed: 'Mixed', view: 'View official site',
+  approximate: 'Approximate community location', loading: 'Loading World Heritage sites…'
+} : {
+  search: 'Buscar', prompt: 'Indica un lugar, municipio o ciudad de México.',
+  searching: 'Buscando lugares en México…', noResults: 'No se encontró ese lugar dentro de México.',
+  failed: 'La búsqueda de lugares no está disponible. Prueba una localidad del catálogo.',
+  local: 'Referencia aproximada basada en una experiencia del catálogo',
+  near: 'experiencias en un radio de', far: 'No hay experiencias en ese radio. Se muestran las cinco más cercanas.',
+  selected: 'Destino', around: 'desde tu destino', source: 'Centro del Patrimonio Mundial de la UNESCO',
+  cultural: 'Cultural', natural: 'Natural', mixed: 'Mixto', view: 'Ver sitio oficial',
+  approximate: 'Ubicación comunitaria aproximada', loading: 'Cargando sitios del Patrimonio Mundial…'
+};
+
+function destinationNormalized(text) {
+  return normStr(String(text || '')).toLowerCase().trim();
+}
+function destinationCoordinates(record) {
+  // Datahub geo point stores [latitude, longitude]; GeoJSON uses [longitude, latitude].
+  const latlon = record?.geo_point_2d ?? record?.coordinates;
+  let lat, lon;
+  if (Array.isArray(latlon)) [lat, lon] = latlon.map(Number);
+  else if (typeof latlon === 'string') [lat, lon] = latlon.split(',').map(value => Number(value.trim()));
+  else if (latlon && typeof latlon === 'object') {
+    lat = Number(latlon.lat ?? latlon.latitude);
+    lon = Number(latlon.lon ?? latlon.longitude);
+  }
+  if ((!Number.isFinite(lat) || !Number.isFinite(lon)) && record?.coordenadas?.coordinates) {
+    const p = record.coordenadas.coordinates;
+    if (Array.isArray(p) && typeof p[0] === 'number') [lon, lat] = p.map(Number);
+  }
+  return Number.isFinite(lat) && Number.isFinite(lon) && lat >= 14 && lat <= 33 && lon >= -119 && lon <= -86
+    ? [lat, lon] : null;
+}
+function normaliseWorldHeritage(item) {
+  const record = item?.fields || item || {};
+  const position = Number.isFinite(Number(record.lat)) && Number.isFinite(Number(record.lon))
+    ? [Number(record.lat), Number(record.lon)] : destinationCoordinates(record);
+  if (!position) return null;
+  let iso = record.iso_codes ?? record['ISO Codes'] ?? [];
+  if (typeof iso === 'string') {
+    try { iso = JSON.parse(iso); } catch (_) { iso = [iso]; }
+  }
+  const countries = Array.isArray(iso) ? iso : [iso];
+  if (!countries.some(code => String(code).toUpperCase() === 'MX')) return null;
+  const id = String(record.id_no ?? record.id ?? record['ID'] ?? '').trim();
+  if (!/^\d+$/.test(id)) return null;
+  return {
+    id, lat: position[0], lon: position[1],
+    name_es: record.name_es || record['Name ES'] || record.name_en || '',
+    name_en: record.name_en || record['Name EN'] || record.name_es || '',
+    category: record.category || record['Categoría'] || '',
+    year: String(record.date_inscribed || record.year || record['Date inscribed'] || '').slice(0, 4),
+    url: `https://whc.unesco.org/en/list/${id}/`
+  };
+}
+function renderWorldHeritage() {
+  if (!WHC_LAYER || !MAP) return;
+  WHC_LAYER.clearLayers();
+  if (!document.getElementById('map-show-heritage')?.checked) return;
+  WHC_SITES.forEach(site => {
+    const category = destinationNormalized(site.category);
+    const color = category === 'natural' ? '#2074A0' : category === 'mixed' || category === 'mixto' ? '#87559D' : '#B68421';
+    const marker = L.marker([site.lat, site.lon], {
+      pane: 'worldHeritagePane', title: DEST_LANG === 'en' ? site.name_en : site.name_es,
+      icon: L.divIcon({ className: 'world-heritage-marker-wrap', html:
+        `<span class="world-heritage-marker" style="--wh-color:${color}" aria-hidden="true">◆</span>`,
+        iconSize: [30, 30], iconAnchor: [15, 15], popupAnchor: [0, -18] })
+    });
+    const name = DEST_LANG === 'en' ? site.name_en : site.name_es;
+    const categoryLabel = category === 'natural' ? DEST_TEXT.natural : (category === 'mixed' || category === 'mixto') ? DEST_TEXT.mixed : DEST_TEXT.cultural;
+    marker.bindPopup(`<div class="map-popup whc-popup"><small>${escapeHtml(DEST_TEXT.source)}</small><div class="map-popup-name">${escapeHtml(name)}</div><p>${escapeHtml(categoryLabel)} · ${escapeHtml(site.year)}</p><a href="${site.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(DEST_TEXT.view)} ↗</a></div>`, { maxWidth: 315 });
+    WHC_LAYER.addLayer(marker);
+  });
+}
+async function setupWorldHeritageLayer() {
+  if (!MAP) return;
+  const pane = MAP.getPane('worldHeritagePane') || MAP.createPane('worldHeritagePane');
+  pane.style.zIndex = '550';
+  WHC_LAYER = L.layerGroup().addTo(MAP);
+  document.getElementById('map-show-heritage')?.addEventListener('change', renderWorldHeritage);
+  // A versioned snapshot avoids an empty map if the public Datahub API is down.
+  try {
+    const response = await fetch('data/patrimonio_mundial_mexico.json');
+    if (!response.ok) throw new Error(`WHC snapshot: ${response.status}`);
+    const snapshot = await response.json();
+    WHC_SITES = (snapshot.sites || []).map(item => normaliseWorldHeritage({ ...item, iso_codes: ['MX'] })).filter(Boolean);
+    renderWorldHeritage();
+  } catch (error) { console.warn('WHC local snapshot unavailable', error); }
+  // Query UNESCO's public API. Search runs server-side, and ISO codes are checked again locally.
+  try {
+    const query = new URLSearchParams({ where: 'search(states_names,"Mexico")', limit: '100', offset: '0' });
+    const response = await fetch(`${WHC_PUBLIC_API}?${query}`, { headers: { Accept: 'application/json' } });
+    if (!response.ok) throw new Error(`UNESCO API: ${response.status}`);
+    const payload = await response.json();
+    const mapped = (payload.results || []).map(normaliseWorldHeritage).filter(Boolean);
+    const deduped = [...new Map(mapped.map(site => [site.id, site])).values()];
+    // A partial response should not erase locations from the complete validated snapshot.
+    if (deduped.length >= WHC_SITES.length && deduped.length >= 30) {
+      WHC_SITES = deduped;
+      renderWorldHeritage();
+    }
+  } catch (error) { console.info('WHC public API unavailable; using validated local snapshot', error); }
+}
+function setDestinationStatus(message) {
+  const el = document.getElementById('destination-status');
+  if (el) { el.textContent = message; el.hidden = !message; }
+}
+function clearDestinationSearch() {
+  DESTINATION_ACTIVE = null;
+  if (DESTINATION_MARKER && MAP) MAP.removeLayer(DESTINATION_MARKER);
+  DESTINATION_MARKER = null;
+  const field = document.getElementById('destination-input');
+  if (field) field.value = '';
+  const results = document.getElementById('destination-results');
+  if (results) { results.hidden = true; results.replaceChildren(); }
+  const clearButton = document.getElementById('destination-clear');
+  if (clearButton) clearButton.hidden = true;
+  setDestinationStatus('');
+  PANEL_CAROUSEL_V4.signature = '';
+  applyMapFilters({ fit: true });
+}
+function selectDestination(lat, lon, label) {
+  if (!(Number.isFinite(lat) && Number.isFinite(lon))) return;
+  DESTINATION_ACTIVE = { lat, lon, label, radius: Number(document.getElementById('destination-radius')?.value || 150) };
+  const input = document.getElementById('destination-input');
+  if (input) input.value = label;
+  const options = document.getElementById('destination-results');
+  if (options) { options.hidden = true; options.replaceChildren(); }
+  const clearButton = document.getElementById('destination-clear');
+  if (clearButton) clearButton.hidden = false;
+  if (DESTINATION_MARKER) MAP.removeLayer(DESTINATION_MARKER);
+  DESTINATION_MARKER = L.marker([lat, lon], {
+    pane: MAP_PANES.user, title: `${DEST_TEXT.selected}: ${label}`,
+    icon: L.divIcon({ className: 'destination-marker-wrap', html: '<span class="destination-marker">◎</span>', iconSize: [36, 36], iconAnchor: [18, 18] })
+  }).addTo(MAP);
+  DESTINATION_MARKER.bindPopup(`<strong>${escapeHtml(DEST_TEXT.selected)}:</strong> ${escapeHtml(label)}`);
+  PANEL_CAROUSEL_V4.signature = '';
+  applyMapFilters({ fit: false });
+  const places = CURRENT_MAP_DATA.filter(hasValidCoordinates).slice(0, 25);
+  const bounds = [[lat, lon], ...places.map(exp => [Number(exp.latitud), Number(exp.longitud)])];
+  MAP.fitBounds(bounds, { padding: [55, 55], maxZoom: 10 });
+  if (window.matchMedia('(max-width: 760px)').matches) setFilterPanelStateV5(true);
+}
+function destinationLocalMatches(term) {
+  const q = destinationNormalized(term);
+  const seen = new Set();
+  return ALL_DATA.filter(hasValidCoordinates).flatMap(exp =>
+    [exp.localidad, exp.municipio, exp.estado].map(part => ({ part: String(part || '').trim(), exp }))
+  ).filter(({ part }) => {
+    const key = destinationNormalized(part);
+    if (!key || key.length < 3 || !key.includes(q) || seen.has(key)) return false;
+    seen.add(key); return true;
+  }).slice(0, 6).map(({ part, exp }) => ({
+    lat: Number(exp.latitud), lon: Number(exp.longitud),
+    label: `${part}, ${exp.estado} (${DEST_TEXT.local})`
+  }));
+}
+function renderDestinationChoices(matches) {
+  const root = document.getElementById('destination-results');
+  if (!root) return;
+  root.replaceChildren(); root.hidden = !matches.length;
+  matches.forEach(place => {
+    const button = document.createElement('button');
+    button.type = 'button'; button.className = 'destination-option';
+    button.textContent = place.label;
+    button.addEventListener('click', () => selectDestination(place.lat, place.lon, place.label));
+    root.appendChild(button);
+  });
+}
+async function searchDestination() {
+  const input = document.getElementById('destination-input');
+  const term = String(input?.value || '').trim();
+  if (term.length < 2) { setDestinationStatus(DEST_TEXT.prompt); return; }
+  setDestinationStatus(DEST_TEXT.searching);
+  const key = destinationNormalized(term);
+  const now = Date.now();
+  try {
+    if (!DESTINATION_CACHE.has(key)) {
+      // Only on an explicit button/Enter action: no public Nominatim autocomplete.
+      if (now - DESTINATION_REQUEST_AT < 1100) return;
+      DESTINATION_REQUEST_AT = now;
+      const qs = new URLSearchParams({ q: `${term}, México`, format: 'jsonv2', countrycodes: 'mx', addressdetails: '1', limit: '5', 'accept-language': DEST_LANG });
+      const response = await fetch(`https://nominatim.openstreetmap.org/search?${qs}`);
+      if (!response.ok) throw new Error(`Geocoder HTTP ${response.status}`);
+      const matches = (await response.json()).map(item => ({ lat: Number(item.lat), lon: Number(item.lon), label: item.display_name }))
+        .filter(item => Number.isFinite(item.lat) && Number.isFinite(item.lon));
+      DESTINATION_CACHE.set(key, matches);
+    }
+    const matches = DESTINATION_CACHE.get(key) || [];
+    renderDestinationChoices(matches);
+    setDestinationStatus(matches.length ? '' : DEST_TEXT.noResults);
+    if (matches.length === 1) selectDestination(matches[0].lat, matches[0].lon, matches[0].label);
+  } catch (error) {
+    console.warn('Destination geocoding unavailable', error);
+    const localMatches = destinationLocalMatches(term);
+    renderDestinationChoices(localMatches);
+    setDestinationStatus(localMatches.length ? DEST_TEXT.local : DEST_TEXT.failed);
+  }
+}
+function setupDestinationSearch() {
+  document.getElementById('destination-search')?.addEventListener('click', searchDestination);
+  document.getElementById('destination-input')?.addEventListener('keydown', event => {
+    if (event.key === 'Enter') { event.preventDefault(); searchDestination(); }
+  });
+  document.getElementById('destination-clear')?.addEventListener('click', clearDestinationSearch);
+  document.getElementById('destination-radius')?.addEventListener('change', () => {
+    if (DESTINATION_ACTIVE) selectDestination(DESTINATION_ACTIVE.lat, DESTINATION_ACTIVE.lon, DESTINATION_ACTIVE.label);
+  });
+}

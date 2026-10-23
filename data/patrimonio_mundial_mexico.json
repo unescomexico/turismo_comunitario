@@ -1,0 +1,367 @@
+{
+  "source": "UNESCO Datahub whc001",
+  "dataset_url": "https://data.unesco.org/explore/dataset/whc001/",
+  "coordinate_format": "geo_point_2d=latitude,longitude; GeoJSON coordinates=longitude,latitude",
+  "sites": [
+    {
+      "id": "1061",
+      "name_es": "Antigua Ciudad Maya y bosques tropicales protegidos de Calakmul, Campeche",
+      "name_en": "Ancient Maya City and Protected Tropical Forests of Calakmul, Campeche",
+      "category": "Mixed",
+      "year": "2002",
+      "lat": 18.0530277778,
+      "lon": -89.7372833333,
+      "url": "https://whc.unesco.org/en/list/1061/"
+    },
+    {
+      "id": "1510",
+      "name_es": "Archipiélago de Revillagigedo",
+      "name_en": "Archipiélago de Revillagigedo",
+      "category": "Natural",
+      "year": "2016",
+      "lat": 18.86131944445,
+      "lon": -112.14513888875,
+      "url": "https://whc.unesco.org/en/list/1510/"
+    },
+    {
+      "id": "1351",
+      "name_es": "Camino Real de Tierra Adentro",
+      "name_en": "Camino Real de Tierra Adentro",
+      "category": "Cultural",
+      "year": "2010",
+      "lat": 22.805058532718338,
+      "lon": -102.45556612877832,
+      "url": "https://whc.unesco.org/en/list/1351/"
+    },
+    {
+      "id": "1250",
+      "name_es": "Campus central de la Ciudad Universitaria de la Universidad Nacional Autónoma de México",
+      "name_en": "Central University City Campus of the Universidad Nacional Autónoma de México (UNAM)",
+      "category": "Cultural",
+      "year": "2007",
+      "lat": 19.3322222222,
+      "lon": -99.1880555555,
+      "url": "https://whc.unesco.org/en/list/1250/"
+    },
+    {
+      "id": "1136",
+      "name_es": "Casa-Taller de Luis Barragán",
+      "name_en": "Luis Barragán House and Studio",
+      "category": "Cultural",
+      "year": "2004",
+      "lat": 19.4111978833,
+      "lon": -99.1923533395,
+      "url": "https://whc.unesco.org/en/list/1136/"
+    },
+    {
+      "id": "585",
+      "name_es": "Centro histórico de Morelia",
+      "name_en": "Historic Centre of Morelia",
+      "category": "Cultural",
+      "year": "1991",
+      "lat": 19.700927,
+      "lon": -101.190376,
+      "url": "https://whc.unesco.org/en/list/585/"
+    },
+    {
+      "id": "412",
+      "name_es": "Centro histórico de México y Xochimilco",
+      "name_en": "Historic Centre of Mexico City and Xochimilco",
+      "category": "Cultural",
+      "year": "1987",
+      "lat": 19.2942675,
+      "lon": -99.07062450000001,
+      "url": "https://whc.unesco.org/en/list/412/"
+    },
+    {
+      "id": "415",
+      "name_es": "Centro histórico de Oaxaca y zona arqueológica de Monte Albán",
+      "name_en": "Historic Centre of Oaxaca and Archaeological Site of Monte Albán",
+      "category": "Cultural",
+      "year": "1987",
+      "lat": 17.0541337222,
+      "lon": -96.74489983335,
+      "url": "https://whc.unesco.org/en/list/415/"
+    },
+    {
+      "id": "416",
+      "name_es": "Centro histórico de Puebla",
+      "name_en": "Historic Centre of Puebla",
+      "category": "Cultural",
+      "year": "1987",
+      "lat": 19.045967,
+      "lon": -98.197769,
+      "url": "https://whc.unesco.org/en/list/416/"
+    },
+    {
+      "id": "676",
+      "name_es": "Centro histórico de Zacatecas",
+      "name_en": "Historic Centre of Zacatecas",
+      "category": "Cultural",
+      "year": "1993",
+      "lat": 22.775484,
+      "lon": -102.573531,
+      "url": "https://whc.unesco.org/en/list/676/"
+    },
+    {
+      "id": "482",
+      "name_es": "Ciudad histórica de Guanajuato y minas adyacentes",
+      "name_en": "Historic Town of Guanajuato and Adjacent Mines",
+      "category": "Cultural",
+      "year": "1988",
+      "lat": 21.01694,
+      "lon": -101.25556,
+      "url": "https://whc.unesco.org/en/list/482/"
+    },
+    {
+      "id": "895",
+      "name_es": "Ciudad histórica fortificada de Campeche",
+      "name_en": "Historic Fortified Town of Campeche",
+      "category": "Cultural",
+      "year": "1999",
+      "lat": 19.84639,
+      "lon": -90.53722,
+      "url": "https://whc.unesco.org/en/list/895/"
+    },
+    {
+      "id": "483",
+      "name_es": "Ciudad prehispánica de Chichén-Itzá",
+      "name_en": "Pre-Hispanic City of Chichen-Itza",
+      "category": "Cultural",
+      "year": "1988",
+      "lat": 20.682739,
+      "lon": -88.568654,
+      "url": "https://whc.unesco.org/en/list/483/"
+    },
+    {
+      "id": "631",
+      "name_es": "Ciudad prehispánica de El Tajín",
+      "name_en": "El Tajin, Pre-Hispanic City",
+      "category": "Cultural",
+      "year": "1992",
+      "lat": 20.446095,
+      "lon": -97.377642,
+      "url": "https://whc.unesco.org/en/list/631/"
+    },
+    {
+      "id": "414",
+      "name_es": "Ciudad prehispánica de Teotihuacán",
+      "name_en": "Pre-Hispanic City of Teotihuacan",
+      "category": "Cultural",
+      "year": "1987",
+      "lat": 19.69167,
+      "lon": -98.84167,
+      "url": "https://whc.unesco.org/en/list/414/"
+    },
+    {
+      "id": "791",
+      "name_es": "Ciudad prehispánica de Uxmal",
+      "name_en": "Pre-Hispanic Town of Uxmal",
+      "category": "Cultural",
+      "year": "1996",
+      "lat": 20.240072166675,
+      "lon": -89.66201994445001,
+      "url": "https://whc.unesco.org/en/list/791/"
+    },
+    {
+      "id": "411",
+      "name_es": "Ciudad prehispánica y parque nacional de Palenque",
+      "name_en": "Pre-Hispanic City and National Park of Palenque",
+      "category": "Cultural",
+      "year": "1987",
+      "lat": 17.48333,
+      "lon": -92.05,
+      "url": "https://whc.unesco.org/en/list/411/"
+    },
+    {
+      "id": "1352",
+      "name_es": "Cuevas prehistóricas de Yagul y Mitla en los Valles Centrales de Oaxaca",
+      "name_en": "Prehistoric Caves of Yagul and Mitla in the Central Valley of Oaxaca",
+      "category": "Cultural",
+      "year": "2010",
+      "lat": 16.9508333333,
+      "lon": -96.4211111111,
+      "url": "https://whc.unesco.org/en/list/1352/"
+    },
+    {
+      "id": "815",
+      "name_es": "Hospicio Cabañas de Guadalajara",
+      "name_en": "Hospicio Cabañas, Guadalajara",
+      "category": "Cultural",
+      "year": "1997",
+      "lat": 20.676888,
+      "lon": -103.337798,
+      "url": "https://whc.unesco.org/en/list/815/"
+    },
+    {
+      "id": "1182",
+      "name_es": "Islas y áreas protegidas del Golfo de California",
+      "name_en": "Islands and Protected Areas of the Gulf of California",
+      "category": "Natural",
+      "year": "2005",
+      "lat": 25.475620370374997,
+      "lon": -110.3777755741,
+      "url": "https://whc.unesco.org/en/list/1182/"
+    },
+    {
+      "id": "1079",
+      "name_es": "Misiones franciscanas de la Sierra Gorda de Querétaro",
+      "name_en": "Franciscan Missions in the Sierra Gorda of Querétaro",
+      "category": "Cultural",
+      "year": "2003",
+      "lat": 21.28170808888,
+      "lon": -99.39054448888001,
+      "url": "https://whc.unesco.org/en/list/1079/"
+    },
+    {
+      "id": "1209",
+      "name_es": "Paisaje de agaves y antiguas instalaciones industriales de Tequila",
+      "name_en": "Agave Landscape and Ancient Industrial Facilities of Tequila",
+      "category": "Cultural",
+      "year": "2006",
+      "lat": 20.7723472778,
+      "lon": -103.7860488335,
+      "url": "https://whc.unesco.org/en/list/1209/"
+    },
+    {
+      "id": "714",
+      "name_es": "Pinturas rupestres de la Sierra de San Francisco",
+      "name_en": "Rock Paintings of the Sierra de San Francisco",
+      "category": "Cultural",
+      "year": "1993",
+      "lat": 27.626963,
+      "lon": -113.020427,
+      "url": "https://whc.unesco.org/en/list/714/"
+    },
+    {
+      "id": "702",
+      "name_es": "Primeros monasterios del siglo XVI en las laderas del Popocatepetl",
+      "name_en": "Earliest 16th-Century Monasteries on the Slopes of Popocatepetl",
+      "category": "Cultural",
+      "year": "1994",
+      "lat": 18.96587695555333,
+      "lon": -98.77362422222001,
+      "url": "https://whc.unesco.org/en/list/702/"
+    },
+    {
+      "id": "1410",
+      "name_es": "Reserva de biosfera El Pinacate y Gran Desierto de Altar",
+      "name_en": "El Pinacate and Gran Desierto de Altar Biosphere Reserve",
+      "category": "Natural",
+      "year": "2013",
+      "lat": 32.0,
+      "lon": -113.9166666667,
+      "url": "https://whc.unesco.org/en/list/1410/"
+    },
+    {
+      "id": "1290",
+      "name_es": "Reserva de biosfera de la mariposa monarca",
+      "name_en": "Monarch Butterfly Biosphere Reserve",
+      "category": "Natural",
+      "year": "2008",
+      "lat": 19.6521851852,
+      "lon": -100.2137037037,
+      "url": "https://whc.unesco.org/en/list/1290/"
+    },
+    {
+      "id": "1704",
+      "name_es": "Ruta Wixárika por los sitios sagrados hasta Wiricuta (Tatehuarí Huajuyé)",
+      "name_en": "Wixárika Route through Sacred Sites to Wirikuta (Tatehuarí Huajuyé)",
+      "category": "Cultural",
+      "year": "2025",
+      "lat": 22.874020694434996,
+      "lon": -102.38146680560001,
+      "url": "https://whc.unesco.org/en/list/1704/"
+    },
+    {
+      "id": "554",
+      "name_es": "Santuario de ballenas de El Vizcaíno",
+      "name_en": "Whale Sanctuary of El Vizcaino",
+      "category": "Natural",
+      "year": "1993",
+      "lat": 27.40597166665,
+      "lon": -113.6657848335,
+      "url": "https://whc.unesco.org/en/list/554/"
+    },
+    {
+      "id": "410",
+      "name_es": "Sian Ka'an",
+      "name_en": "Sian Ka'an",
+      "category": "Natural",
+      "year": "1987",
+      "lat": 19.38333,
+      "lon": -87.79167,
+      "url": "https://whc.unesco.org/en/list/410/"
+    },
+    {
+      "id": "1463",
+      "name_es": "Sistema hidráulico del acueducto del Padre Tembleque",
+      "name_en": "Aqueduct of Padre Tembleque Hydraulic System",
+      "category": "Cultural",
+      "year": "2015",
+      "lat": 19.8352777778,
+      "lon": -98.6625666667,
+      "url": "https://whc.unesco.org/en/list/1463/"
+    },
+    {
+      "id": "1534",
+      "name_es": "Valle de Tehuacán-Cuicatlán - Hábitat originario de Mesoamérica",
+      "name_en": "Tehuacán-Cuicatlán Valley: originary habitat of Mesoamerica",
+      "category": "Mixed",
+      "year": "2018",
+      "lat": 18.163940740733334,
+      "lon": -97.29810833333333,
+      "url": "https://whc.unesco.org/en/list/1534/"
+    },
+    {
+      "id": "1274",
+      "name_es": "Villa Protectora de San Miguel el Grande y Santuario de Jesús Nazareno de Atotonilco",
+      "name_en": "Protective town of San Miguel and the Sanctuary of Jesús Nazareno de Atotonilco",
+      "category": "Cultural",
+      "year": "2008",
+      "lat": 20.9596512222,
+      "lon": -100.77025394444999,
+      "url": "https://whc.unesco.org/en/list/1274/"
+    },
+    {
+      "id": "560",
+      "name_es": "Zona arqueológica de Paquimé (Casas Grandes)",
+      "name_en": "Archaeological Zone of Paquimé, Casas Grandes",
+      "category": "Cultural",
+      "year": "1998",
+      "lat": 30.367128,
+      "lon": -107.948122,
+      "url": "https://whc.unesco.org/en/list/560/"
+    },
+    {
+      "id": "939",
+      "name_es": "Zona de monumentos arqueológicos de Xochicalco",
+      "name_en": "Archaeological Monuments Zone of Xochicalco",
+      "category": "Cultural",
+      "year": "1999",
+      "lat": 18.803972,
+      "lon": -99.29639,
+      "url": "https://whc.unesco.org/en/list/939/"
+    },
+    {
+      "id": "792",
+      "name_es": "Zona de monumentos históricos de Querétaro",
+      "name_en": "Historic Monuments Zone of Querétaro",
+      "category": "Cultural",
+      "year": "1996",
+      "lat": 20.593292,
+      "lon": -100.392135,
+      "url": "https://whc.unesco.org/en/list/792/"
+    },
+    {
+      "id": "862",
+      "name_es": "Zona de monumentos históricos de Tlacotalpán",
+      "name_en": "Historic Monuments Zone of Tlacotalpan",
+      "category": "Cultural",
+      "year": "1998",
+      "lat": 18.613459,
+      "lon": -95.658676,
+      "url": "https://whc.unesco.org/en/list/862/"
+    }
+  ]
+}

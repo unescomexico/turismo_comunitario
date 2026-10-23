@@ -4534,3 +4534,28 @@ html[lang="en"] .intro-content h2 {
   .site-chrome.is-expanded .header-wordmark h1,
   .site-chrome.is-compact .header-wordmark h1 { font-size: .98rem; line-height: 1.08; }
 }
+
+/* Destination planning and UNESCO World Heritage layers — bilingual */
+.destination-search-panel { margin-top: 12px; padding-top: 13px; border-top: 1px solid var(--borde); }
+.destination-search-label { display: block; font-size: .78rem; font-weight: 800; margin-bottom: 7px; color: var(--texto, #273b39); }
+.destination-search-fields { display:flex; gap:6px; align-items:stretch; }
+.destination-search-fields input { width: 0; flex: 1; min-width: 0; padding: 10px 8px; border: 1px solid #bbcbd0; background: white; border-radius: 8px; font: inherit; font-size: .76rem; }
+.destination-search-fields button { padding: 0 11px; border: 0; background:#146F66; color:#fff; border-radius: 8px; font-weight:700; cursor:pointer; font-size:.73rem; }
+.destination-search-fields button:hover { background:#0D514A; }
+.destination-search-bottom { margin-top:8px; display:flex; flex-wrap:wrap; align-items:center; gap:7px; font-size:.72rem; }
+.destination-search-bottom select { border:1px solid #bbcbd0; border-radius:6px; padding:4px; background:white; color:#223; font-size:.73rem; }
+#destination-clear { border:0; background:transparent; color:#0B706B; cursor:pointer; font-weight:700; font-size:.72rem; margin-left:auto; }
+.destination-attribution { display:block; margin-top:8px; line-height:1.45; font-size:.65rem; color:#677; }
+.destination-status { line-height:1.4; font-size:.72rem; margin:8px 0 0; color:#365454; }
+.destination-results { background:#fff; border:1px solid #ccd9d9; border-radius:8px; margin-top:7px; max-height:175px; overflow-y:auto; position:relative; z-index:600; }
+.destination-option { border:0; display:block; background:white; text-align:left; width:100%; padding:9px; color:#263b3b; cursor:pointer; font-size:.73rem; border-bottom:1px solid #eee; }
+.destination-option:hover,.destination-option:focus-visible { background:#EDF7F4; }
+.destination-marker { display:grid; place-items:center; color:white; background:#D25C2D; border:3px solid white; box-shadow:0 1px 9px #3338; width:36px; height:36px; border-radius:50%; font-size:26px; }
+.world-heritage-marker { display:grid; place-items:center; color:white; background:var(--wh-color); border:2px solid white; box-shadow:0 1px 7px #3338; width:30px; height:30px; border-radius:7px; font-size:20px; }
+.world-heritage-marker-wrap,.destination-marker-wrap { background:transparent; border:0; }
+.map-context-row--heritage { display:flex; flex-wrap:wrap; gap:2px 8px; align-items:center; }
+.map-context-row--heritage small { color:#657; font-size:.65rem; }
+.heritage-symbol { background:#B68421; color:white; border-radius:5px; display:grid; place-items:center; }
+.whc-popup p { margin:7px 0; font-size:.82rem; }.whc-popup a { font-size:.8rem; font-weight:700; color:#006f76; }
+.map-filter-panel-body { overflow-y:auto; max-height: min(76vh, 640px); }
+@media (max-width:760px) { .map-filter-panel-body { max-height:calc(100dvh - 170px); } .destination-search-fields input { font-size:.8rem; } }
