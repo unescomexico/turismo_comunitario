@@ -1665,6 +1665,9 @@ function setupMapControls() {
     const button = document.getElementById('map-filter-panel-toggle');
     const collapsed = panel?.classList.toggle('is-collapsed');
     button?.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+    const actionLabel = collapsed ? 'Show filters' : 'Hide filters';
+    button?.setAttribute('aria-label', actionLabel);
+    button?.setAttribute('title', actionLabel);
   });
 
   document.getElementById('map-show-services')?.addEventListener('change', event => {
@@ -1903,11 +1906,6 @@ function refreshContextLayers() {
       });
   }
 
-  const note = document.getElementById('map-context-note');
-  if (note) {
-    if (!showServices && !showInfrastructure) note.textContent = 'Turn on a layer and zoom in to explore the surrounding context.';
-    else note.textContent = `${shownServices} services and ${shownInfra} transport points visible in this area.`;
-  }
 }
 
 function flyToExp(id) {
@@ -2452,6 +2450,9 @@ function setupMapControls() {
     const button = document.getElementById('map-filter-panel-toggle');
     const collapsed = panel?.classList.toggle('is-collapsed');
     button?.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+    const actionLabel = collapsed ? 'Show filters' : 'Hide filters';
+    button?.setAttribute('aria-label', actionLabel);
+    button?.setAttribute('title', actionLabel);
   });
 
   document.getElementById('map-show-services')?.addEventListener('change', event => {
@@ -2821,6 +2822,7 @@ function updateContextLegendV4() {
 
   const showServices = document.getElementById('map-show-services')?.checked;
   const showInfrastructure = document.getElementById('map-show-infrastructure')?.checked;
+  const showHeritage = document.getElementById('map-show-heritage')?.checked;
   const serviceCategory = document.getElementById('map-service-category')?.value || '';
   const infraCategory = document.getElementById('map-infrastructure-category')?.value || '';
   const groups = [];
@@ -2851,8 +2853,23 @@ function updateContextLegendV4() {
       </section>`);
   }
 
+  if (showHeritage) {
+    groups.push(`
+      <section class="context-legend-group context-legend-group--heritage">
+        <h4>World Heritage</h4>
+        <div class="context-legend-items">
+          <div class="context-legend-item">
+            <span class="context-legend-symbol context-legend-symbol--heritage" aria-hidden="true">
+              <img src="${WORLD_HERITAGE_ICON_URL}" alt="">
+            </span>
+            <span>World Heritage sites · Mexico</span>
+          </div>
+        </div>
+      </section>`);
+  }
+
   legend.hidden = groups.length === 0;
-  legend.classList.toggle('is-dual', groups.length === 2);
+  legend.classList.toggle('is-dual', groups.length > 1);
   legend.innerHTML = groups.length
     ? `<div class="context-legend-groups">${groups.join('')}</div>`
     : '';
@@ -2935,18 +2952,6 @@ function refreshContextLayers() {
       });
   }
 
-  const note = document.getElementById('map-context-note');
-  if (note) {
-    if (!showServices && !showInfrastructure) {
-      note.textContent = 'Turn on a layer and zoom in to explore the surrounding context.';
-    } else if (showServices && showInfrastructure) {
-      note.textContent = `${shownServices} services and ${shownInfra} transport points visible in this area.`;
-    } else if (showServices) {
-      note.textContent = `${shownServices} services visible in this area.`;
-    } else {
-      note.textContent = `${shownInfra} transport points visible in this area.`;
-    }
-  }
 
   updateContextLegendV4();
 }
@@ -2992,6 +2997,8 @@ function setFilterPanelStateV5(collapsed) {
 
   panel.classList.toggle('is-collapsed', collapsed);
   button?.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+  button?.setAttribute('aria-label', collapsed ? 'Show filters' : 'Hide filters');
+  button?.setAttribute('title', collapsed ? 'Show filters' : 'Hide filters');
   document.body.classList.toggle('map-filters-open', isMobileMapV5() && !collapsed);
 
   if (collapsed) {
@@ -3300,6 +3307,7 @@ const DESTINATION_CACHE = new Map();
 let WHC_LAYER = null;
 let WHC_SITES = [];
 const WHC_PUBLIC_API = 'https://data.unesco.org/api/explore/v2.1/catalog/datasets/whc001/records';
+const WORLD_HERITAGE_ICON_URL = 'img/whc-convention-emblem.png?v=19';
 const DEST_LANG = 'en';
 const DEST_TEXT = DEST_LANG === 'en' ? {
   search: 'Search', prompt: 'Enter a place, municipality or city in Mexico.',
@@ -3369,12 +3377,14 @@ function renderWorldHeritage() {
   if (!document.getElementById('map-show-heritage')?.checked) return;
   WHC_SITES.forEach(site => {
     const category = destinationNormalized(site.category);
-    const color = category === 'natural' ? '#2074A0' : category === 'mixed' || category === 'mixto' ? '#87559D' : '#B68421';
     const marker = L.marker([site.lat, site.lon], {
-      pane: 'worldHeritagePane', title: DEST_LANG === 'en' ? site.name_en : site.name_es,
-      icon: L.divIcon({ className: 'world-heritage-marker-wrap', html:
-        `<span class="world-heritage-marker" style="--wh-color:${color}" aria-hidden="true">◆</span>`,
-        iconSize: [30, 30], iconAnchor: [15, 15], popupAnchor: [0, -18] })
+      pane: 'worldHeritagePane',
+      title: DEST_LANG === 'en' ? site.name_en : site.name_es,
+      icon: L.divIcon({
+        className: 'world-heritage-marker-wrap',
+        html: `<span class="world-heritage-marker" aria-hidden="true"><img src="${WORLD_HERITAGE_ICON_URL}" alt=""></span>`,
+        iconSize: [40, 40], iconAnchor: [20, 20], popupAnchor: [0, -23],
+      })
     });
     const name = DEST_LANG === 'en' ? site.name_en : site.name_es;
     const categoryLabel = category === 'natural' ? DEST_TEXT.natural : (category === 'mixed' || category === 'mixto') ? DEST_TEXT.mixed : DEST_TEXT.cultural;
@@ -3387,7 +3397,11 @@ async function setupWorldHeritageLayer() {
   const pane = MAP.getPane('worldHeritagePane') || MAP.createPane('worldHeritagePane');
   pane.style.zIndex = '550';
   WHC_LAYER = L.layerGroup().addTo(MAP);
-  document.getElementById('map-show-heritage')?.addEventListener('change', renderWorldHeritage);
+  document.getElementById('map-show-heritage')?.addEventListener('change', () => {
+    renderWorldHeritage();
+    updateContextLegendV4();
+  });
+  updateContextLegendV4();
   // A versioned snapshot avoids an empty map if the public Datahub API is down.
   try {
     const response = await fetch('data/patrimonio_mundial_mexico.json');

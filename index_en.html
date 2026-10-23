@@ -11,7 +11,7 @@
 <link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet"/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-<link href="styles.css?v=18" rel="stylesheet">
+<link href="styles.css?v=19" rel="stylesheet">
 </link></head>
 <body>
 <!-- HEADER -->
@@ -55,8 +55,11 @@
 </div>
 <!-- Filtros y capas del mapa -->
 <div class="map-filter-panel" id="map-filter-panel">
-<button aria-expanded="true" class="map-filter-panel-toggle" id="map-filter-panel-toggle" type="button">
-<span>Filter and plan</span>
+<button aria-expanded="true" aria-controls="map-filter-panel-body" aria-label="Hide filters" title="Hide filters" class="map-filter-panel-toggle" id="map-filter-panel-toggle" type="button">
+<span class="map-filter-toggle-main">
+<span class="map-filter-hamburger" aria-hidden="true"><i></i><i></i><i></i></span>
+<span class="map-filter-toggle-label">Filter and plan</span>
+</span>
 <span aria-hidden="true" class="map-filter-chevron">⌃</span>
 </button>
 <div class="map-filter-panel-body" id="map-filter-panel-body">
@@ -103,8 +106,7 @@
 <option value="puerto_embarcadero">Ports and landing stages</option>
 </select>
 </div>
-<div class="map-context-row map-context-row--heritage"><label class="map-layer-toggle"><input id="map-show-heritage" type="checkbox" checked/> World Heritage sites · Mexico</label><small>Source: UNESCO Datahub (whc001)</small></div>
-<p class="map-context-note" id="map-context-note">Turn on a layer and zoom in to explore the surrounding context.</p>
+<div class="map-context-row map-context-row--heritage"><label class="map-layer-toggle"><input id="map-show-heritage" type="checkbox" checked/> World Heritage sites · Mexico</label></div>
 <div class="destination-search-panel" role="search" aria-label="Search for a destination">
 <label for="destination-input" class="destination-search-label">Search for a destination</label>
 <div class="destination-search-fields"><input id="destination-input" type="search" autocomplete="off" placeholder="E.g. Oaxaca City, Valladolid, Pátzcuaro…" aria-label="Search for a destination"/><button id="destination-search" type="button">Search</button></div>
@@ -185,7 +187,7 @@
 <span aria-hidden="true" class="explore-symbol experience-symbol"><i></i></span>
 <span><strong>Experiences</strong><small>Main map feature</small></span>
 </div>
-<div class="explore-symbol-row"><span aria-hidden="true" class="explore-symbol heritage-symbol">◆</span><span><strong>World Heritage</strong><small>UNESCO sites in Mexico</small></span></div>
+<div class="explore-symbol-row"><span aria-hidden="true" class="explore-symbol heritage-symbol"><img src="img/whc-convention-emblem.png?v=19" alt=""/></span><span><strong>World Heritage</strong><small>UNESCO sites in Mexico</small></span></div>
 <div class="explore-symbol-row">
 <span aria-hidden="true" class="explore-symbol service-symbol">S</span>
 <span><strong>Services</strong><small>Context for planning your visit</small></span>
@@ -606,6 +608,6 @@
 <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"></path>
 </svg>
 </button>
-<script src="main_en.js?v=18"></script>
+<script src="main_en.js?v=19"></script>
 </body>
 </html>
